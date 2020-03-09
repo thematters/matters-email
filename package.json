@@ -22,6 +22,7 @@
     "eslint-plugin-standard": "^4.0.1",
     "gulp": "^4.0.2",
     "gulp-html-i18n": "^0.16.0",
+    "gulp-mjml": "^4.0.2",
     "mjml": "^4.6.2",
     "npx": "^10.2.2",
     "typescript": "^3.8.3"
