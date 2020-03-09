@@ -1,0 +1,41 @@
+kind: pipeline
+name: default
+
+steps:
+  - name: node modules
+    image: node:12.16
+    commands:
+      - npm install --no-progress --quiet --unsafe-perm >  npm-install.log
+
+  - name: build
+    image: node:12.16
+    commands:
+      - npm run build
+
+  # === CI tasks for `develop` branch ===
+  - name: develop:update-mail-templates
+    image: node:12.16
+    environment:
+      MATTERS_SENDGRID_API_KEY:
+        from_secret: DEVELOP_SENDGRID_API_KEY
+    commands:
+      - npm run upload:dev
+    when:
+      branch:
+        - develop
+      event:
+        - push
+
+  # === CI tasks for `master` branch ===
+  - name: prod:update-mail-templates
+    image: node:12.16
+    environment:
+      MATTERS_SENDGRID_API_KEY:
+        from_secret: PROD_SENDGRID_API_KEY
+    commands:
+      - npm run upload:prod
+    when:
+      branch:
+        - master
+      event:
+        - push
