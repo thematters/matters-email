@@ -5,7 +5,7 @@ import * as request from 'request-promise-native'
 
 dotenv.config()
 
-const env = process.env.ENV || 'development'
+const env = process.env.MATTERS_ENV || 'development'
 
 /*
  * prepare http request options for sendgrid web API

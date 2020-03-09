@@ -10,7 +10,7 @@
     "start": "gulp",
     "build": "gulp build",
     "upload:dev": "ts-node --files src/updateEmailTemplates.ts",
-    "upload:prod": "ENV='production' ts-node --files src/updateEmailTemplates.ts"
+    "upload:prod": "MATTERS_ENV='production' ts-node --files src/updateEmailTemplates.ts"
   },
   "author": "",
   "license": "ISC",
