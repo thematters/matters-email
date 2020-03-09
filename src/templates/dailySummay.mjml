@@ -1,7 +1,7 @@
 <mjml>
   <mj-head>
     <mj-include path="./partials/head.mjml" />
-    <mj-title>🐿️ {{recipient.displayName}}，這是專屬於你的 Matters 日報</mj-title>
+    <mj-title>🐿️ {{recipient.displayName}}，${{dailySummary.title}}$</mj-title>
     <mj-preview>
 
       {{#if notices.article_new_appreciation}}
@@ -11,7 +11,7 @@
             {{#if @last}}{{#if @../last}} {{else}}<span>、</span>{{/if}}{{else}}<span>、</span>{{/if}}
           {{/each}}
         {{/each}}
-        讚賞了你的作品…
+        ${{dailySummary.workAwarded}}$…
       {{/if}}
 
       {{#if notices.article_new_comment}}
@@ -21,7 +21,7 @@
             {{#if @last}}{{#if @../last}} {{else}}<span>、</span>{{/if}}{{else}}<span>、</span>{{/if}}
           {{/each}}
         {{/each}}
-        回應了你的作品…
+        ${{dailySummary.workCommented}}$…
       {{/if}}
 
       {{#if notices.article_new_subscriber}}
@@ -31,7 +31,7 @@
             {{#if @last}}{{#if @../last}} {{else}}<span>、</span>{{/if}}{{else}}<span>、</span>{{/if}}
           {{/each}}
         {{/each}}
-        收藏了你的作品…
+        ${{dailySummary.workBookmarked}}$…
       {{/if}}
 
       {{#if notices.article_new_collected}}
@@ -39,7 +39,7 @@
           <span>{{this.actor.displayName}}</span>
           {{#if @last}} {{else}}<span>、</span>{{/if}}
         {{/each}}
-        關聯了你的作品…
+        ${{dailySummary.workAssociated}}$…
       {{/if}}
 
       {{#if notices.article_mentioned_you}}
@@ -47,7 +47,7 @@
           <span>{{this.actor.displayName}}</span>
           {{#if @last}} {{else}}<span>、</span>{{/if}}
         {{/each}}
-        在作品中提及了你…
+        ${{dailySummary.mentionedYouInWork}}$…
       {{/if}}
 
       {{#if notices.comment_mentioned_you}}
@@ -55,16 +55,16 @@
           <span>{{this.actor.displayName}}</span>
           {{#if @last}} {{else}}<span>、</span>{{/if}}
         {{/each}}
-        在評論中提及了你…
+        ${{dailySummary.mentionedYouInComment}}$…
       {{/if}}
 
       {{#if notices.comment_new_reply}}
-        你的評論被
+        ${{dailySummary.yourCommentIs}}$
         {{#each notices.comment_new_reply}}
           <span>{{this.actor.displayName}}</span>
           {{#if @last}} {{else}}<span>、</span>{{/if}}
         {{/each}}
-        回覆；
+        ${{dailySummary.replied}}$；
       {{/if}}
 
       {{#if notices.user_new_follower}}
@@ -74,7 +74,7 @@
             {{#if @last}}{{#if @../last}} {{else}}<span>、</span>{{/if}}{{else}}<span>、</span>{{/if}}
           {{/each}}
         {{/each}}
-        追蹤了你…
+        ${{dailySummary.followedYou}}$…
       {{/if}}
 
       &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
@@ -95,12 +95,12 @@
         <mj-column>
           <mj-text>
             {{#if recipient.displayName }}
-              親愛的{{ recipient.displayName }}，
+              ${{dailySummary.dear}}$ {{ recipient.displayName }}，
             {{/if}}
           </mj-text>
           <mj-spacer height="8px" />
           <mj-text>
-            謝謝你一起搭建 Matters 社區。這是最近 24 小時站上與你有關的活動 🌾
+            ${{dailySummary.activitiesIn24Hrs}}$ 🌾
           </mj-text>
         </mj-column>
       </mj-section>
@@ -113,7 +113,7 @@
 
       <mj-section css-class="card top-clear bottom-clear">
         <mj-column>
-          <mj-text mj-class="subtitle">你的作品在站上受到歡迎</mj-text>
+          <mj-text mj-class="subtitle">${{dailySummary.yourWorksArePopular}}$</mj-text>
           <mj-spacer height="16px" />
         </mj-column>
       </mj-section>
@@ -130,9 +130,9 @@
               {{#if @last}} {{else}}、{{/if}}
             {{/each}}
             {{#if this.actorCount}}
-              等 {{this.actorCount}} 人
+              ${{dailySummary.etc}}$ {{this.actorCount}} 人
             {{/if}}
-            讚賞了你的作品
+            ${{dailySummary.workAwarded}}$
             <a class="link-black" href="{{siteDomain}}/@{{this.article.author.userName}}/{{{this.article.slug}}}-{{this.article.mediaHash}}?utm_medium=email">《{{this.article.title}}》</a>
           </mj-text>
           <mj-spacer height="16px" />
@@ -151,9 +151,9 @@
               {{#if @last}} {{else}}、{{/if}}
             {{/each}}
             {{#if this.actorCount}}
-              等 {{this.actorCount}} 人
+              ${{dailySummary.etc}}$ {{this.actorCount}} 人
             {{/if}}
-            回應了你的作品
+            ${{dailySummary.workCommented}}$
             <a class="link-black" href="{{siteDomain}}/@{{this.article.author.userName}}/{{{this.article.slug}}}-{{this.article.mediaHash}}?utm_medium=email">《{{this.article.title}}》</a>
           </mj-text>
           <mj-spacer height="16px" />
@@ -172,9 +172,9 @@
               {{#if @last}} {{else}}、{{/if}}
             {{/each}}
             {{#if this.actorCount}}
-              等 {{this.actorCount}} 人
+              ${{dailySummary.etc}}$ {{this.actorCount}} 人
             {{/if}}
-            收藏了你的作品
+            ${{dailySummary.workBookmarked}}$
             <a class="link-black" href="{{siteDomain}}/@{{this.article.author.userName}}/{{{this.article.slug}}}-{{this.article.mediaHash}}?utm_medium=email">《{{this.article.title}}》</a>
           </mj-text>
           <mj-spacer height="16px" />
@@ -189,7 +189,7 @@
           </mj-raw>
           <mj-text mj-class="color-grey-dark">
             <a class="link-black" href="{{siteDomain}}/@{{this.actor.userName}}?utm_medium=email">{{this.actor.displayName}}</a>
-            關聯了你的作品
+            ${{dailySummary.workAssociated}}$
             <a class="link-black" href="{{siteDomain}}/@{{this.article.author.userName}}/{{{this.article.slug}}}-{{this.article.mediaHash}}?utm_medium=email">《{{this.article.title}}》</a>
           </mj-text>
           <mj-spacer height="16px" />
@@ -223,7 +223,7 @@
           </mj-raw>
           <!-- divider:end -->
 
-          <mj-text mj-class="subtitle">其他讀者在站上提及了你</mj-text>
+          <mj-text mj-class="subtitle">${{dailySummary.othersMentionedYou}}$</mj-text>
           <mj-spacer height="16px" />
         </mj-column>
       </mj-section>
@@ -235,9 +235,9 @@
             {{#each notices.article_mentioned_you}}
           </mj-raw>
           <mj-text mj-class="color-grey-dark">
-            <a class="link-black" href="{{siteDomain}}/@{{this.actor.userName}}?utm_medium=email">{{this.actor.displayName}}</a> 在作品
+            <a class="link-black" href="{{siteDomain}}/@{{this.actor.userName}}?utm_medium=email">{{this.actor.displayName}}</a> ${{dailySummary.inWork}}$
             <a class="link-black" href="{{siteDomain}}/@{{this.article.author.userName}}/{{{this.article.slug}}}-{{this.article.mediaHash}}?utm_medium=email">《{{this.article.title}}》</a>
-            中提及了你
+            ${{dailySummary.mentionedYou}}$
           </mj-text>
           <mj-spacer height="16px" />
           <mj-raw>
@@ -251,7 +251,7 @@
           </mj-raw>
           <mj-text mj-class="color-grey-dark">
             <a class="link-black" href="{{siteDomain}}/@{{this.actor.userName}}?utm_medium=email">{{this.actor.displayName}}</a>
-            在評論<a class="link-black" href="{{siteDomain}}/@{{this.comment.article.author.userName}}/{{this.comment.article.slug}}-{{this.comment.article.mediaHash}}?utm_medium=email#{{this.comment.globalId}}">「{{this.comment.content}}」</a>中提及了你
+            ${{dailySummary.inComment}}$<a class="link-black" href="{{siteDomain}}/@{{this.comment.article.author.userName}}/{{this.comment.article.slug}}-{{this.comment.article.mediaHash}}?utm_medium=email#{{this.comment.globalId}}">「{{this.comment.content}}」</a>中提及了你
           </mj-text>
           <mj-spacer height="16px" />
           <mj-raw>
@@ -264,13 +264,13 @@
             {{#each notices.comment_new_reply}}
           </mj-raw>
           <mj-text mj-class="color-grey-dark">
-            你在作品
+            ${{dailySummary.youInWork}}$
             <a class="link-black" href="{{siteDomain}}/@{{this.comment.article.author.userName}}/{{this.comment.article.slug}}-{{this.comment.article.mediaHash}}?utm_medium=email">《{{this.comment.article.title}}》</a>
-            中的評論
+            ${{dailySummary.comment}}$
             <a class="link-black" href="{{siteDomain}}/@{{this.comment.article.author.userName}}/{{this.comment.article.slug}}-{{this.comment.article.mediaHash}}?utm_medium=email#{{this.comment.globalId}}">「{{this.comment.content}}」</a>
             被
             <a class="link-black" href="{{siteDomain}}/@{{this.actor.userName}}?utm_medium=email">{{this.actor.displayName}}</a>
-            回覆
+            ${{dailySummary.replied}}$
           </mj-text>
           <mj-spacer height="16px" />
           <mj-raw>
@@ -308,7 +308,7 @@
             {{/if}}
           </mj-raw>
           <!-- divider:end -->
-          <mj-text mj-class="subtitle">認識新朋友，發掘最新作品</mj-text>
+          <mj-text mj-class="subtitle">${{dailySummary.newFriend}}$，${{dailySummary.newWork}}$</mj-text>
           <mj-spacer height="16px" />
         </mj-column>
       </mj-section>
@@ -330,9 +330,9 @@
               {{#if @last}} {{else}}、{{/if}}
             {{/each}}
             {{#if this.actorCount}}
-              等 {{this.actorCount}} 人
+              ${{dailySummary.etc}}$ {{this.actorCount}} 人
             {{/if}}
-            追蹤了你。通過創作與他們進行交流吧！
+            ${{dailySummary.followedYou}}$。${{dailySummary.communicateByCreate}}$
           </mj-text>
           <mj-spacer height="16px" />
           <mj-raw>
@@ -351,7 +351,7 @@
       <mj-section css-class="card top-clear"></mj-section>
       <mj-section padding="24px 0">
         <mj-column>
-          <mj-text css-class="footer" font-size="12px" mj-class="color-grey">想要變更郵件接收設定，請前往 Matters 主站進行<a class="link-underline" href="{{siteDomain}}/me/settings/notification?utm_medium=email">設置</a>。</mj-text>
+          <mj-text css-class="footer" font-size="12px" mj-class="color-grey">${{dailySummary.changeSubscribeSetting}}$<a class="link-underline" href="{{siteDomain}}/me/settings/notification?utm_medium=email">設置</a>。</mj-text>
           <mj-text css-class="footer" font-size="12px" mj-class="color-grey">Copyright © 2020 Matters, All rights reserved.</mj-text>
         </mj-column>
       </mj-section>

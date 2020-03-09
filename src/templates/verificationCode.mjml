@@ -1,8 +1,8 @@
 <mjml>
   <mj-head>
     <mj-include path="./partials/head.mjml" />
-    <mj-title>Matters | {{type}}驗證碼</mj-title>
-    <mj-preview>你的驗證碼是 {{code}}</mj-preview>
+    <mj-title>Matters | {{type}}${{verificationCode.code}}$</mj-title>
+    <mj-preview>${{verificationCode.yourCodeIs}}$ {{code}}</mj-preview>
   </mj-head>
 
   <mj-body mj-class="body" css-class="body">
@@ -15,7 +15,7 @@
 
           <mj-spacer height="16px" />
           <mj-text>
-            你進行{{type}}的驗證碼是（如果不是本人，請不要做任何操作）：
+            ${{verificationCode.youAreDoing}}${{type}}${{verificationCode.codeIs}}$${{verificationCode.makeSureItsYourself}}$：
           </mj-text>
 
           <mj-text mj-class="verification-code">

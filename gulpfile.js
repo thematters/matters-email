@@ -1,6 +1,9 @@
 const gulp = require('gulp')
 const mjml = require('gulp-mjml')
 const i18n = require('gulp-html-i18n')
+const browserSync = require('browser-sync')
+const reload = browserSync.reload
+const argv = require('minimist')(process.argv.slice(2))
 
 const basePaths = {
   mjmlSrc: './src/templates/',
@@ -35,4 +38,28 @@ function generateLocalizedEmailTemplates () {
     .pipe(gulp.dest(paths.i18n.dest))
 }
 
-gulp.task('default', gulp.series(buildMjmlToHtml, generateLocalizedEmailTemplates))
+/** Dev server */
+function server (done) {
+  let watchDir = paths.i18n.dest
+  // $gulp --mjml
+  // will start watch for lokalised emails
+  if (argv.mjml) {
+    watchDir = paths.mjml.dest
+  }
+  const options = {
+    server: {
+      baseDir: watchDir,
+      directory: true
+    },
+    port: '8000',
+    notify: false
+  }
+  browserSync.init(options)
+  done()
+}
+
+function watch () {
+  gulp.watch([paths.mjml.src, paths.i18n.languagesSrc]).on('change', gulp.series(buildMjmlToHtml, generateLocalizedEmailTemplates, reload))
+}
+
+gulp.task('default', gulp.series(buildMjmlToHtml, generateLocalizedEmailTemplates, gulp.parallel(server, watch)))

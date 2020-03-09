@@ -1,8 +1,8 @@
 <mjml>
   <mj-head>
     <mj-include path="./partials/head.mjml" />
-    <mj-title>Matters | ${{migrationSuccess.migrationDone}}$</mj-title>
-    <mj-preview>${{migrationSuccess.welcomeAndCheckDrafts}}$</mj-preview>
+    <mj-title>${{registerSuccess.title}}$</mj-title>
+    <mj-preview>${{registerSuccess.preview}}$</mj-preview>
   </mj-head>
 
   <mj-body mj-class="body" css-class="body">
@@ -14,25 +14,25 @@
           <mj-include path="./partials/greeting.mjml" />
           <mj-spacer height="16px" />
           <mj-text>
-            Hi {{ recipient.displayName }}，
+            ${{registerSuccess.congratulation}}$
           </mj-text>
           <mj-spacer height="16px" />
           <mj-text>
-            ${{migrationSuccess.platformDifferenceAndLikeButtionDescription}}$
+            ${{registerSuccess.howto}}$「<a class="link" href="https://matters.news/faq">${{registerSuccess.guide}}$</a>」。${{registerSuccess.joinOfficial}}$<a class="link" href="https://t.me/joinchat/BXzlWUhXaWNZ-TXJZJCzDQ">Telegram ${{registerSuccess.group}}$</a>，或${{registerSuccess.attention}}$ <a class="link" href="https://www.facebook.com/MattersLab2018">Matters ${{registerSuccess.facebook}}$</a>，${{registerSuccess.followNews}}$。${{registerSuccess.joinForMore}}$ <a class="link" href="https://www.facebook.com/groups/matters.news/">Matters ${{registerSuccess.authorAssociation}}$</a>。${{registerSuccess.newsletter}}$。
           </mj-text>
           <mj-spacer height="16px" />
           <mj-text>
-            ${{migrationSuccess.click}}$<a class="link" href="{{siteDomain}}/@{{recipient.userName}}/drafts?utm_medium=email">${{migrationSuccess.here}}$</a>${{migrationSuccess.publishFirstArticle}}$<a class="link" href="{{siteDomain}}/a{{recipient.userName}}">${{migrationSuccess.yourProfilePage}}$</a>，${{migrationSuccess.likeForIncome}}$
+            ${{registerSuccess.contactUs}}$: <a class="link" href="mailto:ask@matters.news">ask@matters.news</a>
           </mj-text>
           <mj-spacer height="16px" />
           <mj-text>
-            ${{migrationSuccess.contactUs}}$：ask@matters.news
+            ${{registerSuccess.happyCreating}}$
           </mj-text>
         </mj-column>
       </mj-section>
 
       <!-- <mj-section css-class="card bottom-clear" padding-top="24px">
-        <mj-include path="./partials/download.mjml" />
+        <mj-include path="../partials/download.mjml" />
       </mj-section> -->
 
       <mj-section css-class="card top-clear">

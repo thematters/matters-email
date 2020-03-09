@@ -4,7 +4,7 @@
   </mj-column>
   <mj-column>
     <mj-text css-class="slogan" align="left" padding="10px 0 0 0" color="#b3b3b3">
-      一個自由、自主、永續的創作與公共討論空間
+      ${{partials.header}}$
     </mj-text>
   </mj-column>
 </mj-section>
