@@ -62,4 +62,5 @@ function watch () {
   gulp.watch([paths.mjml.src, paths.i18n.languagesSrc]).on('change', gulp.series(buildMjmlToHtml, generateLocalizedEmailTemplates, reload))
 }
 
-gulp.task('default', gulp.series(buildMjmlToHtml, generateLocalizedEmailTemplates, gulp.parallel(server, watch)))
+gulp.task('build', gulp.series(buildMjmlToHtml, generateLocalizedEmailTemplates))
+gulp.task('default', gulp.series('build', gulp.parallel(server, watch)))
