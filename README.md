@@ -12,9 +12,9 @@ MJML itself does not support i18n feature. This build flow will pipe MJML output
 
 ## Add New Template
 
-- add the sendgrid templates for all languages for `development` and `production` environments
+- add the dynamic templates for all languages for `development` and `production` environments in SendGrid
 - create a new mjml file in `src/templates`, update, test and build
-- config `templateId`, `name`, `templateFile` for `development` and `production` environments in `src/updateEmailTemplates.ts`
+- config `TEMPLATES` settings for `development` and `production` environments in `src/updateEmailTemplates.ts`
 
 ## Support Localization
 
