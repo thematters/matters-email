@@ -1,4 +1,4 @@
-# Matter i18n Email Templates
+# Matters Localizable Email Templates
 
 MJML itself does not support i18n feature. This build flow will pipe MJML output html files to `gulp-html-i18n` to support localization.
 
