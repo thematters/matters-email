@@ -10,7 +10,13 @@ MJML itself does not support i18n feature. This build flow will pipe MJML output
 - `npm run upload:dev` to upload build email templates to sendgrid development templates
 - `npm run upload:prod` to upload build email templates to sendgrid production templates
 
-## Template Language
+## Add New Template
+
+- add the sendgrid templates for all languages for `development` and `production` environments
+- create a new mjml file in `src/templates`, update, test and build
+- config `templateId`, `name`, `templateFile` for `development` and `production` environments in `src/updateEmailTemplates.ts`
+
+## Support Localization
 
 `gulp-html-i18n` default template render enginer uses `${{}}$` as delimiters
 
