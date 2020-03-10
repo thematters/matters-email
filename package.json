@@ -6,6 +6,10 @@
   },
   "description": "Use mjml to generate and update sendgrid dynamic templates",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:thematters/matters-email.git"
+  },
   "scripts": {
     "start": "gulp",
     "build": "gulp build",
@@ -13,7 +17,7 @@
     "upload:prod": "MATTERS_ENV='production' ts-node --files src/updateEmailTemplates.ts"
   },
   "author": "",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.22.0",
     "@typescript-eslint/parser": "^2.22.0",
