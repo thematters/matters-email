@@ -138,52 +138,52 @@ const TEMPLATES = (() => {
     console.log('\x1b[36m%s\x1b[0m', 'updating production email templates...')
     return [
       {
-        templateId: 'd-805ccf4182244f59a5388b581df1eeab',
+        templateId: 'd-4a5a938cdc0c4020a1e2feb67a553946',
         name: 'Daily Summary',
         templateFile: 'dailySummary-zh-TW.html'
       },
       {
-        templateId: 'd-e242f3e39f014279966e43425b208cbe',
+        templateId: 'd-7f4276f1b32f48a4a51df90cbbb1447a',
         name: 'Daily Summary',
         templateFile: 'dailySummary-zh-CN.html'
       },
       {
-        templateId: 'd-b370a6eddc394814959b49db1ba4cfec',
+        templateId: 'd-231ada8640374adb9d79a0130480c801',
         name: 'User Deleted',
         templateFile: 'userDeleted-zh-TW.html'
       },
       {
-        templateId: 'd-9774a8882f914afaa43e2634a234762b',
+        templateId: 'd-cce84e261e0f4e47a2f1e2296b784230',
         name: 'User Deleted',
         templateFile: 'userDeleted-zh-CN.html'
       },
       {
-        templateId: 'd-250ba94c759948cbb2bd9f94089d13b8',
+        templateId: 'd-df196f90da7743f6900906fc18487953',
         name: 'Verification Code',
         templateFile: 'verificationCode-zh-TW.html'
       },
       {
-        templateId: 'd-92b184faf2aa48fb8645600f2540cfb4',
+        templateId: 'd-f9373c61bdac43e1a24f221ceba4c61c',
         name: 'Verification Code',
         templateFile: 'verificationCode-zh-CN.html'
       },
       {
-        templateId: 'd-06a6075fefe54a0f96157f69a726e46e',
+        templateId: 'd-765b335a77d244438891a62f023b8c2e',
         name: 'Register Success',
         templateFile: 'registerSuccess-zh-TW.html'
       },
       {
-        templateId: 'd-0be942cd60ff4082b35ab836b60a728f',
+        templateId: 'd-30589f459aac4df1ab66e0f8af79fc4d',
         name: 'Register Success',
         templateFile: 'registerSuccess-zh-CN.html'
       },
       {
-        templateId: 'd-a86e6f1c1fc24379b4b21244f111161b',
+        templateId: 'd-47b788ce3754426fb2a6d3c80b9872eb',
         name: 'Migration Success',
         templateFile: 'migrationSuccess-zh-TW.html'
       },
       {
-        templateId: 'd-c0b89ae6e8fe4eed8f05277853561976',
+        templateId: 'd-2e7d84cd2965426b80eafcfdcd18776c',
         name: 'Migration Success',
         templateFile: 'migrationSuccess-zh-CN.html'
       }
