@@ -86,12 +86,12 @@ const TEMPLATES = (() => {
       {
         templateId: 'd-805ccf4182244f59a5388b581df1eeab',
         name: 'Daily Summary',
-        templateFile: 'dailySummay-zh-TW.html'
+        templateFile: 'dailySummary-zh-TW.html'
       },
       {
         templateId: 'd-e242f3e39f014279966e43425b208cbe',
         name: 'Daily Summary',
-        templateFile: 'dailySummay-zh-CN.html'
+        templateFile: 'dailySummary-zh-CN.html'
       },
       {
         templateId: 'd-b370a6eddc394814959b49db1ba4cfec',
@@ -140,12 +140,12 @@ const TEMPLATES = (() => {
       {
         templateId: 'd-805ccf4182244f59a5388b581df1eeab',
         name: 'Daily Summary',
-        templateFile: 'dailySummay-zh-TW.html'
+        templateFile: 'dailySummary-zh-TW.html'
       },
       {
         templateId: 'd-e242f3e39f014279966e43425b208cbe',
         name: 'Daily Summary',
-        templateFile: 'dailySummay-zh-CN.html'
+        templateFile: 'dailySummary-zh-CN.html'
       },
       {
         templateId: 'd-b370a6eddc394814959b49db1ba4cfec',
