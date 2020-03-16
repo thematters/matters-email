@@ -4,7 +4,6 @@
     <mj-title>Matters | ${{migrationSuccess.migrationDone}}$</mj-title>
     <mj-preview>${{migrationSuccess.welcomeAndCheckDrafts}}$</mj-preview>
   </mj-head>
-
   <mj-body mj-class="body" css-class="body">
     <mj-wrapper mj-class="wrapper">
       <mj-include path="./partials/header.mjml" />
@@ -14,15 +13,34 @@
           <mj-include path="./partials/greeting.mjml" />
           <mj-spacer height="16px" />
           <mj-text>
-            Hi {{ recipient.displayName }}，
+            ${{migrationSuccess.welcomeAndCheckDrafts}}$
           </mj-text>
           <mj-spacer height="16px" />
           <mj-text>
-            ${{migrationSuccess.platformDifferenceAndLikeButtionDescription}}$
+            ${{migrationSuccess.payAttention}}$
+          </mj-text>
+          <mj-text>
+            ${{migrationSuccess.attention1}}$
+          </mj-text>
+          <mj-text>
+            ${{migrationSuccess.attention2}}$
           </mj-text>
           <mj-spacer height="16px" />
           <mj-text>
-            ${{migrationSuccess.click}}$<a class="link" href="{{siteDomain}}/@{{recipient.userName}}/drafts?utm_medium=email">${{migrationSuccess.here}}$</a>${{migrationSuccess.publishFirstArticle}}$<a class="link" href="{{siteDomain}}/a{{recipient.userName}}">${{migrationSuccess.yourProfilePage}}$</a>，${{migrationSuccess.likeForIncome}}$
+            ${{migrationSuccess.editorAndLikeButton}}$
+          </mj-text>
+          <mj-spacer height="16px" />
+          <mj-text>
+            ${{migrationSuccess.publishFrequency}}$
+          </mj-text>
+          <mj-spacer height="16px" />
+          <mj-text>
+            ${{migrationSuccess.click}}$
+            <a class="link" href="{{siteDomain}}/me/drafts?utm_medium=email">${{migrationSuccess.here}}$</a>
+              ${{migrationSuccess.publishFirstArticle}}$
+            <a class="link" href="{{siteDomain}}/@{{recipient.userName}}">
+              ${{migrationSuccess.yourProfilePage}}$
+            </a>，${{migrationSuccess.likeForIncome}}$
           </mj-text>
           <mj-spacer height="16px" />
           <mj-text>
