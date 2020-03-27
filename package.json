@@ -15,7 +15,8 @@
     "build": "gulp build",
     "upload:dev": "ts-node --files src/updateEmailTemplates.ts",
     "upload:prod": "MATTERS_ENV='production' ts-node --files src/updateEmailTemplates.ts",
-    "format": "prettier --write \"**/*.{ts,js,json,md}\""
+    "format": "prettier --write \"**/*.{ts,js,json,md}\"",
+    "lint": "tslint 'src/**/*.ts'"
   },
   "author": "",
   "license": "UNLICENSED",
@@ -28,6 +29,8 @@
     "mjml": "^4.6.2",
     "npx": "^10.2.2",
     "prettier": "^2.0.2",
+    "tslint": "^6.1.0",
+    "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.8.3"
   },
   "dependencies": {

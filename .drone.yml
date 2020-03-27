@@ -2,6 +2,11 @@ kind: pipeline
 name: default
 
 steps:
+  - name: tslint
+    image: node:12.16
+    commands:
+      - npm run lint
+
   - name: node modules
     image: node:12.16
     commands:
