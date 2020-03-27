@@ -9,39 +9,35 @@ const basePaths = {
   translationSrc: './lang/',
   templatesSrc: './src/templates/',
   i18nTemplatesOutput: './build/i18n-emails/',
-  mjmlOutputDest: './build/emails/'
+  mjmlOutputDest: './build/emails/',
 }
 
 const paths = {
   i18n: {
     emailsSrc: basePaths.templatesSrc + '/**/*.mjml',
     languagesSrc: basePaths.translationSrc,
-    dest: basePaths.i18nTemplatesOutput
+    dest: basePaths.i18nTemplatesOutput,
   },
   mjml: {
     src: basePaths.i18nTemplatesOutput + '*.mjml',
-    dest: basePaths.mjmlOutputDest
+    dest: basePaths.mjmlOutputDest,
   },
-  watch: [
-    basePaths.templatesSrc,
-    basePaths.translationSrc
-  ]
+  watch: [basePaths.templatesSrc, basePaths.translationSrc],
 }
 
 function generateLocalizedEmailTemplates() {
   return gulp
     .src(paths.i18n.emailsSrc)
-    .pipe(i18n({
-      langDir: paths.i18n.languagesSrc
-    }))
+    .pipe(
+      i18n({
+        langDir: paths.i18n.languagesSrc,
+      })
+    )
     .pipe(gulp.dest(paths.i18n.dest))
 }
 
 function buildMjmlToHtml() {
-  return gulp
-    .src(paths.mjml.src)
-    .pipe(mjml())
-    .pipe(gulp.dest(paths.mjml.dest))
+  return gulp.src(paths.mjml.src).pipe(mjml()).pipe(gulp.dest(paths.mjml.dest))
 }
 
 /** Dev server */
@@ -57,10 +53,10 @@ function server(done) {
   const options = {
     server: {
       baseDir: watchDir,
-      directory: true
+      directory: true,
     },
     port: '8000',
-    notify: false
+    notify: false,
   }
 
   browserSync.init(options)
@@ -69,8 +65,16 @@ function server(done) {
 }
 
 function watch() {
-  gulp.watch(paths.watch).on('change', gulp.series(generateLocalizedEmailTemplates, buildMjmlToHtml, reload))
+  gulp
+    .watch(paths.watch)
+    .on(
+      'change',
+      gulp.series(generateLocalizedEmailTemplates, buildMjmlToHtml, reload)
+    )
 }
 
-gulp.task('build', gulp.series(generateLocalizedEmailTemplates, buildMjmlToHtml))
+gulp.task(
+  'build',
+  gulp.series(generateLocalizedEmailTemplates, buildMjmlToHtml)
+)
 gulp.task('default', gulp.series('build', gulp.parallel(server, watch)))
