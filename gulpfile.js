@@ -6,46 +6,54 @@ const reload = browserSync.reload
 const argv = require('minimist')(process.argv.slice(2))
 
 const basePaths = {
-  mjmlSrc: './src/templates/',
-  mjmlOutputDest: './build/mjml-output/',
   translationSrc: './lang/',
-  emailsOutputDest: './build/emails/'
+  templatesSrc: './src/templates/',
+  i18nTemplatesOutput: './build/i18n-emails/',
+  mjmlOutputDest: './build/emails/'
 }
 
 const paths = {
+  i18n: {
+    emailsSrc: basePaths.templatesSrc + '/**/*.mjml',
+    languagesSrc: basePaths.translationSrc,
+    dest: basePaths.i18nTemplatesOutput
+  },
   mjml: {
-    src: basePaths.mjmlSrc + '*.mjml',
+    src: basePaths.i18nTemplatesOutput + '*.mjml',
     dest: basePaths.mjmlOutputDest
   },
-  i18n: {
-    emailsSrc: basePaths.mjmlOutputDest + '*.html',
-    languagesSrc: basePaths.translationSrc,
-    dest: basePaths.emailsOutputDest
-  }
+  watch: [
+    basePaths.templatesSrc,
+    basePaths.translationSrc
+  ]
 }
 
-function buildMjmlToHtml () {
+function generateLocalizedEmailTemplates() {
+  return gulp
+    .src(paths.i18n.emailsSrc)
+    .pipe(i18n({
+      langDir: paths.i18n.languagesSrc
+    }))
+    .pipe(gulp.dest(paths.i18n.dest))
+}
+
+function buildMjmlToHtml() {
   return gulp
     .src(paths.mjml.src)
     .pipe(mjml())
     .pipe(gulp.dest(paths.mjml.dest))
 }
 
-function generateLocalizedEmailTemplates () {
-  return gulp
-    .src(paths.i18n.emailsSrc)
-    .pipe(i18n({ langDir: paths.i18n.languagesSrc }))
-    .pipe(gulp.dest(paths.i18n.dest))
-}
-
 /** Dev server */
-function server (done) {
-  let watchDir = paths.i18n.dest
+function server(done) {
+  let watchDir = paths.mjml.dest
+
   // $gulp --mjml
   // will start watch for lokalised emails
   if (argv.mjml) {
     watchDir = paths.mjml.dest
   }
+
   const options = {
     server: {
       baseDir: watchDir,
@@ -54,13 +62,15 @@ function server (done) {
     port: '8000',
     notify: false
   }
+
   browserSync.init(options)
+
   done()
 }
 
-function watch () {
-  gulp.watch([paths.mjml.src, paths.i18n.languagesSrc]).on('change', gulp.series(buildMjmlToHtml, generateLocalizedEmailTemplates, reload))
+function watch() {
+  gulp.watch(paths.watch).on('change', gulp.series(generateLocalizedEmailTemplates, buildMjmlToHtml, reload))
 }
 
-gulp.task('build', gulp.series(buildMjmlToHtml, generateLocalizedEmailTemplates))
+gulp.task('build', gulp.series(generateLocalizedEmailTemplates, buildMjmlToHtml))
 gulp.task('default', gulp.series('build', gulp.parallel(server, watch)))

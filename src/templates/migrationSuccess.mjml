@@ -1,65 +1,60 @@
 <mjml>
   <mj-head>
-    <mj-include path="./partials/head.mjml" />
+    <mj-include path="./partials/head-${{_lang_}}$.mjml" />
     <mj-title>Matters | ${{migrationSuccess.migrationDone}}$</mj-title>
     <mj-preview>${{migrationSuccess.welcomeAndCheckDrafts}}$</mj-preview>
   </mj-head>
   <mj-body mj-class="body" css-class="body">
     <mj-wrapper mj-class="wrapper">
-      <mj-include path="./partials/header.mjml" />
+      <mj-include path="./partials/header-${{_lang_}}$.mjml" />
 
       <mj-section css-class="card bottom-clear">
         <mj-column>
-          <mj-include path="./partials/greeting.mjml" />
+          <mj-include path="./partials/greeting-${{_lang_}}$.mjml" />
           <mj-spacer height="16px" />
+
           <mj-text>
             ${{migrationSuccess.welcomeAndCheckDrafts}}$
           </mj-text>
           <mj-spacer height="16px" />
+
           <mj-text>
             ${{migrationSuccess.payAttention}}$
           </mj-text>
+          <mj-spacer height="8px" />
           <mj-text>
-            ${{migrationSuccess.attention1}}$
+            ${{migrationSuccess.attention}}$
           </mj-text>
-          <mj-text>
-            ${{migrationSuccess.attention2}}$
-          </mj-text>
-          <mj-spacer height="16px" />
+          <mj-spacer height="8px" />
+
           <mj-text>
             ${{migrationSuccess.editorAndLikeButton}}$
           </mj-text>
           <mj-spacer height="16px" />
+
           <mj-text>
             ${{migrationSuccess.publishFrequency}}$
           </mj-text>
           <mj-spacer height="16px" />
+
           <mj-text>
-            ${{migrationSuccess.click}}$
-            <a class="link" href="{{siteDomain}}/me/drafts?utm_medium=email">${{migrationSuccess.here}}$</a>
-              ${{migrationSuccess.publishFirstArticle}}$
-            <a class="link" href="{{siteDomain}}/@{{recipient.userName}}">
-              ${{migrationSuccess.yourProfilePage}}$
-            </a>，${{migrationSuccess.likeForIncome}}$
+            ${{migrationSuccess.publishFirstArticle}}$
           </mj-text>
-          <mj-spacer height="16px" />
+          <mj-spacer height="32px" />
+
           <mj-text>
-            ${{migrationSuccess.contactUs}}$：ask@matters.news
+            ${{migrationSuccess.contactUs}}$
           </mj-text>
         </mj-column>
       </mj-section>
-
-      <!-- <mj-section css-class="card bottom-clear" padding-top="24px">
-        <mj-include path="./partials/download.mjml" />
-      </mj-section> -->
 
       <mj-section css-class="card top-clear">
         <mj-column>
-          <mj-include path="./partials/ending.mjml" />
+          <mj-include path="./partials/ending-${{_lang_}}$.mjml" />
         </mj-column>
       </mj-section>
 
-      <mj-include path="./partials/footer.mjml" />
+      <mj-include path="./partials/footer-${{_lang_}}$.mjml" />
     </mj-wrapper>
   </mj-body>
 </mjml>

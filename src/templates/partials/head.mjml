@@ -7,7 +7,7 @@
   <mj-class name="cta-button" width="100%" color="white" font-size="16px" border-radius="0" height="47px" padding="24px 0 0 0" background-color="#0d6763" inner-padding="0" />
   <mj-class name="color-grey-dark" color="#999c9d" />
   <mj-class name="color-grey" color="#b3b3b3" />
-  <mj-class name="subtitle" font-size="16px" font-weight="700" />
+  <mj-class name="subtitle" font-size="16px" font-weight="700" padding="20px 0 16px 0" />
 </mj-attributes>
 
 <mj-style inline="inline">
@@ -34,6 +34,26 @@
 </mj-style>
 
 <mj-style>
+  ul,
+  ol {
+    padding-left: 32px;
+    margin: 8px 0;
+  }
+
+  li {
+    padding-left: 8px;
+    margin: 8px 0;
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+
   .body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
