@@ -16,12 +16,16 @@
     "upload:dev": "ts-node --files src/updateEmailTemplates.ts",
     "upload:prod": "MATTERS_ENV='production' ts-node --files src/updateEmailTemplates.ts",
     "format": "prettier --write \"**/*.{ts,js,json,md}\"",
-    "lint": "tslint 'src/**/*.ts'"
+    "lint": "eslint . --ext .ts,.tsx"
   },
   "author": "",
   "license": "UNLICENSED",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
+    "@typescript-eslint/parser": "^2.26.0",
     "browser-sync": "^2.26.7",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
     "gulp": "^4.0.2",
     "gulp-html-i18n": "^0.16.0",
     "gulp-mjml": "^4.0.2",
@@ -29,8 +33,6 @@
     "mjml": "^4.6.2",
     "npx": "^10.2.2",
     "prettier": "^2.0.2",
-    "tslint": "^6.1.0",
-    "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.8.3"
   },
   "dependencies": {
