@@ -1,0 +1,13 @@
+newRegisterCommentable:
+  title: '{{recipient.displayName}}，上万名作者正在 Matters 期待你的赞赏与讨论！'
+  welcome: 欢迎你加入 Matters 社区！恭喜你已经解锁了进阶的评论权限，可以在作者们的文章下与他交流了！我们为你准备了几篇热门话题，都是最近获得最多人欣赏的优质文章，邀请你登入帐号为作者拍手，或留言与他互动喔～
+newRegisterUncommentable:
+  title: '{{recipient.displayName}}，你即将解锁评论权限，上万名作者正在 Matters 等待你参与讨论！'
+  welcome: 欢迎加入 Matters 社区！当你在站上阅读超过 30 篇文章，或作品累积的赞赏数超过 15，你就可以跟其他作者留言互动。
+  hook: '距离评论权限解锁，只剩下最后一步，我们推荐你阅读这些精彩文章，读完之后如果喜欢，别忘了登入帐号、作者拍手～你也可以参与<a class="link" href="https://matters.news/tags/VGFnOjY4NTQ">新人打卡</a>，发一篇自我介绍文并获得拍手，也可以解锁权限喔。'
+mediumTermHasFollowees:
+  title: '{{recipient.displayName}}，你喜欢的作者回来了，还记得在 Matters 的旧时光吗？'
+  welcome: 有一阵子没看到你了，Matters 社区正在快速成长中，想邀请你回来看看呢！你欣赏的作者们最近发布了不少新文章，我们为你整理如下，盼望你归来。读完之后记得登入帐号、为作者拍手鼓励。当然，也期待你跟我们分享你的创作。
+mediumTermHasNotFollowees:
+  title: '{{recipient.displayName}}，在你离开的日子里，Matters 有很多话想和你说'
+  welcome: 有一阵子没看到你了，Matters 社区正在快速成长中，写作也越来越多元了，讨论还是如你记忆中那么的热烈，我们为你整理了一份 Matters 精选文集，盼望你归来。如果喜欢，记得登入帐号、为作者拍手。当然，也期待你跟我们分享你的创作。

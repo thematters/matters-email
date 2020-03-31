@@ -140,6 +140,16 @@ const TEMPLATES = (() => {
         name: 'Migration Success',
         templateFile: 'migrationSuccess-zh-CN.html',
       },
+      {
+        templateId: 'd-f2df8dd4f3e24c7981ec152ccf6eb2ec',
+        name: 'Churn User',
+        templateFile: 'churnUser-zh-TW.html',
+      },
+      {
+        templateId: 'd-0e2daefb95214cf9ad0f9cd0d2957636',
+        name: 'Churn User',
+        templateFile: 'churnUser-zh-CN.html',
+      },
     ]
   } else if (env === 'production') {
     console.log('\x1b[36m%s\x1b[0m', 'updating production email templates...')
@@ -193,6 +203,16 @@ const TEMPLATES = (() => {
         templateId: 'd-2e7d84cd2965426b80eafcfdcd18776c',
         name: 'Migration Success',
         templateFile: 'migrationSuccess-zh-CN.html',
+      },
+      {
+        templateId: 'd-0b1612857f9b474aba91679c8e0994d8',
+        name: 'Churn User',
+        templateFile: 'churnUser-zh-TW.html',
+      },
+      {
+        templateId: 'd-d397d5ae9264436bb1e65a202174e6a9',
+        name: 'Churn User',
+        templateFile: 'churnUser-zh-CN.html',
       },
     ]
   } else {
