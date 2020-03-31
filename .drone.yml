@@ -7,6 +7,11 @@ steps:
     commands:
       - npm install --no-progress --quiet --unsafe-perm >  npm-install.log
 
+  - name: tslint
+    image: node:12.16
+    commands:
+      - npm run lint
+
   - name: build
     image: node:12.16
     commands:

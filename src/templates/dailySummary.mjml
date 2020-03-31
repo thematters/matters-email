@@ -1,6 +1,6 @@
 <mjml>
   <mj-head>
-    <mj-include path="./partials/head.mjml" />
+    <mj-include path="./partials/head-${{_lang_}}$.mjml" />
     <mj-title>🐿️ {{recipient.displayName}}，${{dailySummary.title}}$</mj-title>
     <mj-preview>
 
@@ -83,7 +83,7 @@
 
   <mj-body mj-class="body" css-class="body">
     <mj-wrapper mj-class="wrapper">
-      <mj-include path="./partials/header.mjml" />
+      <mj-include path="./partials/header-${{_lang_}}$.mjml" />
 
       <mj-section>
         <mj-column>
@@ -114,7 +114,6 @@
       <mj-section css-class="card top-clear bottom-clear">
         <mj-column>
           <mj-text mj-class="subtitle">${{dailySummary.yourWorksArePopular}}$</mj-text>
-          <mj-spacer height="16px" />
         </mj-column>
       </mj-section>
 
@@ -217,14 +216,14 @@
           <mj-raw>
             {{#if section.article}}
           </mj-raw>
-          <mj-divider padding="16px 0 32px 0" border-color="#ddd" border-width="1px" />
+          <mj-spacer height="16px" />
+          <mj-include path="./partials/divider-${{_lang_}}$.mjml" />
           <mj-raw>
             {{/if}}
           </mj-raw>
           <!-- divider:end -->
 
           <mj-text mj-class="subtitle">${{dailySummary.othersMentionedYou}}$</mj-text>
-          <mj-spacer height="16px" />
         </mj-column>
       </mj-section>
 
@@ -297,19 +296,21 @@
           <mj-raw>
             {{#if section.article}}
           </mj-raw>
-          <mj-divider padding="16px 0 32px 0" border-color="#ddd" border-width="1px" />
+          <mj-spacer height="16px" />
+          <mj-include path="./partials/divider-${{_lang_}}$.mjml" />
           <mj-raw>
             {{else}}
               {{#if section.mention }}
           </mj-raw>
-          <mj-divider padding="16px 0 32px 0" border-color="#ddd" border-width="1px" />
+          <mj-spacer height="16px" />
+          <mj-include path="./partials/divider-${{_lang_}}$.mjml" />
           <mj-raw>
             {{/if}}
             {{/if}}
           </mj-raw>
           <!-- divider:end -->
+
           <mj-text mj-class="subtitle">${{dailySummary.newFriend}}$，${{dailySummary.newWork}}$</mj-text>
-          <mj-spacer height="16px" />
         </mj-column>
       </mj-section>
 
