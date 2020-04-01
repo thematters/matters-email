@@ -87,7 +87,7 @@
 
       <mj-section>
         <mj-column>
-          <mj-image src="https://marketing-image-production.s3.amazonaws.com/uploads/c1d8d390954f12fe494f7b105d4e0ab910bd27a5c7a287a28775b16d4bb0de88e6217c608b7003bb65aa52d6c4fa6c3dfd86927489389c213af32e2f09e05811.jpg" />
+          <mj-image src="https://matters-public-files.s3-ap-southeast-1.amazonaws.com/emails/banner.jpg" />
         </mj-column>
       </mj-section>
 

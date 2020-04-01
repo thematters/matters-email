@@ -1,0 +1,130 @@
+<mjml>
+  <mj-head>
+    <mj-include path="./partials/head-${{_lang_}}$.mjml" />
+    <mj-title>
+      {{#if type.newRegisterCommentable}}
+        ${{churnUser.newRegisterCommentable.title}}$
+      {{/if}}
+
+      {{#if type.newRegisterUncommentable}}
+        ${{churnUser.newRegisterUncommentable.title}}$
+      {{/if}}
+
+      {{#if type.mediumTermHasFollowees}}
+        ${{churnUser.mediumTermHasFollowees.title}}$
+      {{/if}}
+
+      {{#if type.mediumTermHasNotFollowees}}
+        ${{churnUser.mediumTermHasNotFollowees.title}}$
+      {{/if}}
+    </mj-title>
+  </mj-head>
+
+  <mj-body mj-class="body" css-class="body">
+    <mj-wrapper mj-class="wrapper">
+      <mj-include path="./partials/header-${{_lang_}}$.mjml" />
+
+      <mj-section>
+        <mj-column>
+          <mj-image src="https://matters-public-files.s3-ap-southeast-1.amazonaws.com/emails/banner.jpg" />
+        </mj-column>
+      </mj-section>
+
+      <mj-section css-class="card bottom-clear">
+        <mj-column>
+          <mj-include path="./partials/greeting-${{_lang_}}$.mjml" />
+
+          <mj-raw>
+            {{#if type.newRegisterCommentable}}
+          </mj-raw>
+          <mj-text>
+            ${{churnUser.newRegisterCommentable.welcome}}$
+          </mj-text>
+          <mj-raw>
+            {{/if}}
+          </mj-raw>
+
+          <mj-raw>
+            {{#if type.newRegisterUncommentable}}
+          </mj-raw>
+          <mj-text>
+            ${{churnUser.newRegisterUncommentable.welcome}}$
+          </mj-text>
+          <mj-spacer height="16px" />
+          <mj-text>
+            ${{churnUser.newRegisterUncommentable.hook}}$
+          </mj-text>
+          <mj-raw>
+            {{/if}}
+          </mj-raw>
+
+          <mj-raw>
+            {{#if type.mediumTermHasFollowees}}
+          </mj-raw>
+          <mj-text>
+            ${{churnUser.mediumTermHasFollowees.welcome}}$
+          </mj-text>
+          <mj-raw>
+            {{/if}}
+          </mj-raw>
+
+          <mj-raw>
+            {{#if type.mediumTermHasNotFollowees}}
+          </mj-raw>
+          <mj-text>
+            ${{churnUser.mediumTermHasNotFollowees.welcome}}$
+          </mj-text>
+          <mj-raw>
+            {{/if}}
+          </mj-raw>
+
+          <mj-spacer height="16px" />
+        </mj-column>
+      </mj-section>
+
+      <mj-section css-class="card top-clear bottom-clear">
+        <mj-column>
+          <mj-raw>
+            {{#each articles}}
+          </mj-raw>
+
+          <mj-spacer height="16px" />
+
+          <mj-text>
+            <a class="link-black" href="{{siteDomain}}/@{{this.author.userName}}?utm_medium=email">
+              <img class="avatar" src="{{this.author.avatar}}" />
+              <span class="displayName">{{this.author.displayName}}</span>
+            </a>
+          </mj-text>
+
+          <mj-text padding="12px 0" font-size="16px" line-height="24px" font-weight="500">
+            <a class="link-black" href="{{siteDomain}}/@{{this.author.userName}}/{{{this.slug}}}-{{this.mediaHash}}?utm_medium=email">{{this.title}}</a>
+          </mj-text>
+
+          <mj-text>
+            <img class="footer-icon" src="https://matters-public-files.s3-ap-southeast-1.amazonaws.com/emails/clap.png" />
+            <span class="footer-count">{{this.appreciationsReceivedTotal}}</span>
+
+            <img class="footer-icon" src="https://matters-public-files.s3-ap-southeast-1.amazonaws.com/emails/comment.png" />
+            <span class="footer-count">{{this.responseCount}}</span>
+          </mj-text>
+
+          <mj-spacer height="16px" />
+          <mj-include path="./partials/divider-${{_lang_}}$.mjml" />
+
+          <mj-raw>
+            {{/each}}
+          </mj-raw>
+        </mj-column>
+      </mj-section>
+
+      <mj-section css-class="card top-clear">
+        <mj-column>
+          <mj-include path="./partials/ending-${{_lang_}}$.mjml" />
+        </mj-column>
+      </mj-section>
+
+      <mj-include path="./partials/footer-${{_lang_}}$.mjml" />
+    </mj-wrapper>
+  </mj-body>
+</mjml>
