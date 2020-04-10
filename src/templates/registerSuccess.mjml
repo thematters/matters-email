@@ -1,28 +1,68 @@
 <mjml>
   <mj-head>
-    <mj-include path="./partials/head.mjml" />
+    <mj-include path="./partials/head-${{_lang_}}$.mjml" />
     <mj-title>${{registerSuccess.title}}$</mj-title>
     <mj-preview>${{registerSuccess.preview}}$</mj-preview>
   </mj-head>
 
   <mj-body mj-class="body" css-class="body">
     <mj-wrapper mj-class="wrapper">
-      <mj-include path="./partials/header.mjml" />
+      <mj-include path="./partials/header-${{_lang_}}$.mjml" />
 
       <mj-section css-class="card bottom-clear">
         <mj-column>
-          <mj-include path="./partials/greeting.mjml" />
+          <mj-include path="./partials/greeting-${{_lang_}}$.mjml" />
           <mj-spacer height="16px" />
+
           <mj-text>
             ${{registerSuccess.congratulation}}$
           </mj-text>
           <mj-spacer height="16px" />
+
+
+          <mj-text mj-class="subtitle">
+            ${{registerSuccess.sectionReadingTitle}}$
+          </mj-text>
           <mj-text>
-            ${{registerSuccess.howto}}$「<a class="link" href="https://matters.news/faq">${{registerSuccess.guide}}$</a>」。${{registerSuccess.joinOfficial}}$<a class="link" href="https://t.me/joinchat/BXzlWUhXaWNZ-TXJZJCzDQ">Telegram ${{registerSuccess.group}}$</a>，或${{registerSuccess.attention}}$ <a class="link" href="https://www.facebook.com/MattersLab2018">Matters ${{registerSuccess.facebook}}$</a>，${{registerSuccess.followNews}}$。${{registerSuccess.joinForMore}}$ <a class="link" href="https://www.facebook.com/groups/matters.news/">Matters ${{registerSuccess.authorAssociation}}$</a>。${{registerSuccess.newsletter}}$。
+            ${{registerSuccess.sectionReadingContent}}$
           </mj-text>
           <mj-spacer height="16px" />
+
+
+          <mj-text mj-class="subtitle">
+            ${{registerSuccess.sectionProfileTitle}}$
+          </mj-text>
           <mj-text>
-            ${{registerSuccess.contactUs}}$: <a class="link" href="mailto:ask@matters.news">ask@matters.news</a>
+            ${{registerSuccess.sectionProfileContent}}$
+          </mj-text>
+          <mj-spacer height="16px" />
+
+
+          <mj-text mj-class="subtitle">
+            ${{registerSuccess.sectionTagTitle}}$
+          </mj-text>
+          <mj-text>
+            ${{registerSuccess.sectionTagContent}}$
+          </mj-text>
+          <mj-spacer height="16px" />
+
+
+          <mj-text mj-class="subtitle">
+            ${{registerSuccess.sectionCommentTitle}}$
+          </mj-text>
+          <mj-text>
+            ${{registerSuccess.sectionCommentContent}}$
+          </mj-text>
+          <mj-spacer height="32px" />
+
+          <mj-text>
+            ${{registerSuccess.sectionMore}}$
+          </mj-text>
+
+          <mj-spacer height="32px" />
+
+          <mj-text>
+            ${{registerSuccess.contactUs}}$
           </mj-text>
           <mj-spacer height="16px" />
           <mj-text>
@@ -31,17 +71,13 @@
         </mj-column>
       </mj-section>
 
-      <!-- <mj-section css-class="card bottom-clear" padding-top="24px">
-        <mj-include path="../partials/download.mjml" />
-      </mj-section> -->
-
       <mj-section css-class="card top-clear">
         <mj-column>
-          <mj-include path="./partials/ending.mjml" />
+          <mj-include path="./partials/ending-${{_lang_}}$.mjml" />
         </mj-column>
       </mj-section>
 
-      <mj-include path="./partials/footer.mjml" />
+      <mj-include path="./partials/footer-${{_lang_}}$.mjml" />
     </mj-wrapper>
   </mj-body>
 </mjml>

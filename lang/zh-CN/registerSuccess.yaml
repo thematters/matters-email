@@ -1,15 +1,20 @@
-title: 欢迎成为 Matters 创作者，这是一封新手必读
+title: 欢迎来到 Matters 宇宙航舰，这是为你准备的登船指南
 preview: 恭喜你，你已成功加入 Matters
-congratulation: 恭喜你，你已成功加入 Matters。
-howto: 了解 Matters 玩法，请查看
-guide: 新手指南
-joinOfficial: 欢迎加入官方
-group: 群组
-attention: 关注
-facebook: 脸书
-followNews: 随时掌握 Matters 最新资讯
-joinForMore: 想让更多读者看到你的大作，或者寻找好作品，可以加入
-authorAssociation: 写作者联谊会
-newsletter: 每周推送的 newsletter 将向你推荐一周社区精彩作品，敬请关注
-contactUs: 若有更多问题，可以透过 email 联络我们
+congratulation: 欢迎来到华文世界最有趣、最热闹的创作社区 Matters！你现在是社区的一份子了，可以开始发布作品。刚注册完成的你，还可以做这些事情：
+
+sectionReadingTitle: 阅读文章、追踪作者、拍手鼓励作者
+sectionReadingContent: '这里有 Matters 近期的<a class="link" href="https://matters.news/tags?utm_medium=email">热门话题集合</a>，你可以开始寻找自己感兴趣的话题。如果遇到欣赏的作者，按下追踪键，就不会错过他的新文章啰。看到喜欢的文章，请大力的拍手，你的每个拍手都会化为作者的收入。'
+
+sectionProfileTitle: 妆点你的创作空间站
+sectionProfileContent: 每位作者都有自己的创作空间站，在空间中可以看到你发布的文章、你追踪的作者，以及谁追踪了你。在网站点击「我的」进入「个人主页」，上传照片、编辑自我介绍，你的创作空间站就布置完成啦！
+
+sectionTagTitle: 新人打卡
+sectionTagContent: '新人打卡是 Matters 的温暖传统，写一篇精彩的自我介绍文，让社区有机会认识你吧！你可以在 <a class="link" href="https://matters.news/tags/VGFnOjY4NTQ?utm_medium=email">#Matters新人打卡</a> 看到其他作者的自我介绍，寻觅志同道合的创作者。'
+
+sectionCommentTitle: 解锁更多权限
+sectionCommentContent: 想要参与他人的讨论吗？当你的作品累积获得赞赏数超过 15 ，或者在站上阅读超过 30 篇文章，你就可以在其他作者的文章下方留言。
+
+sectionMore: '想知道更多 Matters 玩法，请看 <a class="link" href="https://matters.news/tags/VGFnOjEwNDQ2?utm_medium=email">#Matters新手工具箱</a> 以及「<a class="link" href="https://matters.news/guide?utm_medium=email">新手指南</a>」。也欢迎关注 <a class="link" href="https://www.facebook.com/MattersLab2018/">Matters 脸书粉丝页</a>，加入 <a class="link" href="https://www.facebook.com/groups/matters.news/">脸书创作者社团</a> 或 <a class="link" href="https://t.me/thematters">Telegram 群组</a>，随时掌握新玩法。'
+
+contactUs: '若有更多问题，可以透过 email 联络我们：<a class="link" href="mailto:ask@matters.news">ask@matters.news</a>。'
 happyCreating: 创作愉快！
