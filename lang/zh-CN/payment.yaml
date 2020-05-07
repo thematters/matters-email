@@ -6,15 +6,15 @@ passwordSet:
 passwordChanged:
   title: 交易密码已修改
   content: 我们收到阁下要求修改支付密码的指令，你的支付密码已经修改成功，请使用新密码进行后续支付。
-  contactUs: '如不是你本人操作，请尽快<a class="link" hred="https://t.me/matters_bugs">联络我们</a>或写信至：<a class="link" href="mailto:ask@matters.news">ask@matters.news</a>。'
+  contactUs: '如不是你本人操作，请尽快<a class="link" href="https://t.me/matters_bugs">联络我们</a>或写信至：<a class="link" href="mailto:ask@matters.news">ask@matters.news</a>。'
 creditAdded:
   title: 充值成功
   content: '我们收到阁下充值 Matters 钱包的指令，你已成功完成 {{tx.amount}} 的充值，快回到站上支持你喜欢的创作者吧！'
-  contactUs: '如不是你本人操作，或充值金额与你的记录不匹配，请尽快<a class="link" hred="https://t.me/matters_bugs">联络我们</a>或写信至：<a class="link" href="mailto:ask@matters.news">ask@matters.news</a>。'
+  contactUs: '如不是你本人操作，或充值金额与你的记录不匹配，请尽快<a class="link" href="https://t.me/matters_bugs">联络我们</a>或写信至：<a class="link" href="mailto:ask@matters.news">ask@matters.news</a>。'
 donated:
   title: 支付成功
   content: '我们收到阁下的支付指令，你已成功向 {{tx.recipient.displayName}}（@{{tx.recipient.userName}}）支付 {{tx.amount}}，谢谢你。'
-  contactUs: '如不是你本人操作，或支付金额与你的记录不匹配，请尽快<a class="link" hred="https://t.me/matters_bugs">联络我们</a>或写信至：<a class="link" href="mailto:ask@matters.news">ask@matters.news</a>。'
+  contactUs: '如不是你本人操作，或支付金额与你的记录不匹配，请尽快<a class="link" href="https://t.me/matters_bugs">联络我们</a>或写信至：<a class="link" href="mailto:ask@matters.news">ask@matters.news</a>。'
 receivedDonation:
   title: 收到一笔港币支付
   content: '阁下收到一笔来自 {{tx.sender.displayName}}（@{{tx.sender.userName}}）的支持资金，请上站检视你的收入记录。'
