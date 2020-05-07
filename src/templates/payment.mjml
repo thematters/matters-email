@@ -3,27 +3,27 @@
     <mj-include path="./partials/head-${{_lang_}}$.mjml" />
     <mj-title>
       {{#if type.passwordSet}}
-        Matters | ${{payment.passwordSet.title}}$
+        Matters 通知 | ${{payment.passwordSet.title}}$
       {{/if}}
 
       {{#if type.passwordChanged}}
-        Matters | ${{payment.passwordChanged.title}}$
+        Matters 通知 | ${{payment.passwordChanged.title}}$
       {{/if}}
 
       {{#if type.creditAdded}}
-        Matters | ${{payment.creditAdded.title}}$
+        Matters 通知 | ${{payment.creditAdded.title}}$
       {{/if}}
 
       {{#if type.donated}}
-        Matters | ${{payment.donated.title}}$
+        Matters 通知 | ${{payment.donated.title}}$
       {{/if}}
 
       {{#if type.receivedDonation}}
-        Matters | ${{payment.receivedDonation.title}}$
+        Matters 通知 | ${{payment.receivedDonation.title}}$
       {{/if}}
 
       {{#if type.receivedDonationLikeCoin}}
-        Matters | ${{payment.receivedDonationLikeCoin.title}}$
+        Matters 通知 | ${{payment.receivedDonationLikeCoin.title}}$
       {{/if}}
     </mj-title>
   </mj-head>
