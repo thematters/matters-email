@@ -1,0 +1,23 @@
+to: 致
+contactUs: '如有更多疑問，請聯絡：<a class="link" href="mailto:ask@matters.news">ask@matters.news</a>。'
+passwordSet:
+  title: 交易密碼已設定
+  content: 閣下的支付密碼已經設置成功，你的 Matters 錢包現已開通，感謝你支持 Matters 創作者。
+passwordChanged:
+  title: 交易密碼已修改
+  content: 我們收到閣下要求修改支付密碼的指令，你的支付密碼已經修改成功，請使用新密碼進行後續支付。
+  contactUs: '如不是你本人操作，請儘快<a class="link" hred="https://t.me/matters_bugs">聯絡我們</a>或寫信至：<a class="link" href="mailto:ask@matters.news">ask@matters.news</a>。'
+creditAdded:
+  title: 充值成功
+  content: '我們收到閣下充值 Matters 錢包的指令，你已成功完成 {{tx.amount}} 的充值，快回到站上支持你喜歡的創作者吧！'
+  contactUs: '如不是你本人操作，或充值金額與你的記錄不匹配，請儘快<a class="link" hred="https://t.me/matters_bugs">聯絡我們</a>或寫信至：<a class="link" href="mailto:ask@matters.news">ask@matters.news</a>。'
+donated:
+  title: 支付成功
+  content: '我們收到閣下的支付指令，你已成功向 {{tx.recipient.displayName}}（@{{tx.recipient.userName}}）支付 {{tx.amount}}，謝謝你。'
+  contactUs: '如不是你本人操作，或支付金額與你的記錄不匹配，請儘快<a class="link" hred="https://t.me/matters_bugs">聯絡我們</a>或寫信至：<a class="link" href="mailto:ask@matters.news">ask@matters.news</a>。'
+receivedDonation:
+  title: 收到一筆港幣支付
+  content: '閣下收到一筆來自 {{tx.sender.displayName}}（@{{tx.sender.userName}}）的支持資金，請上站檢視你的收入記錄。'
+receivedDonationLikeCoin:
+  title: 收到一筆 LikeCoin 支付
+  content: '閣下收到一筆來自 {{tx.sender.displayName}}（@{{tx.sender.userName}}）的支持資金，請前往<a class="link" href="https://like.co">你的 LikeCoin 錢包</a>檢視你的收入記錄。'
