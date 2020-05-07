@@ -3,27 +3,31 @@
     <mj-include path="./partials/head-${{_lang_}}$.mjml" />
     <mj-title>
       {{#if type.passwordSet}}
-        Matters 通知 | ${{payment.passwordSet.title}}$
+        ${{payment.passwordSet.title}}$
       {{/if}}
 
       {{#if type.passwordChanged}}
-        Matters 通知 | ${{payment.passwordChanged.title}}$
+        ${{payment.passwordChanged.title}}$
       {{/if}}
 
       {{#if type.creditAdded}}
-        Matters 通知 | ${{payment.creditAdded.title}}$
+        ${{payment.creditAdded.title}}$
       {{/if}}
 
       {{#if type.donated}}
-        Matters 通知 | ${{payment.donated.title}}$
+        ${{payment.donated.title}}$
       {{/if}}
 
       {{#if type.receivedDonation}}
-        Matters 通知 | ${{payment.receivedDonation.title}}$
+        ${{payment.receivedDonation.title}}$
       {{/if}}
 
       {{#if type.receivedDonationLikeCoin}}
-        Matters 通知 | ${{payment.receivedDonationLikeCoin.title}}$
+        ${{payment.receivedDonationLikeCoin.title}}$
+      {{/if}}
+
+      {{#if type.payout}}
+        ${{payment.payout.title}}$
       {{/if}}
     </mj-title>
   </mj-head>
@@ -64,8 +68,26 @@
               ${{payment.receivedDonationLikeCoin.content}}$
             {{/if}}
           </mj-text>
-          <mj-spacer height="16px" />
 
+          <mj-raw>
+            {{#if type.payout}}
+          </mj-raw>
+          <mj-text>
+            ${{payment.payout.content_1}}$
+          </mj-text>
+          <mj-spacer height="16px" />
+          <mj-text>
+            ${{payment.payout.content_2}}$
+          </mj-text>
+          <mj-spacer height="16px" />
+          <mj-text>
+            ${{payment.payout.content_3}}$
+          </mj-text>
+          <mj-raw>
+            {{/if}}
+          </mj-raw>
+
+          <mj-spacer height="16px" />
           <mj-text>
             {{#if type.passwordSet}}
               ${{payment.contactUs}}$
@@ -88,6 +110,10 @@
             {{/if}}
 
             {{#if type.receivedDonationLikeCoin}}
+              ${{payment.contactUs}}$
+            {{/if}}
+
+            {{#if type.payout}}
               ${{payment.contactUs}}$
             {{/if}}
           </mj-text>
