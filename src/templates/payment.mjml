@@ -1,0 +1,132 @@
+<mjml>
+  <mj-head>
+    <mj-include path="./partials/head-${{_lang_}}$.mjml" />
+    <mj-title>
+      {{#if type.passwordSet}}
+        ${{payment.passwordSet.title}}$
+      {{/if}}
+
+      {{#if type.passwordChanged}}
+        ${{payment.passwordChanged.title}}$
+      {{/if}}
+
+      {{#if type.creditAdded}}
+        ${{payment.creditAdded.title}}$
+      {{/if}}
+
+      {{#if type.donated}}
+        ${{payment.donated.title}}$
+      {{/if}}
+
+      {{#if type.receivedDonation}}
+        ${{payment.receivedDonation.title}}$
+      {{/if}}
+
+      {{#if type.receivedDonationLikeCoin}}
+        ${{payment.receivedDonationLikeCoin.title}}$
+      {{/if}}
+
+      {{#if type.payout}}
+        ${{payment.payout.title}}$
+      {{/if}}
+    </mj-title>
+  </mj-head>
+
+  <mj-body mj-class="body" css-class="body">
+    <mj-wrapper mj-class="wrapper">
+      <mj-include path="./partials/header-${{_lang_}}$.mjml" />
+
+      <mj-section css-class="card bottom-clear">
+        <mj-column>
+          <mj-text padding="0">
+            ${{payment.to}}$ {{recipient.displayName}}（@{{recipient.userName}}）：
+          </mj-text>
+          <mj-spacer height="32px" />
+
+          <mj-text>
+            {{#if type.passwordSet}}
+              ${{payment.passwordSet.content}}$
+            {{/if}}
+
+            {{#if type.passwordChanged}}
+              ${{payment.passwordChanged.content}}$
+            {{/if}}
+
+            {{#if type.creditAdded}}
+              ${{payment.creditAdded.content}}$
+            {{/if}}
+
+            {{#if type.donated}}
+              ${{payment.donated.content}}$
+            {{/if}}
+
+            {{#if type.receivedDonation}}
+              ${{payment.receivedDonation.content}}$
+            {{/if}}
+
+            {{#if type.receivedDonationLikeCoin}}
+              ${{payment.receivedDonationLikeCoin.content}}$
+            {{/if}}
+          </mj-text>
+
+          <mj-raw>
+            {{#if type.payout}}
+          </mj-raw>
+          <mj-text>
+            ${{payment.payout.content_1}}$
+          </mj-text>
+          <mj-spacer height="16px" />
+          <mj-text>
+            ${{payment.payout.content_2}}$
+          </mj-text>
+          <mj-spacer height="16px" />
+          <mj-text>
+            ${{payment.payout.content_3}}$
+          </mj-text>
+          <mj-raw>
+            {{/if}}
+          </mj-raw>
+
+          <mj-spacer height="16px" />
+          <mj-text>
+            {{#if type.passwordSet}}
+              ${{payment.contactUs}}$
+            {{/if}}
+
+            {{#if type.passwordChanged}}
+              ${{payment.passwordChanged.contactUs}}$
+            {{/if}}
+
+            {{#if type.creditAdded}}
+              ${{payment.creditAdded.contactUs}}$
+            {{/if}}
+
+            {{#if type.donated}}
+              ${{payment.donated.contactUs}}$
+            {{/if}}
+
+            {{#if type.receivedDonation}}
+              ${{payment.contactUs}}$
+            {{/if}}
+
+            {{#if type.receivedDonationLikeCoin}}
+              ${{payment.contactUs}}$
+            {{/if}}
+
+            {{#if type.payout}}
+              ${{payment.contactUs}}$
+            {{/if}}
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section css-class="card top-clear">
+        <mj-column>
+          <mj-include path="./partials/ending-${{_lang_}}$.mjml" />
+        </mj-column>
+      </mj-section>
+
+      <mj-include path="./partials/footer-${{_lang_}}$.mjml" />
+    </mj-wrapper>
+  </mj-body>
+</mjml>
