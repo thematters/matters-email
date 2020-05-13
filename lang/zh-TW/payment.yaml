@@ -2,15 +2,15 @@ to: 致
 contactUs: '如有更多疑問，請聯絡：<a class="link" href="mailto:ask@matters.news">ask@matters.news</a>。'
 passwordSet:
   title: Matters 通知 | 你的交易密碼已成功設定
-  content: 閣下的支付密碼已經設置成功，你的 Matters 錢包現已開通，感謝你支持 Matters 創作者。
+  content: 閣下的交易密碼已經設置成功，你的 Matters 錢包現已開通，感謝你支持 Matters 創作者。
 passwordChanged:
   title: Matters 通知 | 你的交易密碼已修改成功
-  content: 我們收到閣下要求修改支付密碼的指令，你的支付密碼已經修改成功，請使用新密碼進行後續支付。
+  content: 我們收到閣下要求修改交易密碼的指令，你的交易密碼已經修改成功，請使用新密碼進行後續支付。
   contactUs: '如不是你本人操作，請儘快<a class="link" href="https://t.me/matters_bugs">聯絡我們</a>或寫信至：<a class="link" href="mailto:ask@matters.news">ask@matters.news</a>。'
 creditAdded:
-  title: Matters 通知 | 充值成功
-  content: '我們收到閣下充值 Matters 錢包的指令，你已成功完成 <span class="link">{{tx.amount}} {{tx.currency}}</span> 的充值，快回到站上支持你喜歡的創作者吧！'
-  contactUs: '如不是你本人操作，或充值金額與你的記錄不匹配，請儘快<a class="link" href="https://t.me/matters_bugs">聯絡我們</a>或寫信至：<a class="link" href="mailto:ask@matters.news">ask@matters.news</a>。'
+  title: Matters 通知 | 储值成功
+  content: '我們收到閣下储值 Matters 錢包的指令，你已成功完成 <span class="link">{{tx.amount}} {{tx.currency}}</span> 的储值，快回到站上支持你喜歡的創作者吧！'
+  contactUs: '如不是你本人操作，或储值金額與你的記錄不匹配，請儘快<a class="link" href="https://t.me/matters_bugs">聯絡我們</a>或寫信至：<a class="link" href="mailto:ask@matters.news">ask@matters.news</a>。'
 donated:
   title: Matters 通知 | 支付成功
   content: '我們收到閣下的支付指令，你已成功向 {{tx.recipient.displayName}}（@{{tx.recipient.userName}}）支付 <span class="link">{{tx.amount}} {{tx.currency}}</span>，謝謝你。'
@@ -26,4 +26,4 @@ payout:
   content_1: '我們收到閣下 Matters 錢包的提現指令，你指示 <span class="link">{{tx.amount}} {{tx.currency}}</span> 的提現流程已經開始。'
   content_2: '提現經由 Stripe 完成，需要至少 14 個工作日處理。銀行到帳週期由你持有卡的發卡行決定，請你耐心等待或聯絡銀行諮詢。'
   content_3: '感謝你來到 Matters 分享你的創作，Matters 以成為華文最優秀的創作平台為目標，謝謝你與我們同行。'
-  contactUs: '如不是你本人操作，或提現金額與你的記錄不匹配，請儘快修改帳戶及支付密碼，並<a class="link" href="https://t.me/matters_bugs">聯絡我們</a>或寫信至：<a class="link" href="mailto:ask@matters.news">ask@matters.news</a>。'
+  contactUs: '如不是你本人操作，或提現金額與你的記錄不匹配，請儘快修改帳戶及交易密碼，並<a class="link" href="https://t.me/matters_bugs">聯絡我們</a>或寫信至：<a class="link" href="mailto:ask@matters.news">ask@matters.news</a>。'
