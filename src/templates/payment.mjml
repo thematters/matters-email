@@ -39,7 +39,7 @@
       <mj-section css-class="card bottom-clear">
         <mj-column>
           <mj-text padding="0">
-            ${{payment.to}}$ {{recipient.displayName}}（@{{recipient.userName}}）：
+            ${{payment.to}}$ {{recipient.displayName}} (@{{recipient.userName}}) ：
           </mj-text>
           <mj-spacer height="32px" />
 
