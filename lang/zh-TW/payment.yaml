@@ -13,14 +13,14 @@ creditAdded:
   contactUs: '如不是你本人操作，或储值金額與你的記錄不匹配，請儘快<a class="link" href="https://t.me/matters_bugs">聯絡我們</a>或寫信至：<a class="link" href="mailto:ask@matters.news">ask@matters.news</a>。'
 donated:
   title: Matters 通知 | 支付成功
-  content: '我們收到閣下的支付指令，你已成功向 {{tx.recipient.displayName}}（@{{tx.recipient.userName}}）支付 <span class="link">{{tx.amount}} {{tx.currency}}</span>，謝謝你。'
+  content: '我們收到閣下的支付指令，你已成功向 {{tx.recipient.displayName}} (<a class="link" href="{{siteDomain}}/@{{tx.recipient.userName}}?utm_medium=email">@{{tx.recipient.userName}}</a>) 支付 <span class="link">{{tx.amount}} {{tx.currency}}</span>，謝謝你。'
   contactUs: '如不是你本人操作，或支付金額與你的記錄不匹配，請儘快<a class="link" href="https://t.me/matters_bugs">聯絡我們</a>或寫信至：<a class="link" href="mailto:ask@matters.news">ask@matters.news</a>。'
 receivedDonation:
   title: Matters 通知 | 你收到一筆來自他人的支持
-  content: '閣下收到一筆來自 {{tx.sender.displayName}}（@{{tx.sender.userName}}）的支持資金，請上站檢視你的收入記錄。'
+  content: '閣下收到一筆來自 {{tx.sender.displayName}} (<a class="link" href="{{siteDomain}}/@{{tx.sender.userName}}?utm_medium=email">@{{tx.sender.userName}}</a>) 的支持資金 {{tx.amount}} {{tx.currency}}，請上站檢視你的收入記錄。'
 receivedDonationLikeCoin:
   title: Matters 通知 | 你收到一筆來自他人的支持
-  content: '閣下收到一筆來自 {{tx.sender.displayName}}（@{{tx.sender.userName}}）的支持資金，請前往<a class="link" href="https://like.co">你的 LikeCoin 錢包</a>檢視你的收入記錄。'
+  content: '閣下收到一筆來自 {{tx.sender.displayName}} (<a class="link" href="{{siteDomain}}/@{{tx.sender.userName}}?utm_medium=email">@{{tx.sender.userName}}</a>) 的支持資金 {{tx.amount}} {{tx.currency}}，請前往<a class="link" href="https://like.co">你的 LikeCoin 錢包</a>檢視你的收入記錄。'
 payout:
   title: Matters 通知 | 你的提現流程已經啟動
   content_1: '我們收到閣下 Matters 錢包的提現指令，你指示 <span class="link">{{tx.amount}} {{tx.currency}}</span> 的提現流程已經開始。'
