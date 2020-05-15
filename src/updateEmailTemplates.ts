@@ -150,6 +150,16 @@ const TEMPLATES = (() => {
         name: 'Churn User',
         templateFile: 'churnUser-zh-CN.html',
       },
+      {
+        templateId: 'd-dd77980e9ec1477f98259c7e9fb4fc28',
+        name: 'Payment',
+        templateFile: 'payment-zh-TW.html',
+      },
+      {
+        templateId: 'd-9fea53d8838e44c4be4b93d26b8f2e9a',
+        name: 'Payment',
+        templateFile: 'payment-zh-CN.html',
+      },
     ]
   } else if (env === 'production') {
     console.log('\x1b[36m%s\x1b[0m', 'updating production email templates...')
@@ -213,6 +223,16 @@ const TEMPLATES = (() => {
         templateId: 'd-d397d5ae9264436bb1e65a202174e6a9',
         name: 'Churn User',
         templateFile: 'churnUser-zh-CN.html',
+      },
+      {
+        templateId: 'd-96ab5281c6bd419ebec20e8dbcbed427',
+        name: 'Payment',
+        templateFile: 'payment-zh-TW.html',
+      },
+      {
+        templateId: 'd-b00c4b181721405ebcb9170b1f890075',
+        name: 'Payment',
+        templateFile: 'payment-zh-CN.html',
       },
     ]
   } else {
