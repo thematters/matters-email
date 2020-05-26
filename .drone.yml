@@ -22,7 +22,7 @@ steps:
     image: node:12.16
     environment:
       MATTERS_SENDGRID_API_KEY:
-        from_secret: DEVELOP_SENDGRID_API_KEY
+        from_secret: SENDGRID_API_KEY
     commands:
       - npm run upload:dev
     when:
@@ -36,7 +36,7 @@ steps:
     image: node:12.16
     environment:
       MATTERS_SENDGRID_API_KEY:
-        from_secret: PROD_SENDGRID_API_KEY
+        from_secret: SENDGRID_API_KEY
     commands:
       - npm run upload:prod
     when:
