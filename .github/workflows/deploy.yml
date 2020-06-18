@@ -5,7 +5,7 @@ on:
     branches:
       - master
       - develop
-      - feature/github-actions
+
 jobs:
   deploy:
     name: Deploy Serverless Functions
@@ -25,7 +25,7 @@ jobs:
 
       # Develop
       - name: Deploy (devlop)
-        if: github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/feature/github-actions'
+        if: github.ref == 'refs/heads/develop'
         run: npm run upload:dev
         env:
           MATTERS_SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
@@ -41,7 +41,7 @@ jobs:
         uses: 8398a7/action-slack@v3
         with:
           status: ${{ job.status }}
-          author_name: serverless-file-post-processing
+          author_name: matters-email
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
         if: always()
