@@ -20,7 +20,7 @@ receivedDonation:
   content: '阁下收到一笔来自 {{tx.sender.displayName}} (<a class="link" href="{{siteDomain}}/@{{tx.sender.userName}}?utm_medium=email">@{{tx.sender.userName}}</a>) 的支持资金 {{tx.amount}} {{tx.currency}}，请上站检视你的收入记录。'
 receivedDonationLikeCoin:
   title: Matters 通知 | 你收到一笔来自他人的支持
-  content: '阁下收到一笔来自 {{tx.sender.displayName}} (<a class="link" href="{{siteDomain}}/@{{tx.sender.userName}}?utm_medium=email">@{{tx.sender.userName}}</a>) 的支持资金 {{tx.amount}} {{tx.currency}}，请前往<a class="link" href="https://like.co">你的 LikeCoin 钱包</a>检视你的收入记录。'
+  content: '阁下收到一笔来自 {{tx.sender.displayName}} (<a class="link" href="{{siteDomain}}/@{{tx.sender.userName}}?utm_medium=email">@{{tx.sender.userName}}</a>) 的支持资金 {{tx.amount}} {{tx.currency}}，请前往<a class="link" href="https://like.co/in/matters/redirect">你的 LikeCoin 钱包</a>检视你的收入记录。'
 payout:
   title: Matters 通知 | 你的提现流程已经启动
   content_1: '我们收到阁下 Matters 钱包的提现指令，你指示 <span class="link">{{tx.amount}} {{tx.currency}}</span> 的提现流程已经开始。'
