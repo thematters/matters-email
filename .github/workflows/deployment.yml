@@ -53,10 +53,11 @@ jobs:
         run: npm run upload:prod
 
       - name: Slack Notification
+        if: always()
         uses: 8398a7/action-slack@v3
         with:
           status: ${{ job.status }}
           author_name: matters-email
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
-        if: always()
