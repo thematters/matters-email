@@ -9,9 +9,11 @@ on:
     branches:
       - '*'
 
+env:
+  MATTERS_SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+
 jobs:
-  deploy:
-    name: Deploy Serverless Functions
+  build_deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
@@ -26,19 +28,15 @@ jobs:
       - name: Build
         run: npm run build
 
-      # === CI tasks for `develop` branch ===
+      # === `develop` branch ===
       - name: Deploy (devlop)
         if: github.ref == 'refs/heads/develop'
         run: npm run upload:dev
-        env:
-          MATTERS_SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
 
-      # === CI tasks for `master` branch ===
+      # === `master` branch ===
       - name: Deploy (production)
         if: github.ref == 'refs/heads/master'
         run: npm run upload:prod
-        env:
-          MATTERS_SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
 
       - name: Slack Notification
         uses: 8398a7/action-slack@v3
