@@ -25,7 +25,7 @@ jobs:
 
       # Develop
       - name: Deploy (devlop)
-        if: github.ref == 'refs/heads/develop' || github.ref == 'feature/github-actions'
+        if: github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/feature/github-actions'
         run: npm run upload:dev
         env:
           MATTERS_SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
