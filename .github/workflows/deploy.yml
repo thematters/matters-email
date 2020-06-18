@@ -23,14 +23,14 @@ jobs:
       - name: Build
         run: npm run build
 
-      # Develop
+      # === CI tasks for `develop` branch ===
       - name: Deploy (devlop)
         if: github.ref == 'refs/heads/develop'
         run: npm run upload:dev
         env:
           MATTERS_SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
 
-      # Production
+      # === CI tasks for `master` branch ===
       - name: Deploy (production)
         if: github.ref == 'refs/heads/master'
         run: npm run upload:prod
