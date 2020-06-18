@@ -1,0 +1,47 @@
+name: Deployment
+
+on:
+  push:
+    branches:
+      - master
+      - develop
+      - feature/github-actions
+jobs:
+  deploy:
+    name: Deploy Serverless Functions
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Linting
+        run: npm run lint
+
+      - name: Build
+        run: npm run build
+
+      # Develop
+      - name: Deploy (devlop)
+        if: github.ref == 'refs/heads/develop' || github.ref == 'feature/github-actions'
+        run: npm run upload:dev
+        env:
+          MATTERS_SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+
+      # Production
+      - name: Deploy (production)
+        if: github.ref == 'refs/heads/master'
+        run: npm run upload:prod
+        env:
+          MATTERS_SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+
+      - name: Slack Notification
+        uses: 8398a7/action-slack@v3
+        with:
+          status: ${{ job.status }}
+          author_name: serverless-file-post-processing
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
+        if: always()
