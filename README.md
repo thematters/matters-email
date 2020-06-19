@@ -1,6 +1,6 @@
 # Matters Localizable Email Templates
 
-![](https://github.com/thematters/matters-email/workflows/Deployment/badge.svg)
+![](https://github.com/thematters/matters-email/workflows/Deployment/badge.svg) ![](https://github.com/thematters/matters-email/workflows/Create%20Release/badge.svg)
 
 MJML itself does not support i18n feature. This build flow will pipe MJML output html files to `gulp-html-i18n` to support localization.
 
