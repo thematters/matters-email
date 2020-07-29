@@ -25,7 +25,7 @@
     "@typescript-eslint/parser": "^2.26.0",
     "browser-sync": "^2.26.7",
     "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.10.1",
+    "eslint-config-prettier": "^6.11.0",
     "gulp": "^4.0.2",
     "gulp-html-i18n": "^0.16.0",
     "gulp-mjml": "^4.0.2",
