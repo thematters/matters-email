@@ -33,7 +33,7 @@
     "mjml": "^4.6.3",
     "npx": "^10.2.2",
     "prettier": "^2.0.5",
-    "typescript": "^3.9.7"
+    "typescript": "^4.0.2"
   },
   "dependencies": {
     "@types/request": "^2.48.5",
