@@ -30,6 +30,28 @@
 
 
           <mj-text mj-class="subtitle">
+            ${{registerSuccess.sectionAppreciationTitle}}$
+          </mj-text>
+          <mj-text>
+            ${{registerSuccess.sectionAppreciationContent}}$
+          </mj-text>
+          <mj-spacer height="16px" />
+          <mj-text>
+            ${{registerSuccess.sectionAppreciationContent2}}$
+          </mj-text>
+          <mj-spacer height="16px" />
+
+
+          <mj-text mj-class="subtitle">
+            ${{registerSuccess.sectionFirstPostTitle}}$
+          </mj-text>
+          <mj-text>
+            ${{registerSuccess.sectionFirstPostContent}}$
+          </mj-text>
+          <mj-spacer height="16px" />
+
+
+          <mj-text mj-class="subtitle">
             ${{registerSuccess.sectionProfileTitle}}$
           </mj-text>
           <mj-text>
