@@ -160,6 +160,26 @@ const TEMPLATES = (() => {
         name: 'Payment',
         templateFile: 'payment-zh-CN.html',
       },
+      {
+        templateId: 'd-88b64da37a3240a2b240b5fbdf944661',
+        name: 'Adopt Tag',
+        templateFile: 'adoptTag-zh-TW.html',
+      },
+      {
+        templateId: 'd-2d9dda465f294e1e8a7e226a4165d0d9',
+        name: 'Adopt Tag',
+        templateFile: 'adoptTag-zh-CN.html',
+      },
+      {
+        templateId: 'd-ea7389447e9d48549a7d0ad86b90fa9f',
+        name: 'Assign As Tag Editor',
+        templateFile: 'assignAsTagEditor-zh-TW.html',
+      },
+      {
+        templateId: 'd-6fe4334692e2475dba68a135831f0f40',
+        name: 'Assign As Tag Editor',
+        templateFile: 'assignAsTagEditor-zh-CN.html',
+      },
     ]
   } else if (env === 'production') {
     console.log('\x1b[36m%s\x1b[0m', 'updating production email templates...')
@@ -233,6 +253,26 @@ const TEMPLATES = (() => {
         templateId: 'd-b00c4b181721405ebcb9170b1f890075',
         name: 'Payment',
         templateFile: 'payment-zh-CN.html',
+      },
+      {
+        templateId: 'd-20e5e339130d49d79fce853577f689d3',
+        name: 'Adopt Tag',
+        templateFile: 'adoptTag-zh-TW.html',
+      },
+      {
+        templateId: 'd-6e8f11d55f3447fc9e4ab2f4aa13ff2f',
+        name: 'Adopt Tag',
+        templateFile: 'adoptTag-zh-CN.html',
+      },
+      {
+        templateId: 'd-3dc33b89e89442fe8c25c51502c9f4d6',
+        name: 'Assign As Tag Editor',
+        templateFile: 'assignAsTagEditor-zh-TW.html',
+      },
+      {
+        templateId: 'd-fba153b334af44cb9c1ecc3695eff9fc',
+        name: 'Assign As Tag Editor',
+        templateFile: 'assignAsTagEditor-zh-CN.html',
       },
     ]
   } else {
