@@ -1,0 +1,52 @@
+<mjml>
+  <mj-head>
+    <mj-include path="./partials/head-${{_lang_}}$.mjml" />
+    <mj-title>${{assignAsTagEditor.title}}$</mj-title>
+    <mj-preview>${{assignAsTagEditor.preview}}$</mj-preview>
+  </mj-head>
+
+  <mj-body mj-class="body" css-class="body">
+    <mj-wrapper mj-class="wrapper">
+      <mj-include path="./partials/header-${{_lang_}}$.mjml" />
+
+      <mj-section css-class="card bottom-clear">
+        <mj-column>
+          <mj-text>
+            ${{assignAsTagEditor.to}}$
+          </mj-text>
+          <mj-spacer height="16px" />
+          <mj-text>
+            ${{assignAsTagEditor.preview}}$
+          </mj-text>
+          <mj-spacer height="16px" />
+
+          <mj-text>
+            ${{assignAsTagEditor.intro}}$
+          </mj-text>
+          <mj-spacer height="16px" />
+
+          <mj-text>
+            ${{assignAsTagEditor.guide.desc1}}$
+          </mj-text>
+          <mj-spacer height="16px" />
+          <mj-text>
+            ${{assignAsTagEditor.guide.desc2}}$
+          </mj-text>
+          <mj-spacer height="32px" />
+
+          <mj-text>
+            ${{assignAsTagEditor.notes.desc}}$
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section css-class="card top-clear">
+        <mj-column>
+          <mj-include path="./partials/ending-${{_lang_}}$.mjml" />
+        </mj-column>
+      </mj-section>
+
+      <mj-include path="./partials/footer-${{_lang_}}$.mjml" />
+    </mj-wrapper>
+  </mj-body>
+</mjml>
