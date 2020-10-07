@@ -2,6 +2,8 @@ title: '{{recipient.displayName}}，你已成为 #{{tag.content}} 的主理人�
 
 preview: '恭喜你已成功认领标签 #{{tag.content}}。'
 
+preface: '恭喜你已成功认领标签 <a class="link" href="{{siteDomain}}/tags/{{tag.id}}?utm_medium=email">#{{tag.content}}</a>。'
+
 to: '{{recipient.displayName}}：'
 
 intro: 标签就像是马特市里的街区，不同街区有自己的特色。你可以通过这些玩法，让自己的街区发展出独特的生命力。

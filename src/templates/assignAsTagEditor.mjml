@@ -16,7 +16,7 @@
           </mj-text>
           <mj-spacer height="16px" />
           <mj-text>
-            ${{assignAsTagEditor.preview}}$
+            ${{assignAsTagEditor.preface}}$
           </mj-text>
           <mj-spacer height="16px" />
 

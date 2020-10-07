@@ -16,7 +16,7 @@
           </mj-text>
           <mj-spacer height="16px" />
           <mj-text>
-            ${{adoptTag.preview}}$
+            ${{adoptTag.preface}}$
           </mj-text>
           <mj-spacer height="16px" />
 
