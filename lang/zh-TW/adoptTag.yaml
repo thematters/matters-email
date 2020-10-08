@@ -1,7 +1,11 @@
 title: '{{recipient.displayName}}，你已成為 #{{tag.content}} 的主理人，你做好準備了嗎？'
+
 preview: '恭喜你已成功認領標籤 #{{tag.content}}。'
 
+preface: '恭喜你已成功認領標籤 <a class="link" href="{{siteDomain}}/tags/{{tag.id}}?utm_medium=email">#{{tag.content}}</a>。'
+
 to: '{{recipient.displayName}}：'
+
 intro: 標籤就像是馬特市裡的街區，不同街區有自己的特色。你可以通過這些玩法，讓自己的街區發展出獨特的生命力。
 
 guide1:

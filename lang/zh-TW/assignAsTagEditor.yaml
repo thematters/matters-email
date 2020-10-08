@@ -2,6 +2,8 @@ title: '{{recipient.displayName}}，你已成為 #{{tag.content}} 的協作者�
 
 preview: '{{sender.displayName}} 邀請你成為標籤 #{{tag.content}} 的協作者。現在你可以和主理人一起豐富、壯大你們的標籤。'
 
+preface: '{{sender.displayName}} 邀請你成為標籤  <a class="link" href="{{siteDomain}}/tags/{{tag.id}}?utm_medium=email">#{{tag.content}}</a> 的協作者。現在你可以和主理人一起豐富、壯大你們的標籤。'
+
 to: '{{recipient.displayName}}：'
 
 intro: 協理標籤最重要的工作內容是管理標籤內的作品，做法很簡單：

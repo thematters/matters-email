@@ -2,6 +2,8 @@ title: '{{recipient.displayName}}，你已成为 #{{tag.content}} 的协作者�
 
 preview: '{{sender.displayName}} 邀请你成为标签 #{{tag.content}} 的协作者。现在你可以和主理人一起丰富、壮大你们的标签。'
 
+preface: '{{sender.displayName}} 邀请你成为标签 <a class="link" href="{{siteDomain}}/tags/{{tag.id}}?utm_medium=email">#{{tag.content}}</a> 的协作者。现在你可以和主理人一起丰富、壮大你们的标签。'
+
 to: '{{recipient.displayName}}：'
 
 intro: 协理标签最重要的工作内容是管理标签内的作品，做法很简单：
