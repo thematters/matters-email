@@ -1,8 +1,32 @@
 <mjml>
   <mj-head>
     <mj-include path="./partials/head-${{_lang_}}$.mjml" />
-    <mj-title>Matters | {{type}}${{verificationCode.code}}$</mj-title>
-    <mj-preview>${{verificationCode.yourCodeIs}}$ {{code}}</mj-preview>
+    <mj-title>
+      {{#if type.register}}
+        ${{verificationCode.register.title}}$
+      {{/if}}
+
+      {{#if type.emailReset}}
+        ${{verificationCode.emailReset.title}}$
+      {{/if}}
+
+      {{#if type.emailResetConfirm}}
+        ${{verificationCode.emailReset.title}}$
+      {{/if}}
+
+      {{#if type.passwordReset}}
+        ${{verificationCode.passwordReset.title}}$
+      {{/if}}
+
+      {{#if type.paymentPasswordReset}}
+        ${{verificationCode.paymentPasswordReset.title}}$
+      {{/if}}
+    </mj-title>
+    <mj-preview>
+      {{#if code}}
+        ${{verificationCode.yourCodeIs}}$ {{code}}
+      {{/if}}
+    </mj-preview>
   </mj-head>
 
   <mj-body mj-class="body" css-class="body">
@@ -11,17 +35,97 @@
 
       <mj-section css-class="card">
         <mj-column>
+          <!-- Greeting -->
           <mj-include path="./partials/greeting-${{_lang_}}$.mjml" />
+          <mj-spacer height="16px" />
 
+          <!-- Content -->
+          <mj-raw>
+            {{#if type.register}}
+          </mj-raw>
+          <mj-text>
+            {{#if code}}
+              ${{verificationCode.register.code.content_1}}$
+            {{/if}}
+            {{#if link}}
+              ${{verificationCode.register.link.content_1}}$
+            {{/if}}
+          </mj-text>
           <mj-spacer height="16px" />
           <mj-text>
-            ${{verificationCode.youAreDoing}}${{type}}${{verificationCode.codeIs}}$${{verificationCode.makeSureItsYourself}}$：
+            {{#if code}}
+              ${{verificationCode.register.code.content_2}}$
+            {{/if}}
+            {{#if link}}
+              ${{verificationCode.register.link.content_2}}$
+            {{/if}}
           </mj-text>
+          <mj-raw>
+            {{/if}}
+          </mj-raw>
 
+          <mj-text>
+            {{#if code}}
+              {{#if type.emailReset}}
+                ${{verificationCode.emailReset.code.content}}$
+              {{/if}}
+
+              {{#if type.emailResetConfirm}}
+                ${{verificationCode.emailReset.code.content}}$
+              {{/if}}
+
+              {{#if type.passwordReset}}
+                ${{verificationCode.passwordReset.code.content}}$
+              {{/if}}
+
+              {{#if type.paymentPasswordReset}}
+                ${{verificationCode.paymentPasswordReset.code.content}}$
+              {{/if}}
+            {{/if}}
+
+            {{#if link}}
+              {{#if type.emailReset}}
+                ${{verificationCode.emailReset.link.content}}$
+              {{/if}}
+
+              {{#if type.emailResetConfirm}}
+                ${{verificationCode.emailReset.link.content}}$
+              {{/if}}
+
+              {{#if type.passwordReset}}
+                ${{verificationCode.passwordReset.link.content}}$
+              {{/if}}
+
+              {{#if type.paymentPasswordReset}}
+                ${{verificationCode.paymentPasswordReset.link.content}}$
+              {{/if}}
+            {{/if}}
+          </mj-text>
+          <mj-spacer height="16px" />
+
+          <!-- Code -->
+          <mj-raw>
+            {{#if code}}
+          </mj-raw>
           <mj-text mj-class="verification-code">
             {{code}}
           </mj-text>
+          <mj-raw>
+            {{/if}}
+          </mj-raw>
 
+          <!-- Link -->
+          <mj-raw>
+            {{#if link}}
+          </mj-raw>
+          <mj-button href="{{link}}" align="left" background-color="#C0A46B" font-size="16px" font-weight="500" line-height="16px" inner-padding="16px 72px" padding-top="16px" color="white" border-radius="48px">
+            ${{verificationCode.quickLink}}$
+          </mj-button>
+          <mj-raw>
+            {{/if}}
+          </mj-raw>
+
+          <!-- Ending -->
           <mj-include path="./partials/ending-${{_lang_}}$.mjml" />
         </mj-column>
       </mj-section>
