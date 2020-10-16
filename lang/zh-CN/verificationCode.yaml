@@ -5,10 +5,10 @@ register:
   title: Matters | 注册验证
   code:
     content_1: 欢迎登上 Matters 宇宙航舰！Matters 是一个可以让你自由创作和讨论的空间，在这里的每位创作者都能将鼓励化做奖赏，与其他用户互动、经营自己的创作空间站。
-    content_2: '你进行注册的邮箱为 <span class="link">{{email}}</span><br/>请输入验证码完成验证，一键启航。'
+    content_2: '你进行注册的邮箱为 <span class="link">{{recipient.email}}</span><br/>请输入验证码完成验证，一键启航。'
   link:
     content_1: 欢迎登上 Matters 宇宙航舰！Matters 是一个可以让你自由创作和讨论的空间，在这里的每位创作者都能将鼓励化做奖赏，与其他用户互动、经营自己的创作空间站。
-    content_2: '你进行注册的邮箱为 <span class="link">{{email}}</span><br/>请点击下方按钮完成密码设置，一键启航。'
+    content_2: '你进行注册的邮箱为 <span class="link">{{recipient.email}}</span><br/>请点击下方按钮完成密码设置，一键启航。'
 
 emailReset:
   title: Matters | 修改邮箱验证
