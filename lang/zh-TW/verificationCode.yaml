@@ -1,5 +1,35 @@
-code: 驗證碼
 yourCodeIs: 你的驗證碼是
-youAreDoing: 你進行
-codeIs: 的驗證碼是
-makeSureItsYourself: （如果不是本人，請不要做任何操作）
+quickLink: 快速驗證連結
+
+register:
+  title: Matters | 註冊驗證
+  code:
+    content_1: 歡迎登上 Matters 宇宙航艦！Matters 是一個可以讓你自由創作和討論的空間，在這裡的每位創作者都能將鼓勵化做獎賞，與其他用戶互動、經營自己的創作空間站。
+    content_2: '你進行註冊的電子信箱為 <span class="link">{{email}}</span><br/>請输入验证码完成驗證，一鍵啟航。'
+  link:
+    content_1: 歡迎登上 Matters 宇宙航艦！Matters 是一個可以讓你自由創作和討論的空間，在這裡的每位創作者都能將鼓勵化做獎賞，與其他用戶互動、經營自己的創作空間站。
+    content_2: '你進行註冊的電子信箱為 <span class="link">{{email}}</span><br/>請點擊下方按鈕完成密碼設置，一鍵啟航。'
+
+emailReset:
+  title: Matters | 修改電子信箱驗證
+  code:
+    content: 你正在進行修改電子信箱的身份驗證，如不是你本人，請不要進行操作。請输入验证码完成驗證。
+  link:
+    content: 你正在進行修改電子信箱的身份驗證，如不是你本人，請不要進行操作。請點擊下方按鈕完成快速驗證。
+
+passwordReset:
+  title: Matters | 修改密碼驗證
+  code:
+    content: 你正在進行修改密碼的身份驗證，如不是你本人，請不要進行操作。請输入验证码完成驗證。
+  link:
+    content: 你正在進行修改密碼的身份驗證，如不是你本人，請不要進行操作。請點擊下方按鈕完成快速驗證。
+
+paymentPasswordReset:
+  title: Matters | 修改交易密碼驗證
+  code:
+    content: 你正在進行修改交易密碼的身份驗證，如不是你本人，請不要進行操作。請输入验证码完成驗證。
+  link:
+    content: 你正在進行修改交易密碼的身份驗證，如不是你本人，請不要進行操作。請點擊下方按鈕完成快速驗證。
+
+contactUs: '若有更多問題，可以透過 email 聯絡我們：<a class="link" href="mailto:ask@matters.news">ask@matters.news</a>。'
+happyCreating: 創作愉快！
