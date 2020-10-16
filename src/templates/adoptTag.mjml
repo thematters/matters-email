@@ -1,0 +1,73 @@
+<mjml>
+  <mj-head>
+    <mj-include path="./partials/head-${{_lang_}}$.mjml" />
+    <mj-title>${{adoptTag.title}}$</mj-title>
+    <mj-preview>${{adoptTag.preview}}$</mj-preview>
+  </mj-head>
+
+  <mj-body mj-class="body" css-class="body">
+    <mj-wrapper mj-class="wrapper">
+      <mj-include path="./partials/header-${{_lang_}}$.mjml" />
+
+      <mj-section css-class="card bottom-clear">
+        <mj-column>
+          <mj-text>
+            ${{adoptTag.to}}$
+          </mj-text>
+          <mj-spacer height="16px" />
+          <mj-text>
+            ${{adoptTag.preface}}$
+          </mj-text>
+          <mj-spacer height="16px" />
+
+          <mj-text>
+            ${{adoptTag.intro}}$
+          </mj-text>
+          <mj-spacer height="16px" />
+
+          <mj-text mj-class="subtitle">
+            ${{adoptTag.guide1.title}}$
+          </mj-text>
+          <mj-text>
+            ${{adoptTag.guide1.desc}}$
+          </mj-text>
+          <mj-spacer height="16px" />
+
+
+          <mj-text mj-class="subtitle">
+            ${{adoptTag.guide2.title}}$
+          </mj-text>
+          <mj-text>
+            ${{adoptTag.guide2.desc}}$
+          </mj-text>
+          <mj-spacer height="16px" />
+
+
+          <mj-text mj-class="subtitle">
+            ${{adoptTag.guide3.title}}$
+          </mj-text>
+          <mj-text>
+            ${{adoptTag.guide3.desc1}}$
+          </mj-text>
+          <mj-spacer height="16px" />
+          <mj-text>
+            ${{adoptTag.guide3.desc2}}$
+          </mj-text>
+          <mj-spacer height="32px" />
+
+          <mj-text>
+            ${{adoptTag.notes.desc}}$
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section css-class="card top-clear">
+        <mj-column>
+          <mj-include path="./partials/ending-${{_lang_}}$.mjml" />
+        </mj-column>
+      </mj-section>
+
+      <mj-include path="./partials/footer-${{_lang_}}$.mjml" />
+    </mj-wrapper>
+  </mj-body>
+</mjml>
