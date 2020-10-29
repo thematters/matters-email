@@ -21,6 +21,15 @@
 
 
           <mj-text mj-class="subtitle">
+            ${{registerSuccess.sectionFirstPostTitle}}$
+          </mj-text>
+          <mj-text>
+            ${{registerSuccess.sectionFirstPostContent}}$
+          </mj-text>
+          <mj-spacer height="16px" />
+
+
+          <mj-text mj-class="subtitle">
             ${{registerSuccess.sectionReadingTitle}}$
           </mj-text>
           <mj-text>
@@ -43,10 +52,10 @@
 
 
           <mj-text mj-class="subtitle">
-            ${{registerSuccess.sectionFirstPostTitle}}$
+            ${{registerSuccess.sectionTagTitle}}$
           </mj-text>
           <mj-text>
-            ${{registerSuccess.sectionFirstPostContent}}$
+            ${{registerSuccess.sectionTagContent}}$
           </mj-text>
           <mj-spacer height="16px" />
 
@@ -56,15 +65,6 @@
           </mj-text>
           <mj-text>
             ${{registerSuccess.sectionProfileContent}}$
-          </mj-text>
-          <mj-spacer height="16px" />
-
-
-          <mj-text mj-class="subtitle">
-            ${{registerSuccess.sectionTagTitle}}$
-          </mj-text>
-          <mj-text>
-            ${{registerSuccess.sectionTagContent}}$
           </mj-text>
           <mj-spacer height="16px" />
 
