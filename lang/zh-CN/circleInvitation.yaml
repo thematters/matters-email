@@ -1,4 +1,4 @@
-title: 'Matters | {{sender.displayName}}正在邀请你进入{{name}}围炉，并为你开通了免费资格的限时福利'
+title: 'Matters | {{sender.displayName}} 正在邀请你进入{{name}}围炉，并为你开通了免费资格的限时福利'
 preview: '{{sender.displayName}} 正在邀请你加入{{name}}围炉，并为你开通了为期 {{freePeriod}} 个月的限时体验福利，你可以在这段时间内，免费体验围炉的所有功能！'
 
 content1: '{{sender.displayName}} 正在邀请你加入{{name}}围炉，并为你开通了为期 {{freePeriod}} 个月的限时体验福利，你可以在这段时间内，免费体验围炉的所有功能！'
