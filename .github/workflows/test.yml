@@ -1,22 +1,16 @@
-name: Deployment
+name: Test
 
 on:
   pull_request:
     branches:
-      - master
-      - develop
-      - stage
-    types:
-      - closed
+      - '*'
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  MATTERS_SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
   SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
 
 jobs:
-  build_and_deploy:
-    if: github.event.pull_request.merged == true
+  build_and_test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
@@ -44,16 +38,6 @@ jobs:
 
       - name: Build
         run: npm run build
-
-      # === `develop` branch ===
-      - name: Upload (devlop)
-        if: github.base_ref == 'develop'
-        run: npm run upload:dev
-
-      # === `master` branch ===
-      - name: Upload (production)
-        if: github.base_ref == 'master'
-        run: npm run upload:prod
 
       - name: Slack Notification
         if: always()
