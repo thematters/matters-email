@@ -37,17 +37,6 @@
           </mj-text>
           <mj-spacer height="16px" />
 
-          <!-- Code -->
-          <mj-raw>
-            {{#if code}}
-          </mj-raw>
-          <mj-text mj-class="verification-code">
-            {{code}}
-          </mj-text>
-          <mj-raw>
-            {{/if}}
-          </mj-raw>
-
           <!-- Link -->
           <mj-raw>
             {{#if registerLink}}
