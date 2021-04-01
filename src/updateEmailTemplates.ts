@@ -180,6 +180,16 @@ const TEMPLATES = (() => {
         name: 'Assign As Tag Editor',
         templateFile: 'assignAsTagEditor-zh-CN.html',
       },
+      {
+        templateId: 'd-d3c45a17feb441eca8b979db18596b6c',
+        name: 'Circle Invitation',
+        templateFile: 'circleInvitation-zh-TW.html',
+      },
+      {
+        templateId: 'd-80a66fac2361413bb4ea594cf0238d53',
+        name: 'Circle Invitation',
+        templateFile: 'circleInvitation-zh-CN.html',
+      },
     ]
   } else if (env === 'production') {
     console.log('\x1b[36m%s\x1b[0m', 'updating production email templates...')
@@ -273,6 +283,16 @@ const TEMPLATES = (() => {
         templateId: 'd-fba153b334af44cb9c1ecc3695eff9fc',
         name: 'Assign As Tag Editor',
         templateFile: 'assignAsTagEditor-zh-CN.html',
+      },
+      {
+        templateId: 'd-409e5bce4c8343df828d9393a5a4c32d',
+        name: 'Circle Invitation',
+        templateFile: 'circleInvitation-zh-TW.html',
+      },
+      {
+        templateId: 'd-75f9d85caae141278a8a816fa44ef9f7',
+        name: 'Circle Invitation',
+        templateFile: 'circleInvitation-zh-CN.html',
       },
     ]
   } else {

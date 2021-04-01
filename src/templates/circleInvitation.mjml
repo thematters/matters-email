@@ -1,0 +1,74 @@
+<mjml>
+  <mj-head>
+    <mj-include path="./partials/head-${{_lang_}}$.mjml" />
+    <mj-title>${{circleInvitation.title}}$</mj-title>
+    <mj-preview>${{circleInvitation.preview}}$</mj-preview>
+  </mj-head>
+
+  <mj-body mj-class="body" css-class="body">
+    <mj-wrapper mj-class="wrapper">
+      <mj-include path="./partials/header-${{_lang_}}$.mjml" />
+
+      <mj-section>
+        <mj-column>
+          <mj-image src="https://matters-public-files.s3-ap-southeast-1.amazonaws.com/emails/circle.png" />
+        </mj-column>
+      </mj-section>
+
+      <mj-section css-class="card">
+        <mj-column>
+          <!-- Greeting -->
+          <mj-include path="./partials/greeting-${{_lang_}}$.mjml" />
+          <mj-spacer height="16px" />
+
+          <!-- Content -->
+          <mj-text>
+            ${{circleInvitation.content1}}$
+          </mj-text>
+          <mj-spacer height="16px" />
+
+          <mj-text>
+            ${{circleInvitation.content2}}$
+          </mj-text>
+          <mj-spacer height="16px" />
+
+          <mj-text>
+            ${{circleInvitation.content3}}$
+          </mj-text>
+          <mj-spacer height="16px" />
+
+          <!-- Link -->
+          <mj-raw>
+            {{#if registerLink}}
+          </mj-raw>
+          <mj-button href="{{registerLink}}" align="left" background-color="#C0A46B" font-size="16px" font-weight="500" line-height="16px" inner-padding="16px 72px" padding-top="16px" color="white" border-radius="48px">
+            ${{circleInvitation.registerLink}}$
+          </mj-button>
+          <mj-raw>
+            {{/if}}
+          </mj-raw>
+
+          <mj-raw>
+            {{#if circleLink}}
+          </mj-raw>
+          <mj-button href="{{circleLink}}" align="left" background-color="#C0A46B" font-size="16px" font-weight="500" line-height="16px" inner-padding="16px 72px" padding-top="16px" color="white" border-radius="48px">
+            ${{circleInvitation.circleLink}}$
+          </mj-button>
+          <mj-raw>
+            {{/if}}
+          </mj-raw>
+          <mj-spacer height="16px" />
+
+          <mj-text>
+            ${{circleInvitation.contactUs}}$
+          </mj-text>
+
+          <!-- Ending -->
+          <mj-include path="./partials/ending-${{_lang_}}$.mjml" />
+        </mj-column>
+      </mj-section>
+
+      <mj-include path="./partials/footer-${{_lang_}}$.mjml" />
+    </mj-wrapper>
+  </mj-body>
+</mjml>
