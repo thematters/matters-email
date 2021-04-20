@@ -1,7 +1,7 @@
-title: 'Matters | {{sender.displayName}} 正在邀请你进入{{circle.displayName}}围炉，你现在可免费加入！'
-preview: '{{sender.displayName}} 正在邀请你加入{{circle.displayName}}围炉，并为你开通了为期 {{circle.freePeriod}} 个月的限时体验福利，你可以在这段时间内，免费体验围炉的所有功能！'
+title: 'Matters | {{sender.displayName}} 正在邀请你进入“{{circle.displayName}}”围炉，你现在可免费加入！'
+preview: '{{sender.displayName}} 正在邀请你加入“{{circle.displayName}}”围炉，并为你开通了为期 {{circle.freePeriod}} 个月的限时体验福利，你可以在这段时间内，免费体验围炉的所有功能！'
 
-content1: '{{sender.displayName}} 正在邀请你加入{{circle.displayName}}围炉，并为你开通了为期 {{circle.freePeriod}} 个月的限时体验福利，你可以在这段时间内，免费体验围炉的所有功能！'
+content1: '{{sender.displayName}} 正在邀请你加入“{{circle.displayName}}”围炉，并为你开通了为期 {{circle.freePeriod}} 个月的限时体验福利，你可以在这段时间内，免费体验围炉的所有功能！'
 content2: '加入围炉后，你可以看到作者只开放给围炉读者的精彩内容，你还可以透过围炉的「众聊」功能，与志同道合的朋友聊天、互动，在一个更私密的空间里，构建起互相对话、支持的连结。'
 content3: '<a class="link" href="{{siteDomain}}/~{{circle.name}}?utm_medium=email">{{circle.displayName}}</a>炉子已起好，点击下方按钮，一起来加薪火吧！'
 
