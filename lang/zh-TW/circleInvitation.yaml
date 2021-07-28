@@ -1,7 +1,7 @@
 title: 'Matters | {{sender.displayName}} 正在邀請你進入「{{cirlce.displayName}}」圍爐，你現在可免費加入！'
-preview: '{{sender.displayName}} 正在邀請你加入「{{circle.displayName}}」圍爐，並為你開通了為期 {{circle.freePeriod}} 個月的限時體驗福利，你可以在這段時間內，免費體驗圍爐的所有功能！'
+preview: '{{sender.displayName}} 正在邀請你加入「{{circle.displayName}}」圍爐，並為你開通了為期 {{circle.freePeriod}} 天的限時體驗福利，你可以在這段時間內，免費體驗圍爐的所有功能！'
 
-content1: '{{sender.displayName}} 正在邀請你加入「{{circle.displayName}}」圍爐，並為你開通了為期 {{circle.freePeriod}} 個月的限時體驗福利，你可以在這段時間內，免費體驗圍爐的所有功能！'
+content1: '{{sender.displayName}} 正在邀請你加入「{{circle.displayName}}」圍爐，並為你開通了為期 {{circle.freePeriod}} 天的限時體驗福利，你可以在這段時間內，免費體驗圍爐的所有功能！'
 content2: '加入圍爐後，你可以看到作者只開放給圍爐讀者的精彩內容，你還可以透過圍爐的「眾聊」功能，與志同道合的朋友聊天、互動，在一個更私密的空間裡，構建起互相對話、支持的連結。'
 content3: '<a class="link" href="{{siteDomain}}/~{{circle.name}}?utm_medium=email">{{circle.displayName}}</a>爐子已起好，點擊下方按鈕，一起來加薪火吧！'
 
