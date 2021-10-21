@@ -1,8 +1,8 @@
 <mjml>
   <mj-head>
     <mj-include path="./partials/head-${{_lang_}}$.mjml" />
-    <mj-title>${{cryptoWalletConnected.title}}$</mj-title>
-    <mj-preview>${{cryptoWalletConnected.preview}}$</mj-preview>
+    <mj-title>${{cryptoWalletAirdrop.title}}$</mj-title>
+    <mj-preview>${{cryptoWalletAirdrop.preview}}$</mj-preview>
   </mj-head>
 
   <mj-body mj-class="body" css-class="body">
@@ -17,7 +17,7 @@
 
           <!-- Content -->
           <mj-text>
-            ${{cryptoWalletConnected.content}}$
+            ${{cryptoWalletAirdrop.content1}}$
           </mj-text>
           <mj-spacer height="16px" />
 
@@ -27,7 +27,12 @@
           <mj-spacer height="16px" />
 
           <mj-text>
-            ${{cryptoWalletConnected.contactUs}}$
+            ${{cryptoWalletAirdrop.content2}}$
+          </mj-text>
+          <mj-spacer height="16px" />
+
+          <mj-text>
+            ${{cryptoWalletAirdrop.contactUs}}$
           </mj-text>
 
           <!-- Ending -->
