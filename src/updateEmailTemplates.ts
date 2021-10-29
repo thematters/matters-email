@@ -190,6 +190,26 @@ const TEMPLATES = (() => {
         name: 'Circle Invitation',
         templateFile: 'circleInvitation-zh-CN.html',
       },
+      {
+        templateId: 'd-a1befbc03fcd466fad0b6f20dcf040b4',
+        name: 'Crypto Wallet Airdrop',
+        templateFile: 'cryptoWalletAirdrop-zh-TW.html',
+      },
+      {
+        templateId: 'd-a6b1244849c74582a50bbe828593d7a1',
+        name: 'Crypto Wallet Airdrop',
+        templateFile: 'cryptoWalletAirdrop-zh-CN.html',
+      },
+      {
+        templateId: 'd-7eb4b8de26fc4f3ea905f4cf6ed5f072',
+        name: 'Crypto Wallet Connected',
+        templateFile: 'cryptoWalletConnected-zh-TW.html',
+      },
+      {
+        templateId: 'd-77dcbcc0fbb0411f88716103f9dede15',
+        name: 'Crypto Wallet Connected',
+        templateFile: 'cryptoWalletConnected-zh-CN.html',
+      },
     ]
   } else if (env === 'production') {
     console.log('\x1b[36m%s\x1b[0m', 'updating production email templates...')
@@ -293,6 +313,26 @@ const TEMPLATES = (() => {
         templateId: 'd-75f9d85caae141278a8a816fa44ef9f7',
         name: 'Circle Invitation',
         templateFile: 'circleInvitation-zh-CN.html',
+      },
+      {
+        templateId: 'd-fd12bcaed4de478b955b870b462a8c01',
+        name: 'Crypto Wallet Airdrop',
+        templateFile: 'cryptoWalletAirdrop-zh-TW.html',
+      },
+      {
+        templateId: 'd-69b2bb07584f4ee2bb9ac7e287118420',
+        name: 'Crypto Wallet Airdrop',
+        templateFile: 'cryptoWalletAirdrop-zh-CN.html',
+      },
+      {
+        templateId: 'd-78149a4a6cc4452db4aebc5316648cdd',
+        name: 'Crypto Wallet Connected',
+        templateFile: 'cryptoWalletConnected-zh-TW.html',
+      },
+      {
+        templateId: 'd-6036dda2690c439a958d4fdf666822d5',
+        name: 'Crypto Wallet Connected',
+        templateFile: 'cryptoWalletConnected-zh-CN.html',
       },
     ]
   } else {
