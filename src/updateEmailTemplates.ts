@@ -201,6 +201,11 @@ const TEMPLATES = (() => {
         templateFile: 'cryptoWalletAirdrop-zh-CN.html',
       },
       {
+        templateId: 'd-a5908c363fe546b3a20824fd5d0557fe',
+        name: 'Crypto Wallet Airdrop',
+        templateFile: 'cryptoWalletAirdrop-en.html',
+      },
+      {
         templateId: 'd-7eb4b8de26fc4f3ea905f4cf6ed5f072',
         name: 'Crypto Wallet Connected',
         templateFile: 'cryptoWalletConnected-zh-TW.html',
@@ -323,6 +328,11 @@ const TEMPLATES = (() => {
         templateId: 'd-69b2bb07584f4ee2bb9ac7e287118420',
         name: 'Crypto Wallet Airdrop',
         templateFile: 'cryptoWalletAirdrop-zh-CN.html',
+      },
+      {
+        templateId: 'd-7478e483e18c4a59984e782c631a2921',
+        name: 'Crypto Wallet Airdrop',
+        templateFile: 'cryptoWalletAirdrop-en.html',
       },
       {
         templateId: 'd-78149a4a6cc4452db4aebc5316648cdd',
