@@ -1,0 +1,41 @@
+<mjml>
+  <mj-head>
+    <mj-include path="./partials/head-${{_lang_}}$.mjml" />
+    <mj-title>${{cryptoWalletConnectedEnglish.title}}$</mj-title>
+    <mj-preview>${{cryptoWalletConnectedEnglish.preview}}$</mj-preview>
+  </mj-head>
+
+  <mj-body mj-class="body" css-class="body">
+    <mj-wrapper mj-class="wrapper">
+      <mj-include path="./partials/header-${{_lang_}}$.mjml" />
+
+      <mj-section css-class="card">
+        <mj-column>
+          <!-- Greeting -->
+          <mj-include path="./partials/greeting-${{_lang_}}$.mjml" />
+          <mj-spacer height="16px" />
+
+          <!-- Content -->
+          <mj-text>
+            ${{cryptoWalletConnectedEnglish.content}}$
+          </mj-text>
+          <mj-spacer height="16px" />
+
+          <mj-text mj-class="color-grey-dark">
+            {{cryptoWallet.address}}
+          </mj-text>
+          <mj-spacer height="16px" />
+
+          <mj-text>
+            ${{cryptoWalletConnectedEnglish.contactUs}}$
+          </mj-text>
+
+          <!-- Ending -->
+          <mj-include path="./partials/ending-${{_lang_}}$.mjml" />
+        </mj-column>
+      </mj-section>
+
+      <mj-include path="./partials/footer-${{_lang_}}$.mjml" />
+    </mj-wrapper>
+  </mj-body>
+</mjml>
