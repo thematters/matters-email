@@ -87,7 +87,7 @@
 
       <mj-section>
         <mj-column>
-          <mj-image src="https://matters-public-files.s3-ap-southeast-1.amazonaws.com/emails/banner.jpg" />
+          <mj-image src="https://static.matters.news/emails/banner.jpg" />
         </mj-column>
       </mj-section>
 

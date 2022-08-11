@@ -26,7 +26,7 @@
 
       <mj-section>
         <mj-column>
-          <mj-image src="https://matters-public-files.s3-ap-southeast-1.amazonaws.com/emails/banner.jpg" />
+          <mj-image src="https://static.matters.news/emails/banner.jpg" />
         </mj-column>
       </mj-section>
 
@@ -102,10 +102,10 @@
           </mj-text>
 
           <mj-text>
-            <img class="footer-icon" src="https://matters-public-files.s3-ap-southeast-1.amazonaws.com/emails/clap.png" />
+            <img class="footer-icon" src="https://static.matters.news/emails/clap.png" />
             <span class="footer-count">{{this.appreciationsReceivedTotal}}</span>
 
-            <img class="footer-icon" src="https://matters-public-files.s3-ap-southeast-1.amazonaws.com/emails/comment.png" />
+            <img class="footer-icon" src="https://static.matters.news/emails/comment.png" />
             <span class="footer-count">{{this.responseCount}}</span>
           </mj-text>
 
