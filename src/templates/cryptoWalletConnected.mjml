@@ -29,9 +29,6 @@
           <mj-text>
             ${{cryptoWalletConnected.contactUs}}$
           </mj-text>
-
-          <!-- Ending -->
-          <mj-include path="./partials/ending-${{_lang_}}$.mjml" />
         </mj-column>
       </mj-section>
 

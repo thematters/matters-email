@@ -9,7 +9,7 @@
     <mj-wrapper mj-class="wrapper">
       <mj-include path="./partials/header-${{_lang_}}$.mjml" />
 
-      <mj-section css-class="card bottom-clear">
+      <mj-section css-class="card">
         <mj-column>
           <mj-text>
             ${{adoptTag.to}}$
@@ -58,12 +58,6 @@
           <mj-text>
             ${{adoptTag.notes.desc}}$
           </mj-text>
-        </mj-column>
-      </mj-section>
-
-      <mj-section css-class="card top-clear">
-        <mj-column>
-          <mj-include path="./partials/ending-${{_lang_}}$.mjml" />
         </mj-column>
       </mj-section>
 

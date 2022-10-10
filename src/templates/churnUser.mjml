@@ -30,7 +30,7 @@
         </mj-column>
       </mj-section>
 
-      <mj-section css-class="card bottom-clear">
+      <mj-section css-class="card">
         <mj-column>
           <mj-include path="./partials/greeting-${{_lang_}}$.mjml" />
 
@@ -115,12 +115,6 @@
           <mj-raw>
             {{/each}}
           </mj-raw>
-        </mj-column>
-      </mj-section>
-
-      <mj-section css-class="card top-clear">
-        <mj-column>
-          <mj-include path="./partials/ending-${{_lang_}}$.mjml" />
         </mj-column>
       </mj-section>
 

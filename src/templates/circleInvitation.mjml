@@ -9,7 +9,7 @@
     <mj-wrapper mj-class="wrapper">
       <mj-include path="./partials/header-${{_lang_}}$.mjml" />
 
-      <mj-section>
+      <mj-section background-color="#fff">
         <mj-column>
           <mj-image src="https://static.matters.news/emails/circle.png" />
         </mj-column>
@@ -62,9 +62,6 @@
           <mj-text>
             ${{circleInvitation.contactUs}}$
           </mj-text>
-
-          <!-- Ending -->
-          <mj-include path="./partials/ending-${{_lang_}}$.mjml" />
         </mj-column>
       </mj-section>
 

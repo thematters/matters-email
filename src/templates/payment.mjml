@@ -52,7 +52,7 @@
         </mj-column>
       </mj-section>
 
-      <mj-section css-class="card bottom-clear">
+      <mj-section css-class="card">
         <mj-column>
           <mj-text padding="0" mj-class="color-grey-darker">
             ${{payment.to}}$ {{recipient.displayName}} (@{{recipient.userName}}) ，
@@ -158,12 +158,6 @@
               ${{payment.contactUs}}$
             {{/if}}
           </mj-text>
-        </mj-column>
-      </mj-section>
-
-      <mj-section css-class="card top-clear">
-        <mj-column>
-          <mj-include path="./partials/ending-${{_lang_}}$.mjml" />
         </mj-column>
       </mj-section>
 

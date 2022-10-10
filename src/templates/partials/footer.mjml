@@ -1,5 +1,24 @@
-<mj-section padding="24px 0">
+<mj-section background-color="#fff" padding="24px 32px 0">
   <mj-column>
-    <mj-text mj-class="color-grey" css-class="footer" font-size="12px">Copyright © 2020 Matters, All rights reserved.</mj-text>
+    <mj-social font-size="15px" icon-size="24px" inner-padding="8px" padding="0px" mode="horizontal">
+      <mj-social-element href="https://matters.news?utm_medium=email" src="https://static.matters.news/emails/matters.png"></mj-social-element>
+      <mj-social-element href="https://twitter.com/MattersLab" src="https://static.matters.news/emails/twitter.png"></mj-social-element>
+      <mj-social-element href="https://discord.gg/matterslab" src="https://static.matters.news/emails/discord.png"></mj-social-element>
+      <mj-social-element href="https://www.facebook.com/MattersLab2018/" src="https://static.matters.news/emails/facebook.png"></mj-social-element>
+      <mj-social-element href="https://www.instagram.com/matterslab2018/" src="https://static.matters.news/emails/instagram.png"></mj-social-element>
+    </mj-social>
   </mj-column>
 </mj-section>
+
+<mj-section background-color="#fff" padding="4px 32px">
+  <mj-column>
+    <mj-text align="center" color="#333" font-size="12px">${{partials.footer.contactUs}}$</mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section background-color="#fff" padding="0 32px 24px">
+  <mj-column>
+    <mj-text align="center" mj-class="color-grey" font-size="12px">Copyright © 2022 Matters, All rights reserved.</mj-text>
+  </mj-column>
+</mj-section>
+
