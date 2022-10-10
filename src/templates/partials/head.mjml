@@ -5,6 +5,7 @@
   <mj-class name="wrapper" padding-left="10px" padding-right="10px" />
   <mj-class name="verification-code" color="#0d6763" font-size="24px" padding-top="16px" font-weight="500" />
   <mj-class name="cta-button" width="100%" color="white" font-size="16px" border-radius="0" height="47px" padding="24px 0 0 0" background-color="#0d6763" inner-padding="0" />
+  <mj-class name="color-grey-darker" color="#808080" />
   <mj-class name="color-grey-dark" color="#999c9d" />
   <mj-class name="color-grey" color="#b3b3b3" />
   <mj-class name="subtitle" font-size="16px" font-weight="700" padding="20px 0 16px 0" />
@@ -24,6 +25,14 @@
   .link-underline {
     color: inherit;
     text-decoration: underline;
+  }
+
+  .color-black {
+    color: #000;
+  }
+
+  .weight-medium {
+    font-weight: 500;
   }
 
   .avatar {
@@ -54,6 +63,12 @@
     font-size: 14px;
     line-height: 16px;
     vertical-align: middle;
+  }
+
+  .article-digest {
+    padding: 8px 16px;
+    background-color: #F7F7F7;
+    border-radius: 8px;
   }
 </mj-style>
 

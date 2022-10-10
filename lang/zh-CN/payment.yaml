@@ -1,5 +1,5 @@
-to: 致
-contactUs: '如有更多疑问，请联络：<a class="link" href="mailto:customer@matters.news">customer@matters.news</a>。'
+to: 亲爱的
+contactUs: '如有更多疑问，请联络：<a class="link weight-medium" href="mailto:customer@matters.news">customer@matters.news</a>。'
 
 passwordSet:
   title: Matters | 你的交易密码已成功设定
@@ -8,29 +8,29 @@ passwordSet:
 passwordChanged:
   title: Matters | 你的交易密码已修改成功
   content: 我们收到阁下要求修改交易密码的指令，你的交易密码已经修改成功，请使用新密码进行后续支付。
-  contactUs: '如不是你本人操作，请尽快<a class="link" href="https://t.me/matters_bugs">联络我们</a>或写信至：<a class="link" href="mailto:customer@matters.news">customer@matters.news</a>。'
+  contactUs: '如不是你本人操作，请尽快<a class="link weight-medium" href="https://discord.gg/matterslab"> 联络我们 </a>或写信至：<a class="link weight-medium" href="mailto:customer@matters.news">customer@matters.news</a>。'
 
 creditAdded:
   title: Matters | 储值成功
-  content: '我们收到阁下储值 Matters 钱包的指令，你已成功完成 <span class="link">{{tx.amount}} {{tx.currency}}</span> 的储值，快回到站上支持你喜欢的创作者吧！'
-  contactUs: '如不是你本人操作，或储值金额与你的记录不匹配，请尽快<a class="link" href="https://t.me/matters_bugs">联络我们</a>或写信至：<a class="link" href="mailto:customer@matters.news">customer@matters.news</a>。'
+  content: '我们收到阁下储值 Matters 钱包的指令，你已成功完成 <span class="color-black weight-medium">{{tx.amount}} {{tx.currency}}</span> 的储值，快回到站上支持你喜欢的创作者吧！'
+  contactUs: '如不是你本人操作，或储值金额与你的记录不匹配，请尽快<a class="link weight-medium" href="https://discord.gg/matterslab"> 联络我们 </a>或写信至：<a class="link weight-medium" href="mailto:customer@matters.news">customer@matters.news</a>。'
 
 donated:
-  title: Matters | 支付成功
-  content: '我们收到阁下的支付指令，你已成功向 {{tx.recipient.displayName}} (<a class="link" href="{{siteDomain}}/@{{tx.recipient.userName}}?utm_medium=email">@{{tx.recipient.userName}}</a>) 支付 <span class="link">{{tx.amount}} {{tx.currency}}</span>，谢谢你。'
-  contactUs: '如不是你本人操作，或支付金额与你的记录不匹配，请尽快<a class="link" href="https://t.me/matters_bugs">联络我们</a>或写信至：<a class="link" href="mailto:customer@matters.news">customer@matters.news</a>。'
+  title: Matters | 支持成功
+  content: '你向 <span class="color-black weight-medium">{{tx.recipient.displayName}}</span> (<a class="link weight-medium" href="{{siteDomain}}/@{{tx.recipient.userName}}?utm_medium=email">@{{tx.recipient.userName}}</a>) 作品支持了 <span class="color-black weight-medium">{{tx.amount}} {{tx.currency}}</span>，支付已顺利完成，感谢你的付出与参与。'
+  contactUs: '如不是你本人操作，或支付金额与你的记录不匹配，请尽快<a class="link weight-medium" href="https://discord.gg/matterslab"> 联络我们 </a>或写信至：<a class="link weight-medium" href="mailto:customer@matters.news">customer@matters.news</a>。'
 
 receivedDonation:
   title: Matters | 你收到一笔来自他人的支持
-  content: '阁下收到一笔来自 {{tx.sender.displayName}} (<a class="link" href="{{siteDomain}}/@{{tx.sender.userName}}?utm_medium=email">@{{tx.sender.userName}}</a>) 的支持资金 {{tx.amount}} {{tx.currency}}，请上站检视你的收入记录。'
+  content: '你的创作收到一笔来自 <span class="color-black weight-medium">{{tx.sender.displayName}}</span> (<a class="link weight-medium" href="{{siteDomain}}/@{{tx.sender.userName}}?utm_medium=email">@{{tx.sender.userName}}</a>) 的支持资金 {{tx.amount}} {{tx.currency}}，你可以随时上站检视收入纪录。恭喜你又向前迈进。'
 
 receivedDonationLikeCoin:
   title: Matters | 你收到一笔来自他人的支持
-  content: '阁下收到一笔来自 {{tx.sender.displayName}} (<a class="link" href="{{siteDomain}}/@{{tx.sender.userName}}?utm_medium=email">@{{tx.sender.userName}}</a>) 的支持资金 {{tx.amount}} {{tx.currency}}，请前往<a class="link" href="https://like.co/in/matters/redirect">你的 LikeCoin 钱包</a>检视你的收入记录。'
+  content: '你的创作收到一笔来自 <span class="color-black weight-medium">{{tx.sender.displayName}}</span> (<a class="link weight-medium" href="{{siteDomain}}/@{{tx.sender.userName}}?utm_medium=email">@{{tx.sender.userName}}</a>) 的支持资金 {{tx.amount}} {{tx.currency}}，请前往<a class="link weight-medium" href="https://like.co/in/matters/redirect">你的 LikeCoin 钱包</a>检视你的收入记录。恭喜你又向前迈进。'
 
 payout:
   title: Matters | 你的提现流程已经启动
-  content_1: '我们收到阁下 Matters 钱包的提现指令，你指示 <span class="link">{{tx.amount}} {{tx.currency}}</span> 的提现流程已经开始。'
+  content_1: '我们收到阁下 Matters 钱包的提现指令，你指示 <span class="color-black weight-medium">{{tx.amount}} {{tx.currency}}</span> 的提现流程已经开始。'
   content_2: '提现经由 Stripe 完成，需要至少 14 个工作日处理。银行到帐周期由你持有卡的发卡行决定，请你耐心等待或联络银行咨询。'
   content_3: '感谢你来到 Matters 分享你的创作，Matters 以成为华文最优秀的创作平台为目标，谢谢你与我们同行。'
-  contactUs: '如不是你本人操作，或提现金额与你的记录不匹配，请尽快修改帐户及交易密码，并<a class="link" href="https://t.me/matters_bugs">联络我们</a>或写信至：<a class="link" href="mailto:customer@matters.news">customer@matters.news</a>。'
+  contactUs: '如不是你本人操作，或提现金额与你的记录不匹配，请尽快修改帐户及交易密码，并<a class="link weight-medium" href="https://discord.gg/matterslab"> 联络我们 </a>或写信至：<a class="link weight-medium" href="mailto:customer@matters.news">customer@matters.news</a>。'

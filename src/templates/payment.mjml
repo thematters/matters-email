@@ -36,14 +36,30 @@
     <mj-wrapper mj-class="wrapper">
       <mj-include path="./partials/header-${{_lang_}}$.mjml" />
 
+      <mj-section>
+        <mj-column>
+          <mj-raw>
+            {{#if type.donated}}
+          </mj-raw>
+          <mj-image src="https://static.matters.news/emails/banner_donation_donor.jpg" />
+          <mj-raw>
+            {{else}}
+          </mj-raw>
+          <mj-image src="https://static.matters.news/emails/banner_donation_recipient.jpg" />
+          <mj-raw>
+            {{/if}}
+          </mj-raw>
+        </mj-column>
+      </mj-section>
+
       <mj-section css-class="card bottom-clear">
         <mj-column>
-          <mj-text padding="0">
-            ${{payment.to}}$ {{recipient.displayName}} (@{{recipient.userName}}) ：
+          <mj-text padding="0" mj-class="color-grey-darker">
+            ${{payment.to}}$ {{recipient.displayName}} (@{{recipient.userName}}) ，
           </mj-text>
           <mj-spacer height="32px" />
 
-          <mj-text>
+          <mj-text mj-class="color-grey-darker">
             {{#if type.passwordSet}}
               ${{payment.passwordSet.content}}$
             {{/if}}
@@ -72,23 +88,48 @@
           <mj-raw>
             {{#if type.payout}}
           </mj-raw>
-          <mj-text>
+          <mj-text mj-class="color-grey-darker">
             ${{payment.payout.content_1}}$
           </mj-text>
           <mj-spacer height="16px" />
-          <mj-text>
+          <mj-text mj-class="color-grey-darker">
             ${{payment.payout.content_2}}$
           </mj-text>
           <mj-spacer height="16px" />
-          <mj-text>
+          <mj-text mj-class="color-grey-darker">
             ${{payment.payout.content_3}}$
           </mj-text>
           <mj-raw>
             {{/if}}
           </mj-raw>
 
-          <mj-spacer height="16px" />
-          <mj-text>
+          <mj-raw>
+            {{#if type.donated}}
+          </mj-raw>
+          <mj-spacer height="24px" />
+          <mj-include path="./partials/articleDigest-${{_lang_}}$.mjml" />
+          <mj-raw>
+            {{/if}}
+          </mj-raw>
+          <mj-raw>
+            {{#if type.receivedDonation}}
+          </mj-raw>
+          <mj-spacer height="24px" />
+          <mj-include path="./partials/articleDigest-${{_lang_}}$.mjml" />
+          <mj-raw>
+            {{/if}}
+          </mj-raw>
+          <mj-raw>
+            {{#if type.receivedDonationLikeCoin}}
+          </mj-raw>
+          <mj-spacer height="24px" />
+          <mj-include path="./partials/articleDigest-${{_lang_}}$.mjml" />
+          <mj-raw>
+            {{/if}}
+          </mj-raw>
+
+          <mj-spacer height="24px" />
+          <mj-text mj-class="color-grey-darker">
             {{#if type.passwordSet}}
               ${{payment.contactUs}}$
             {{/if}}
