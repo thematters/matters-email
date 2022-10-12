@@ -1,9 +1,9 @@
-<mj-section padding="38px 0 24px 0">
+<mj-section css-class="card">
   <mj-column>
-    <mj-image css-class="logo" align="left" width="96px" padding="10px 0 0 0" href="{{siteDomain}}?utm_medium=email" src="https://static.matters.news/emails/logo.png" />
+    <mj-image align="left" width="97px" height="20px" href="{{siteDomain}}?utm_medium=email" src="https://static.matters.news/emails/logo.png"  />
   </mj-column>
   <mj-column>
-    <mj-text css-class="slogan" align="left" padding="10px 0 0 0" color="#b3b3b3">
+    <mj-text css-class="slogan" align="left" font-size="13px" color="#808080">
       ${{partials.header}}$
     </mj-text>
   </mj-column>

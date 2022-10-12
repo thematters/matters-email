@@ -1,2 +1,4 @@
 header: 一个自由、自主、永续的创作与公共讨论空间
 ending: —— Matters 团队
+footer:
+  contactUs: '若有任何问题，欢迎致信 <a class="link-underline-green" href="mailto:hi@matters.news">hi@matters.news</a>'

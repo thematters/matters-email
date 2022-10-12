@@ -8,7 +8,13 @@
     <mj-wrapper mj-class="wrapper">
       <mj-include path="./partials/header-${{_lang_}}$.mjml" />
 
-      <mj-section css-class="card bottom-clear">
+      <mj-section>
+        <mj-column>
+          <mj-image src="https://static.matters.news/emails/banner_onboard.jpg" />
+        </mj-column>
+      </mj-section>
+
+      <mj-section css-class="card">
         <mj-column>
           <mj-include path="./partials/greeting-${{_lang_}}$.mjml" />
           <mj-spacer height="16px" />
@@ -45,12 +51,6 @@
           <mj-text>
             ${{migrationSuccess.contactUs}}$
           </mj-text>
-        </mj-column>
-      </mj-section>
-
-      <mj-section css-class="card top-clear">
-        <mj-column>
-          <mj-include path="./partials/ending-${{_lang_}}$.mjml" />
         </mj-column>
       </mj-section>
 
