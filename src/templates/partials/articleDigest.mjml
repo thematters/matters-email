@@ -1,10 +1,10 @@
-<mj-section css-class="article-digest">
+<mj-section>
   <mj-column>
-    <mj-text font-size="15px" line-height="24px">
-      <a class="link-black weight-medium" href="{{siteDomain}}/@{{article.author.userName}}/{{article.id}}-{{article.slug}}-{{article.mediaHash}}?utm_medium=email">{{article.title}}</a>
-    </mj-text>
-    <mj-text mj-class="color-grey-darker">
-      {{article.author.displayName}}
+    <mj-text>
+      <a class="article-digest link-black weight-medium" href="{{siteDomain}}/@{{article.author.userName}}/{{article.id}}-{{article.slug}}-{{article.mediaHash}}?utm_medium=email">
+        <span class="article-digest-title">{{article.title}}</span>
+        <span class="article-digest-subtitle">{{article.author.displayName}}</span>
+      </a>
     </mj-text>
   </mj-column>
 </mj-section>

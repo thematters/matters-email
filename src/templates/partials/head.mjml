@@ -69,12 +69,6 @@
     line-height: 16px;
     vertical-align: middle;
   }
-
-  .article-digest {
-    padding: 8px 16px;
-    background-color: #F7F7F7;
-    border-radius: 8px;
-  }
 </mj-style>
 
 <mj-style>
@@ -112,6 +106,30 @@
   .card {
     background-color: #ffffff !important;
     padding: 16px !important;
+  }
+
+
+  .article-digest {
+    display: block;
+    padding: 8px 16px;
+    background-color: #F7F7F7;
+    border-radius: 8px;
+  }
+
+  .article-digest-title {
+    display: block;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+
+  .article-digest-subtitle {
+    margin-top: 4px;
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #808080;
   }
 
   @media all and (min-width: 480px) {
