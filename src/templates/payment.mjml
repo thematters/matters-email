@@ -73,7 +73,7 @@
             {{/if}}
 
             {{#if type.donated}}
-              ${{payment.donated.content}}$
+              ${{payment.donated.content_1}}$
             {{/if}}
 
             {{#if type.receivedDonation}}
@@ -108,6 +108,10 @@
           </mj-raw>
           <mj-spacer height="24px" />
           <mj-include path="./partials/articleDigest-${{_lang_}}$.mjml" />
+          <mj-spacer height="24px" />
+          <mj-text mj-class="color-grey-darker">
+            ${{payment.donated.content_2}}$
+          </mj-text>
           <mj-raw>
             {{/if}}
           </mj-raw>
