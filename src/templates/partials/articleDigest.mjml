@@ -1,0 +1,10 @@
+<mj-section>
+  <mj-column>
+    <mj-text>
+      <a class="article-digest link-black weight-medium" href="{{siteDomain}}/@{{article.author.userName}}/{{article.id}}-{{article.slug}}-{{article.mediaHash}}?utm_medium=email">
+        <span class="article-digest-title">{{article.title}}</span>
+        <span class="article-digest-subtitle">{{article.author.displayName}}</span>
+      </a>
+    </mj-text>
+  </mj-column>
+</mj-section>

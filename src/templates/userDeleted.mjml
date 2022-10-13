@@ -9,7 +9,13 @@
     <mj-wrapper mj-class="wrapper">
       <mj-include path="./partials/header-${{_lang_}}$.mjml" />
 
-      <mj-section css-class="card bottom-clear">
+      <mj-section>
+        <mj-column>
+          <mj-image src="https://static.matters.news/emails/banner_onboard.jpg" />
+        </mj-column>
+      </mj-section>
+
+      <mj-section css-class="card">
         <mj-column>
           <mj-text padding="0">
             {{#if recipient.displayName}}
@@ -38,16 +44,6 @@
           <mj-text>
             ${{userDeleted.sendQuestionTo}}$
           </mj-text>
-        </mj-column>
-      </mj-section>
-
-      <!-- <mj-section css-class="card bottom-clear" padding-top="24px">
-        <mj-include path="./partials/download-${{_lang_}}$.mjml" />
-      </mj-section> -->
-
-      <mj-section css-class="card top-clear">
-        <mj-column>
-          <mj-include path="./partials/ending-${{_lang_}}$.mjml" />
         </mj-column>
       </mj-section>
 

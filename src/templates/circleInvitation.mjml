@@ -11,7 +11,7 @@
 
       <mj-section>
         <mj-column>
-          <mj-image src="https://static.matters.news/emails/circle.png" />
+          <mj-image src="https://static.matters.news/emails/banner_circle.jpg" />
         </mj-column>
       </mj-section>
 
@@ -62,9 +62,6 @@
           <mj-text>
             ${{circleInvitation.contactUs}}$
           </mj-text>
-
-          <!-- Ending -->
-          <mj-include path="./partials/ending-${{_lang_}}$.mjml" />
         </mj-column>
       </mj-section>
 

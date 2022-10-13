@@ -87,7 +87,7 @@
 
       <mj-section>
         <mj-column>
-          <mj-image src="https://static.matters.news/emails/banner.jpg" />
+          <mj-image src="https://static.matters.news/emails/banner_daily_summary.jpg" />
         </mj-column>
       </mj-section>
 
@@ -314,7 +314,7 @@
         </mj-column>
       </mj-section>
 
-      <mj-section css-class="card top-clear bottom-clear">
+      <mj-section css-class="card top-clear">
         <mj-column>
           <!-- user_new_follower:start -->
           <mj-raw>
@@ -348,14 +348,7 @@
       </mj-raw>
       <!-- section:follow:end -->
 
-
-      <mj-section css-class="card top-clear"></mj-section>
-      <mj-section padding="24px 0">
-        <mj-column>
-          <mj-text css-class="footer" font-size="12px" mj-class="color-grey">${{dailySummary.changeSubscribeSetting}}$<a class="link-underline" href="{{siteDomain}}/me/settings/notification?utm_medium=email">設置</a>。</mj-text>
-          <mj-text css-class="footer" font-size="12px" mj-class="color-grey">Copyright © 2020 Matters, All rights reserved.</mj-text>
-        </mj-column>
-      </mj-section>
+      <mj-include path="./partials/footer-${{_lang_}}$.mjml" />
     </mj-wrapper>
   </mj-body>
 </mjml>
