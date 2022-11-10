@@ -110,7 +110,7 @@
           <mj-include path="./partials/articleDigest-${{_lang_}}$.mjml" />
           <mj-spacer height="24px" />
           <mj-text mj-class="color-grey-darker">
-            ${{payment.donated.content_2}}$
+            ${{payment.donated.content_2}}${{#if article.hasReplyToDonator}}${{payment.donated.content_3}}${{/if}}
           </mj-text>
           <mj-raw>
             {{/if}}
