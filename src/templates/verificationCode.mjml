@@ -73,19 +73,19 @@
           <mj-text>
             {{#if code}}
               {{#if type.emailReset}}
-                ${{verificationCode.emailReset.code.content}}$
+                ${{verificationCode.emailReset.code.content_1}}$
               {{/if}}
 
               {{#if type.emailResetConfirm}}
-                ${{verificationCode.emailReset.code.content}}$
+                ${{verificationCode.emailReset.code.content_1}}$
               {{/if}}
 
               {{#if type.passwordReset}}
-                ${{verificationCode.passwordReset.code.content}}$
+                ${{verificationCode.passwordReset.code.content_1}}$
               {{/if}}
 
               {{#if type.paymentPasswordReset}}
-                ${{verificationCode.paymentPasswordReset.code.content}}$
+                ${{verificationCode.paymentPasswordReset.code.content_1}}$
               {{/if}}
             {{/if}}
 
@@ -119,6 +119,34 @@
           <mj-raw>
             {{/if}}
           </mj-raw>
+
+          <!-- Content -->
+          <mj-raw>
+            {{#if code}}
+          </mj-raw>
+            <mj-spacer height="32px" />
+          <mj-raw>
+            {{/if}}
+          </mj-raw>
+          <mj-text>
+            {{#if code}}
+              {{#if type.emailReset}}
+                ${{verificationCode.emailReset.code.content_2}}$
+              {{/if}}
+
+              {{#if type.emailResetConfirm}}
+                ${{verificationCode.emailReset.code.content_2}}$
+              {{/if}}
+
+              {{#if type.passwordReset}}
+                ${{verificationCode.passwordReset.code.content_2}}$
+              {{/if}}
+
+              {{#if type.paymentPasswordReset}}
+                ${{verificationCode.paymentPasswordReset.code.content_2}}$
+              {{/if}}
+            {{/if}}
+          </mj-text>
 
           <!-- Link -->
           <mj-raw>
