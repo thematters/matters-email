@@ -1,9 +1,12 @@
-<mj-section css-class="card">
-  <mj-column width="30%">
+<mj-section css-class="logo">
+  <mj-column>
     <mj-image align="left" width="97px" height="20px" href="{{siteDomain}}?utm_medium=email" src="https://static.matters.news/emails/logo.png" />
   </mj-column>
-  <mj-column width="70%">
-    <mj-text css-class="slogan" align="inherit" font-size="13px" color="#808080">
+</mj-section>
+
+<mj-section css-class="slogan">
+  <mj-column>
+    <mj-text align="left" font-size="13px" color="#808080">
       ${{partials.header}}$
     </mj-text>
   </mj-column>
