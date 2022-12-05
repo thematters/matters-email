@@ -18,7 +18,7 @@ creditAdded:
 donated:
   title: Matters | 支持成功
   content_1: '你向 <span class="color-black weight-medium">{{tx.recipient.displayName}}</span> (<a class="link weight-medium" href="{{siteDomain}}/@{{tx.recipient.userName}}?utm_medium=email">@{{tx.recipient.userName}}</a>) 的作品'
-  content_2: '支持了 <span class="color-black weight-medium">{{tx.amount}} {{tx.currency}}</span>，支付已顺利完成，感谢你的付出与参与。'
+  content_2: '支持了 <span class="color-black weight-medium">{{tx.amount}} {{tx.currency}}</span>，支付已顺利完成，这是你给出的第 {{ tx.donationCount }} 次支持，感谢你的付出与参与。'
   content_3: 作者留了一段內容给你，若还未阅读过，点击上方文章前往看看吧！
   contactUs: '如不是你本人操作，或支付金额与你的记录不匹配，请尽快<a class="link weight-medium" href="https://discord.gg/matterslab"> 联络我们 </a>或写信至：<a class="link weight-medium" href="mailto:customer@matters.news">customer@matters.news</a>。'
 
