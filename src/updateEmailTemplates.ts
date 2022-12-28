@@ -384,6 +384,16 @@ const TEMPLATES = (() => {
         name: 'Crypto Wallet Connected English',
         templateFile: 'cryptoWalletConnectedEnglish-zh-CN.html',
       },
+      {
+        templateId: 'd-bc5695dcae564795ac76bc6a783a5ef7',
+        name: 'User Retention',
+        templateFile: 'userRetention-zh-TW.html',
+      },
+      {
+        templateId: 'd-7497ca1cfaa745a8bff4b3d20e92480a',
+        name: 'User Retention',
+        templateFile: 'userRetention-zh-CN.html',
+      },
     ]
   } else {
     return []
