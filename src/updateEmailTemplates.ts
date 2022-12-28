@@ -382,11 +382,14 @@ const TEMPLATES = (() => {
 
 // invoke
 ;(async () => {
+  const jobs = []
   for (const t of TEMPLATES) {
-    createTemplateVersion(
+    jobs.push(createTemplateVersion(
       t.templateId,
       t.name,
       `${TEMPLATE_ROOT}${t.templateFile}`
-    )
+    ))
   }
+  await Promise.all(jobs)
+  process.exit()
 })()
