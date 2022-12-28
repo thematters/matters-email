@@ -230,6 +230,16 @@ const TEMPLATES = (() => {
         name: 'Crypto Wallet Connected English',
         templateFile: 'cryptoWalletConnectedEnglish-zh-CN.html',
       },
+      {
+        templateId: 'd-550c209eef09442d8430fed10379593a',
+        name: 'User Retention',
+        templateFile: 'userRetention-zh-TW.html',
+      },
+      {
+        templateId: 'd-22b0f1c254d74cadaf6b2d246e0b4c14',
+        name: 'User Retention',
+        templateFile: 'userRetention-zh-CN.html',
+      },
     ]
   } else if (env === 'production') {
     console.log('\x1b[36m%s\x1b[0m', 'updating production email templates...')
