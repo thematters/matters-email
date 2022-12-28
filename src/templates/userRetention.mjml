@@ -1,28 +1,51 @@
 <mjml>
   <mj-body mj-class="body" css-class="body">
      <mj-raw>
+    {{recipient.displayName}} 你好:
 
-     {{recipient.displayName}} 你好:
-
-     {{#equals type "NEWUSER"}}
-	     <p>今天是你加入 Matters 的第 {{recipient.days}} 天，想與你分享：</p>
-	     <p>Matters 暱稱「馬特市」，由一群喜歡支持創作者的馬特市民組成，至今給出的支持總額超過 10 萬美金。知道你初來乍到，邀請你參加 Matters 新人打卡，與市民互動！</p>
-	     {{#greaterThan (length articlesRecommended) 0}}
-		        <p>在你短暫離開 Matters 時，你關注的作者發布了不少精彩內容：<p>
-		{{#each articlesRecommended}}
-			<li><a href="https://{{siteDomain}}/@-/-{{this.mediaHash}}">{{this.title}} - {{this.displayName}}</a></li>
-		{{/each}}
-             {{/greaterThan}}
-	     {{#greaterThan (length articlesHottest) 0}}
-		        <p>在你短暫離開 Matters 時，你錯過了不少精彩內容<p>
-		{{#each articlesHottest}}
-			<li><a href="https://{{siteDomain}}/@-/-{{this.mediaHash}}">{{this.title}} - {{this.displayName}}</a></li>
-		{{/each}}
-             {{/greaterThan}}
-     {{else}}
+    {{#equals type "NEWUSER"}}
+	    <p>今天是你加入 Matters 的第 {{@root.recipient.days}} 天，想與你分享：</p>
+	    <p>Matters 暱稱「馬特市」，由一群喜歡支持創作者的馬特市民組成，至今給出的支持總額超過 10 萬美金。知道你初來乍到，邀請你參加 Matters 新人打卡，與市民互動！</p>
+	    {{#greaterThan (length @root.articlesRecommended) 0}}
+		    <p>在你短暫離開 Matters 時，你關注的作者發布了不少精彩內容：<p>
+		    {{#each @root.articlesRecommended}}
+			    <li><a href="https://{{@root.siteDomain}}/@-/-{{this.mediaHash}}">{{this.title}} - {{this.displayName}}</a></li>
+		    {{/each}}
+        {{/greaterThan}}
+	    {{#greaterThan (length @root.articlesHottest) 0}}
+		    <p>在你短暫離開 Matters 時，你錯過了不少精彩內容<p>
+		    {{#each @root.articlesHottest}}
+			    <li><a href="https://{{@root.siteDomain}}/@-/-{{this.mediaHash}}">{{this.title}} - {{this.displayName}}</a></li>
+		    {{/each}}
+        {{/greaterThan}}
+    {{else}}
 	     <p>別來無恙，在你短暫離開 Matters 時，你關注的作者發布了不少精彩內容：</p>
-     {{/equals}}
-
+    {{/equals}}
+    {{#or (or numDonations numAppreciations) (length usersRecommended)}}
+        <p>此外,
+        {{#or @root.numDonations @root.numAppreciations}}
+            你的作品也吸引許多目光，獲得了
+            {{#and @root.numDonations @root.numAppreciations}}
+                {{@root.numDonations}} 次支持與 {{@root.numAppreciations}} 次讚賞。</p>
+            {{else}}
+                {{#if @root.numDonations}}
+                    {{@root.numDonations}} 次支持。</p>
+                {{else}}
+                    {{@root.numAppreciations}} 次讚賞。</p>
+                {{/if}}
+            {{/and}}
+        {{/or}}
+        {{#greaterThan (length @root.usersRecommended) 0}}
+            <p>不少讀者仍期待著你的新作品，以下這幾位是你的忠實讀者：</p>
+            {{#each @root.usersRecommended}}
+                <li><a href="https://{{@root.siteDomain}}/@{{this.userName}}">{{this.displayName}}</a></li>
+            {{/each}}
+        {{/greaterThan}}
+    {{/or}}
+    <p>最後，Matters 也增加了許多新功能，快來試試：</p>
+    {{#each articlesNewFeature}}
+       <li><a href="https://{{@root.siteDomain}}/@-/-{{this.mediaHash}}">{{this.title}} - {{this.displayName}}</a></li>
+    {{/each}}
      </mj-raw>
   </mj-body>
 </mjml>
