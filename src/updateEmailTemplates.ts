@@ -230,6 +230,16 @@ const TEMPLATES = (() => {
         name: 'Crypto Wallet Connected English',
         templateFile: 'cryptoWalletConnectedEnglish-zh-CN.html',
       },
+      {
+        templateId: 'd-22b0f1c254d74cadaf6b2d246e0b4c14',
+        name: 'User Retention',
+        templateFile: 'userRetention-zh-CN.html',
+      },
+      {
+        templateId: 'd-550c209eef09442d8430fed10379593a',
+        name: 'User Retention',
+        templateFile: 'userRetention-zh-TW.html',
+      },
     ]
   } else if (env === 'production') {
     console.log('\x1b[36m%s\x1b[0m', 'updating production email templates...')
@@ -370,9 +380,14 @@ const TEMPLATES = (() => {
         templateFile: 'cryptoWalletConnectedEnglish-zh-TW.html',
       },
       {
-        templateId: 'd-c3e01486b5744194a646c46e271d6120',
-        name: 'Crypto Wallet Connected English',
-        templateFile: 'cryptoWalletConnectedEnglish-zh-CN.html',
+        templateId: 'd-7497ca1cfaa745a8bff4b3d20e92480a',
+        name: 'User Retention',
+        templateFile: 'userRetention-zh-CN.html',
+      },
+      {
+        templateId: 'd-bc5695dcae564795ac76bc6a783a5ef7',
+        name: 'User Retention',
+        templateFile: 'userRetention-zh-TW.html',
       },
     ]
   } else {
