@@ -151,16 +151,14 @@
   .users-recommended {
     width: 100%;
     display: flex;
-    justify-content: flex-start;
+    flex-direction: row;
     flex-wrap: wrap;
+    gap: 8px;
   }
 
   .users-recommended-item {
-    flex: 1;
-    margin: 0 8px 8px 0;
-    width: cal((100% - 16px) / 2);
-    min-width: cal((100% - 16px) / 2);
-    max-width: cal((100% - 16px) / 2);
+    width: 48%;
+    box-sizing: border-box;
   }
 
   @media all and (min-width: 480px) {

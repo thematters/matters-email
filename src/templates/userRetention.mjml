@@ -10,101 +10,101 @@
           <mj-image src="https://static.matters.news/emails/banner_new_user.jpg" />
         </mj-column>
       </mj-section>
-      <mj-section css-class="card">
-        <mj-column>
-          <mj-text mj-class="color-grey-darker">
-            ${{userRetention.to}}$ ${{userRetention.hi}}$</p>
-          </mj-text>
-          <mj-spacer height="24px" />
-
-          {{#equals type "NEWUSER"}}
-            <mj-text mj-class="color-grey-darker">
-              ${{userRetention.newcomer.p1}}$
-            </mj-text>
-            <mj-spacer height="24px" />
-            <mj-text mj-class="color-grey-darker">
-              ${{userRetention.newcomer.p2}}$
-            </mj-text>
-            <mj-spacer height="40px" />
-            <mj-divider border-color="#F7F7F7"></mj-divider>
-            <mj-spacer height="40px" />
-            <mj-text mj-class="color-grey-darker">
-              ${{userRetention.newcomer.p3}}$
-            </mj-text>
-            {{else}}
+          <mj-section css-class="card">
+            <mj-column>
               <mj-text mj-class="color-grey-darker">
-                ${{userRetention.activeUser.p1}}$
+                ${{userRetention.to}}$ ${{userRetention.hi}}$</p>
               </mj-text>
-          {{/equals}}
-          <mj-spacer height="24px" />
-          <mj-text mj-class="color-grey-darker">
-            {{#greaterThan (length @root.articlesRecommended) 0}}
-              <span class='article-recommended'>
-                {{#each @root.articlesRecommended}}
-                  <a class="article-digest link-black weight-medium" href="https://{{@root.siteDomain}}/@-/-{{this.mediaHash}}">
+              <mj-spacer height="24px" />
+
+              {{#equals type "NEWUSER"}}
+                <mj-text mj-class="color-grey-darker">
+                  ${{userRetention.newcomer.p1}}$
+                </mj-text>
+                <mj-spacer height="24px" />
+                <mj-text mj-class="color-grey-darker">
+                  ${{userRetention.newcomer.p2}}$
+                </mj-text>
+                <mj-spacer height="40px" />
+                <mj-divider border-color="#F7F7F7"></mj-divider>
+                <mj-spacer height="40px" />
+                <mj-text mj-class="color-grey-darker">
+                  ${{userRetention.newcomer.p3}}$
+                </mj-text>
+                {{else}}
+                  <mj-text mj-class="color-grey-darker">
+                    ${{userRetention.activeUser.p1}}$
+                  </mj-text>
+              {{/equals}}
+              <mj-spacer height="24px" />
+              <mj-text mj-class="color-grey-darker">
+                {{#greaterThan (length @root.articlesRecommended) 0}}
+                  <span class='article-recommended'>
+                    {{#each @root.articlesRecommended}}
+                      <a class="article-digest link-black weight-medium" href="https://{{@root.siteDomain}}/@-/-{{this.mediaHash}}">
+                        <span class="article-digest-title">{{this.title}}</span>
+                        <span class="article-digest-subtitle">{{this.displayName}}</span>
+                      </a>
+                    {{/each}}
+                  </span>
+                {{/greaterThan}}
+              </mj-text>
+              <mj-spacer height="40px" />
+              <mj-divider border-color="#F7F7F7"></mj-divider>
+              <mj-spacer height="40px" />
+
+              {{#or (or numDonations numAppreciations) (length usersRecommended)}}
+                <mj-text mj-class="color-grey-dark">
+                  {{#or @root.numDonations @root.numAppreciations}}
+                    ${{userRetention.donated.content}}$
+
+                    {{#and @root.numDonations @root.numAppreciations}}
+                      ${{userRetention.donated.support}}$ ${{userRetention.donated.and}}$ ${{userRetention.donated.like}}$。${{userRetention.p4}}$
+                      {{else}}
+                        {{#if @root.numDonations}}
+                          ${{userRetention.donated.support}}$。
+
+                        {{else}}
+                          ${{userRetention.donated.like}}$。
+                        {{/if}}${{userRetention.p4}}$
+                    {{/and}}
+                  {{/or}}
+                </mj-text>
+              {{/or}}
+              <mj-spacer height="24px" />
+              <mj-text mj-class="color-grey-darker"> {{#greaterThan (length @root.usersRecommended) 0}}
+                  <span class='users-recommended'>
+                    {{#each @root.usersRecommended}}
+                      <a class="article-digest link-black weight-medium users-recommended-item" href="https://{{@root.siteDomain}}/@{{this.userName}}">
+                        <span class="article-digest-title">{{this.displayName}}</span>
+                        <span class="article-digest-subtitle">@{{this.userName}}</span>
+                      </a>
+                    {{/each}}
+                  </span>
+                {{/greaterThan}}</mj-text>
+              <mj-spacer height="40px" />
+              <mj-divider border-color="#F7F7F7"></mj-divider>
+              <mj-spacer height="40px" />
+              <mj-text mj-class="color-grey-darker">
+                ${{userRetention.p5}}$
+              </mj-text>
+              <mj-spacer height="24px" />
+              <mj-text mj-class="color-grey-darker"> {{#each articlesNewFeature}}
+
+                  <a class="article-digest link-black weight-medium " href="https://{{@root.siteDomain}}/@-/-{{this.mediaHash}}">
                     <span class="article-digest-title">{{this.title}}</span>
                     <span class="article-digest-subtitle">{{this.displayName}}</span>
                   </a>
-                {{/each}}
-              </span>
-            {{/greaterThan}}
-          </mj-text>
-          <mj-spacer height="40px" />
-          <mj-divider border-color="#F7F7F7"></mj-divider>
-          <mj-spacer height="40px" />
 
-          {{#or (or numDonations numAppreciations) (length usersRecommended)}}
-            <mj-text mj-class="color-grey-dark">
-              {{#or @root.numDonations @root.numAppreciations}}
-                ${{userRetention.donated.content}}$
+                {{/each}}</mj-text>
+              <mj-spacer height="40px" />
+              <mj-button href="{{registerLink}}" align="left" background-color="#0D6763" font-size="16px" font-weight="500" line-height="16px" inner-padding="12px 30px" padding-top="12px" color="white" border-radius="100px">
+                ${{userRetention.goToWebsite}}$
+              </mj-button>
+            </mj-column>
 
-                {{#and @root.numDonations @root.numAppreciations}}
-                  ${{userRetention.donated.support}}$ ${{userRetention.donated.and}}$ ${{userRetention.donated.like}}$。${{userRetention.p4}}$
-                  {{else}}
-                    {{#if @root.numDonations}}
-                      ${{userRetention.donated.support}}$。
-
-                    {{else}}
-                      ${{userRetention.donated.like}}$。
-                    {{/if}}${{userRetention.p4}}$
-                {{/and}}
-              {{/or}}
-            </mj-text>
-          {{/or}}
-          <mj-spacer height="24px" />
-          <mj-text mj-class="color-grey-darker"> {{#greaterThan (length @root.usersRecommended) 0}}
-              <span class='users-recommended'>
-                {{#each @root.usersRecommended}}
-                  <a class="article-digest link-black weight-medium users-recommended-item" href="https://{{@root.siteDomain}}/@{{this.userName}}">
-                    <span class="article-digest-title">{{this.displayName}}</span>
-                    <span class="article-digest-subtitle">@{{this.userName}}</span>
-                  </a>
-                {{/each}}
-              </span>
-            {{/greaterThan}}</mj-text>
-          <mj-spacer height="40px" />
-          <mj-divider border-color="#F7F7F7"></mj-divider>
-          <mj-spacer height="40px" />
-          <mj-text mj-class="color-grey-darker">
-            ${{userRetention.p5}}$
-          </mj-text>
-          <mj-spacer height="24px" />
-          <mj-text mj-class="color-grey-darker"> {{#each articlesNewFeature}}
-
-              <a class="article-digest link-black weight-medium " href="https://{{@root.siteDomain}}/@-/-{{this.mediaHash}}">
-                <span class="article-digest-title">{{this.title}}</span>
-                <span class="article-digest-subtitle">{{this.displayName}}</span>
-              </a>
-
-            {{/each}}</mj-text>
-          <mj-spacer height="40px" />
-          <mj-button href="{{registerLink}}" align="left" background-color="#0D6763" font-size="16px" font-weight="500" line-height="16px" inner-padding="16px 72px" padding-top="16px" color="white" border-radius="48px">
-            ${{userRetention.goToWebsite}}$
-          </mj-button>
-        </mj-column>
-
-      </mj-section>
-      <mj-include path="./partials/footer-${{_lang_}}$.mjml" />
+          </mj-section>
+          <mj-include path="./partials/footer-${{_lang_}}$.mjml" />
     </mj-wrapper>
   </mj-body>
 </mjml>
