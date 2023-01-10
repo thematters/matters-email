@@ -120,9 +120,7 @@
   }
 
   .article-recommended {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+    margin-bottom: 8px;
   }
 
   .article-digest {
@@ -146,19 +144,6 @@
     line-height: 16px;
     font-weight: 400;
     color: #808080;
-  }
-
-  .users-recommended {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-
-  .users-recommended-item {
-    width: 48%;
-    box-sizing: border-box;
   }
 
   @media all and (min-width: 480px) {
