@@ -7,7 +7,8 @@ to: '{{recipient.displayName}}'
 newcomer:
   p1: '今天是你加入 Matters 的第 <span class="weight-medium color-black">{{recipient.days}}</span> 天，想與你分享：'
   p2: 'Matters 暱稱「馬特市」，由一群喜歡支持創作者的馬特市民組成，至今給出的支持總額超過 10 萬美金。知道你初來乍到，邀請你參加 <a class="link weight-medium" href="https://matters.news/tags/6854">Matters 新人打卡</a>，與市民互動！'
-  p3: 在你短暫離開 Matters 時，你關注的作者發布了不少精彩內容：：
+  p3: 在你短暫離開 Matters 時，你關注的作者發布了不少精彩內容：
+  p4: 你錯過了不少精彩內容：
 
 activeUser:
   p1: 別來無恙，在你短暫離開 Matters 時，你關注的作者發布了不少精彩內容：：

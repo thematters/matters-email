@@ -1,5 +1,5 @@
 <mjml>
-  <mj-head>    
+  <mj-head>
     <mj-include path="./partials/head-${{_lang_}}$.mjml" />
     <mj-title>${{userRetention.title}}$</mj-title>
   </mj-head>
@@ -22,16 +22,13 @@
           <mj-text mj-class="color-grey-darker">
             ${{userRetention.newcomer.p1}}$
           </mj-text>
-          <mj-spacer height="24px" />
+          <mj-spacer height="40px" />
           <mj-text mj-class="color-grey-darker">
             ${{userRetention.newcomer.p2}}$
           </mj-text>
           <mj-spacer height="40px" />
           <mj-divider border-color="#F7F7F7"></mj-divider>
           <mj-spacer height="40px" />
-          <mj-text mj-class="color-grey-darker">
-            ${{userRetention.newcomer.p3}}$
-          </mj-text>
           <mj-text>
             {{else}}
           </mj-text>
@@ -41,65 +38,90 @@
           <mj-text>
             {{/equals}}
           </mj-text>
-          <mj-spacer height="24px" />
-          <mj-text mj-class="color-grey-darker">
+          <mj-text>
             {{#greaterThan (length @root.articlesRecommended) 0}}
-              <mj-column>
-                {{#each @root.articlesRecommended}}
-                  <a class="article-digest link-black weight-medium article-recommended" href="{{@root.siteDomain}}/@-/-{{this.mediaHash}}">
-                    <span class="article-digest-title">{{this.title}}</span>
-                    <span class="article-digest-subtitle">{{this.displayName}}</span>
-                  </a>
-                {{/each}}
-              </mj-column>
-            {{/greaterThan}}
-            {{#greaterThan (length @root.articlesHottest) 0}}
-              <mj-column>
-                {{#each @root.articlesHottest}}
-                  <a class="article-digest link-black weight-medium article-recommended" href="{{@root.siteDomain}}/@-/-{{this.mediaHash}}">
-                    <span class="article-digest-title">{{this.title}}</span>
-                    <span class="article-digest-subtitle">{{this.displayName}}</span>
-                  </a>
-                {{/each}}
-              </mj-column>
+          </mj-text>
+          <mj-text mj-class="color-grey-darker">
+            ${{userRetention.newcomer.p3}}$
+          </mj-text>
+          <mj-spacer height="24px" />
+          <mj-text>
+            <mj-column>
+              {{#each @root.articlesRecommended}}
+                <a class="article-digest link-black weight-medium article-recommended" href="{{@root.siteDomain}}/@-/-{{this.mediaHash}}">
+                  <span class="article-digest-title">{{this.title}}</span>
+                  <span class="article-digest-subtitle">{{this.displayName}}</span>
+                </a>
+              {{/each}}
+            </mj-column>
+          </mj-text>
+          <mj-text>
             {{/greaterThan}}
           </mj-text>
-          <mj-spacer height="32px" />
+          <mj-text>
+            {{#greaterThan (length @root.articlesHottest) 0}}
+          </mj-text>
+          <mj-text mj-class="color-grey-darker">
+            ${{userRetention.newcomer.p4}}$
+          </mj-text>
+          <mj-spacer height="24px" />
+          <mj-text>
+            <mj-column>
+              {{#each @root.articlesHottest}}
+                <a class="article-digest link-black weight-medium article-recommended" href="{{@root.siteDomain}}/@-/-{{this.mediaHash}}">
+                  <span class="article-digest-title">{{this.title}}</span>
+                  <span class="article-digest-subtitle">{{this.displayName}}</span>
+                </a>
+              {{/each}}
+            </mj-column>
+          </mj-text>
+          <mj-spacer height="40px" />
           <mj-divider border-color="#F7F7F7"></mj-divider>
           <mj-spacer height="40px" />
-          <mj-text mj-class="color-grey-darker">
+          <mj-text>
+            {{/greaterThan}}
+          </mj-text>
+          <mj-text >
             {{#or (or numDonations numAppreciations) (length usersRecommended)}}
-              <mj-text>
-                {{#or @root.numDonations @root.numAppreciations}}
-                  ${{userRetention.donated.content}}$
-                  {{#and @root.numDonations @root.numAppreciations}}
-                    ${{userRetention.donated.support}}$ ${{userRetention.donated.and}}$ ${{userRetention.donated.like}}$。${{userRetention.p4}}$
-                    {{else}}
-                      {{#if @root.numDonations}}
-                        ${{userRetention.donated.support}}$。
-                      {{else}}
-                        ${{userRetention.donated.like}}$。
-                      {{/if}}${{userRetention.p4}}$
-                  {{/and}}
-                {{/or}}
-              </mj-text>
+          </mj-text>
+          <mj-text mj-class="color-grey-darker">
+            {{#or @root.numDonations @root.numAppreciations}}
+              ${{userRetention.donated.content}}$
+              {{#and @root.numDonations @root.numAppreciations}}
+                ${{userRetention.donated.support}}$ ${{userRetention.donated.and}}$ ${{userRetention.donated.like}}$。${{userRetention.p4}}$
+                {{else}}
+                  {{#if @root.numDonations}}
+                    ${{userRetention.donated.support}}$。
+                  {{else}}
+                    ${{userRetention.donated.like}}$。
+                  {{/if}}${{userRetention.p4}}$
+              {{/and}}
             {{/or}}
           </mj-text>
-          <mj-spacer height="24px" />
-          <mj-text mj-class="color-grey-darker">
+            <mj-spacer height="24px" />
+          <mj-text>
+            {{/or}}
+          </mj-text>
+          </mj-text>
+          <mj-text >
             {{#greaterThan (length @root.usersRecommended) 0}}
-              <mj-column>
-                {{#each @root.usersRecommended}}
-                  <a class="article-digest link-black weight-medium article-recommended" href="{{@root.siteDomain}}/@{{this.userName}}">
-                    <span class="article-digest-title">{{this.displayName}}</span>
-                    <span class="article-digest-subtitle">@{{this.userName}}</span>
-                  </a>
-                {{/each}}
-              </mj-column>
-            {{/greaterThan}}</mj-text>
+          </mj-text>
+          <mj-text>
+            <mj-column>
+              {{#each @root.usersRecommended}}
+                <a class="article-digest link-black weight-medium article-recommended" href="{{@root.siteDomain}}/@{{this.userName}}">
+                  <span class="article-digest-title">{{this.displayName}}</span>
+                  <span class="article-digest-subtitle">@{{this.userName}}</span>
+                </a>
+              {{/each}}
+            </mj-column>
+          </mj-text>
           <mj-spacer height="40px" />
           <mj-divider border-color="#F7F7F7"></mj-divider>
           <mj-spacer height="40px" />
+          <mj-text>
+            {{/greaterThan}}
+          </mj-text>
           <mj-text mj-class="color-grey-darker">
             ${{userRetention.p5}}$
           </mj-text>
@@ -110,7 +132,8 @@
                 <span class="article-digest-title">{{this.title}}</span>
                 <span class="article-digest-subtitle">{{this.displayName}}</span>
               </a>
-            {{/each}}</mj-text>
+            {{/each}}
+          </mj-text>
           <mj-spacer height="40px" />
           <mj-button href="https://matters.news/" align="left" background-color="#0D6763" font-size="16px" font-weight="500" line-height="16px" inner-padding="12px 30px" padding-top="12px" color="white" border-radius="100px">
             ${{userRetention.goToWebsite}}$

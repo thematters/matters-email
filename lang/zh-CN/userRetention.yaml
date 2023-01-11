@@ -8,6 +8,7 @@ newcomer:
   p1: '今天是你加入 Matters 的第 <span class="weight-medium color-black">{{recipient.days}}</span> 天，想与你分享：'
   p2: 'Matters 昵称「马特市」，由一群喜欢支持创作者的马特市民组成，至今给出的支持总额超过 10 万美金。知道你初来乍到，邀请你参加 <a class="link weight-medium" href="https://matters.news/tags/6854">Matters 新人打卡</a>，与市民互动！'
   p3: 在你短暂离开 Matters 时，你关注的作者发布了不少精彩内容：
+  p4: 你错过了不少精彩內容：
 
 activeUser:
   p1: 别来无恙，在你短暂离开 Matters 时，你关注的作者发布了不少精彩内容：
