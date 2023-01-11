@@ -1,7 +1,7 @@
 <mjml>
-  <mj-head>
-    <mj-title>${{userRetention.title}}$</mj-title>
+  <mj-head>    
     <mj-include path="./partials/head-${{_lang_}}$.mjml" />
+    <mj-title>${{userRetention.title}}$</mj-title>
   </mj-head>
   <mj-body mj-class="body" css-class="body">
     <mj-wrapper mj-class="wrapper">
@@ -17,7 +17,6 @@
           </mj-text>
           <mj-spacer height="24px" />
           <mj-text>
-
             {{#equals type "NEWUSER"}}
           </mj-text>
           <mj-text mj-class="color-grey-darker">
