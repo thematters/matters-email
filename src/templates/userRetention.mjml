@@ -11,6 +11,7 @@
         </mj-column>
       </mj-section>
       <mj-section css-class="card">
+        <!-- greeting -->
         <mj-column>
           <mj-text mj-class="color-grey-darker">
             ${{userRetention.to}}$ ${{userRetention.hi}}$</p>
@@ -38,6 +39,8 @@
           <mj-text>
             {{/equals}}
           </mj-text>
+
+          <!-- articlesRecommended -->
           <mj-text>
             {{#greaterThan (length @root.articlesRecommended) 0}}
           </mj-text>
@@ -58,6 +61,8 @@
           <mj-text>
             {{/greaterThan}}
           </mj-text>
+
+          <!-- articlesHottest -->
           <mj-text>
             {{#greaterThan (length @root.articlesHottest) 0}}
           </mj-text>
@@ -81,7 +86,9 @@
           <mj-text>
             {{/greaterThan}}
           </mj-text>
-          <mj-text >
+
+          <!-- numDonations& numAppreciations -->
+          <mj-text>
             {{#or (or numDonations numAppreciations) (length usersRecommended)}}
           </mj-text>
           <mj-text mj-class="color-grey-darker">
@@ -98,12 +105,14 @@
               {{/and}}
             {{/or}}
           </mj-text>
-            <mj-spacer height="24px" />
+          <mj-spacer height="24px" />
           <mj-text>
             {{/or}}
           </mj-text>
           </mj-text>
-          <mj-text >
+
+          <!-- usersRecommended -->
+          <mj-text>
             {{#greaterThan (length @root.usersRecommended) 0}}
           </mj-text>
           <mj-text>
@@ -122,6 +131,8 @@
           <mj-text>
             {{/greaterThan}}
           </mj-text>
+
+          <!-- articlesNewFeature -->
           <mj-text mj-class="color-grey-darker">
             ${{userRetention.p5}}$
           </mj-text>
@@ -140,6 +151,8 @@
           </mj-button>
         </mj-column>
       </mj-section>
+
+      <!-- footer -->
       <mj-include path="./partials/footer-${{_lang_}}$.mjml" />
     </mj-wrapper>
   </mj-body>
