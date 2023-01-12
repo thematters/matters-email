@@ -36,6 +36,7 @@
           <mj-text mj-class="color-grey-darker">
             ${{userRetention.activeUser.p1}}$
           </mj-text>
+          </mj-text>
           <mj-text>
             {{/equals}}
           </mj-text>
@@ -110,12 +111,10 @@
           </mj-text>
 
           <!-- usersRecommended -->
-          <mj-text>
+          <mj-text mj-class="color-grey-darker">
             {{#greaterThan (length @root.usersRecommended) 0}}
-              {{#and (equals numDonations 0) (equals numAppreciations 0)}}
-                <mj-text mj-class="color-grey-darker">
-                  ${{userRetention.donated.also}}$${{userRetention.p4}}$
-                </mj-text>
+              {{#and (equals @root.numDonations 0) (equals @root.numAppreciations 0)}}
+                ${{userRetention.donated.also}}$${{userRetention.p4}}$
               {{/and}}
           </mj-text>
           <mj-spacer height="24px" />
@@ -137,6 +136,9 @@
           </mj-text>
 
           <!-- articlesNewFeature -->
+          <mj-text>
+            {{#greaterThan (length @root.articlesNewFeature) 0}}
+          </mj-text>
           <mj-text mj-class="color-grey-darker">
             ${{userRetention.p5}}$
           </mj-text>
@@ -150,6 +152,10 @@
             {{/each}}
           </mj-text>
           <mj-spacer height="40px" />
+          <mj-text>
+            {{/greaterThan}}
+          </mj-text>
+
           <mj-button href="https://matters.news/" align="left" background-color="#0D6763" font-size="16px" font-weight="500" line-height="16px" inner-padding="12px 30px" padding-top="12px" color="white" border-radius="100px">
             ${{userRetention.goToWebsite}}$
           </mj-button>
