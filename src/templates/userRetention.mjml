@@ -93,7 +93,7 @@
           </mj-text>
           <mj-text mj-class="color-grey-darker">
             {{#or @root.numDonations @root.numAppreciations}}
-              ${{userRetention.donated.content}}$
+              ${{userRetention.donated.also}}$${{userRetention.donated.content}}$
               {{#and @root.numDonations @root.numAppreciations}}
                 ${{userRetention.donated.support}}$ ${{userRetention.donated.and}}$ ${{userRetention.donated.like}}$。${{userRetention.p4}}$
                 {{else}}
@@ -105,16 +105,20 @@
               {{/and}}
             {{/or}}
           </mj-text>
-          <mj-spacer height="24px" />
           <mj-text>
             {{/or}}
-          </mj-text>
           </mj-text>
 
           <!-- usersRecommended -->
           <mj-text>
             {{#greaterThan (length @root.usersRecommended) 0}}
           </mj-text>
+          {{#and (equals numDonations 0) (equals numAppreciations 0)}}
+            <mj-text mj-class="color-grey-darker">
+              ${{userRetention.donated.also}}$${{userRetention.p4}}$
+            </mj-text>
+          {{/and}}
+          <mj-spacer height="24px" />
           <mj-text>
             <mj-column>
               {{#each @root.usersRecommended}}

@@ -11,15 +11,16 @@ newcomer:
   p4: 你錯過了不少精彩內容：
 
 activeUser:
-  p1: 別來無恙，在你短暫離開 Matters 時，你關注的作者發布了不少精彩內容：：
+  p1: 別來無恙，在你短暫離開 Matters 時，你關注的作者發布了不少精彩內容：
 
 donated: 
-  content: 此外，你的作品也吸引許多目光，獲得了 
+  also: 此外，
+  content: 你的作品也吸引許多目光，獲得了 
   support: '<span class="weight-medium color-black">{{@root.numDonations}}</span> 次支持'
   like: '<span class="weight-medium color-black">{{@root.numAppreciations}}</span> 次讚賞'
   and: 与
 
-p4: 不少讀者仍期待著你的新作品，以下這幾位是你的忠實讀者
+p4: 不少讀者仍期待著你的新作品，以下這幾位是你的忠實讀者：
 
 p5: 最後，Matters 也增加了許多新功能，快來試試：
 
