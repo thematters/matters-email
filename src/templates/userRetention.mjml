@@ -112,12 +112,12 @@
           <!-- usersRecommended -->
           <mj-text>
             {{#greaterThan (length @root.usersRecommended) 0}}
+              {{#and (equals numDonations 0) (equals numAppreciations 0)}}
+                <mj-text mj-class="color-grey-darker">
+                  ${{userRetention.donated.also}}$${{userRetention.p4}}$
+                </mj-text>
+              {{/and}}
           </mj-text>
-          {{#and (equals numDonations 0) (equals numAppreciations 0)}}
-            <mj-text mj-class="color-grey-darker">
-              ${{userRetention.donated.also}}$${{userRetention.p4}}$
-            </mj-text>
-          {{/and}}
           <mj-spacer height="24px" />
           <mj-text>
             <mj-column>
