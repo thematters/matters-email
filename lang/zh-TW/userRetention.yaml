@@ -19,7 +19,7 @@ donated:
   content: 你的作品也吸引許多目光，獲得了 
   support: '<span class="weight-medium color-black">{{@root.numDonations}}</span> 次支持'
   like: '<span class="weight-medium color-black">{{@root.numAppreciations}}</span> 次讚賞'
-  and: 与
+  and: 與
 
 p4: 不少讀者仍期待著你的新作品，以下這幾位是你的忠實讀者：
 
