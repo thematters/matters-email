@@ -1,0 +1,28 @@
+title: '{{subject}}'
+
+hi: 你好，
+
+to: '{{recipient.displayName}}'
+
+newcomer:
+  p1: '今天是你加入 Matters 的第 <span class="weight-medium color-black">{{recipient.days}}</span> 天，想與你分享：'
+  p2: 'Matters 暱稱「馬特市」，由一群喜歡支持創作者的馬特市民組成，至今給出的支持總額超過 10 萬美金。知道你初來乍到，邀請你參加 <a class="link weight-medium" href="https://matters.news/tags/6854">Matters 新人打卡</a>，與市民互動！'
+  p3: 在你短暫離開 Matters 時，你關注的作者發布了不少精彩內容：
+  p4: 在你短暫離開 Matters 時，你錯過了不少精彩內容：
+
+activeUser:
+  p1: 別來無恙，在你短暫離開 Matters 時，你關注的作者發布了不少精彩內容：
+  p2: 別來無恙，在你短暫離開 Matters 時，你錯過了不少精彩內容：
+
+donated: 
+  also: 此外，
+  content: 你的作品也吸引許多目光，獲得了 
+  support: '<span class="weight-medium color-black">{{@root.numDonations}}</span> 次支持'
+  like: '<span class="weight-medium color-black">{{@root.numAppreciations}}</span> 次讚賞'
+  and: 與
+
+p4: 不少讀者仍期待著你的新作品，以下這幾位是你的忠實讀者：
+
+p5: 最後，Matters 也增加了許多新功能，快來試試：
+
+goToWebsite: 前往 Matters 發表新創作

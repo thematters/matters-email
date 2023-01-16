@@ -102,6 +102,7 @@
     background-color: #ffffff !important;
     padding: 16px !important;
   }
+
   .logo {
     background-color: #ffffff !important;
     padding-top: 16px;
@@ -109,12 +110,17 @@
     padding-bottom: 8px;
     padding-left: 16px;
   }
+
   .slogan {
     background-color: #ffffff !important;
     padding-top: 0;
     padding-right: 16px;
     padding-bottom: 16px;
     padding-left: 16px;
+  }
+
+  .article-recommended {
+    margin-bottom: 8px;
   }
 
   .article-digest {
@@ -144,12 +150,14 @@
     .card {
       padding: 32px !important;
     }
+
     .logo {
       padding-top: 32px;
       padding-right: 32px;
       padding-bottom: 16px;
       padding-left: 32px;
     }
+
     .slogan {
       padding-top: 0;
       padding-right: 32px;
