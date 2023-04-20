@@ -41,11 +41,11 @@
           <mj-raw>
             {{#if type.donated}}
           </mj-raw>
-          <mj-image src="https://static.matters.town/emails/banner_donation_donor.jpg" />
+          <mj-image src="https://static.matters.news/emails/banner_donation_donor.jpg" />
           <mj-raw>
             {{else}}
           </mj-raw>
-          <mj-image src="https://static.matters.town/emails/banner_donation_recipient.jpg" />
+          <mj-image src="https://static.matters.news/emails/banner_donation_recipient.jpg" />
           <mj-raw>
             {{/if}}
           </mj-raw>

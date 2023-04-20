@@ -7,7 +7,7 @@
     <mj-wrapper mj-class="wrapper">
       <mj-section>
         <mj-column>
-          <mj-image src="https://static.matters.town/emails/banner_new_user.jpg" />
+          <mj-image src="https://static.matters.news/emails/banner_new_user.jpg" />
         </mj-column>
       </mj-section>
       <mj-section css-class="card">
