@@ -1,6 +1,6 @@
 <mj-section css-class="logo">
   <mj-column>
-    <mj-image align="left" width="97px" height="20px" href="{{siteDomain}}?utm_medium=email" src="https://static.matters.news/emails/logo.png" />
+    <mj-image align="left" width="97px" height="20px" href="{{siteDomain}}?utm_medium=email" src="https://static.matters.town/emails/logo.png" />
   </mj-column>
 </mj-section>
 

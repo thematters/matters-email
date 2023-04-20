@@ -1,11 +1,11 @@
 <mj-section background-color="#fff" padding="24px 32px 0">
   <mj-column>
     <mj-social font-size="15px" icon-size="24px" inner-padding="8px" padding="0px" mode="horizontal">
-      <mj-social-element href="https://matters.news?utm_medium=email" src="https://static.matters.news/emails/matters.png"></mj-social-element>
-      <mj-social-element href="https://twitter.com/MattersLab" src="https://static.matters.news/emails/twitter.png"></mj-social-element>
-      <mj-social-element href="https://discord.gg/matterslab" src="https://static.matters.news/emails/discord.png"></mj-social-element>
-      <mj-social-element href="https://www.facebook.com/MattersLab2018/" src="https://static.matters.news/emails/facebook.png"></mj-social-element>
-      <mj-social-element href="https://www.instagram.com/matters.lab/" src="https://static.matters.news/emails/instagram.png"></mj-social-element>
+      <mj-social-element href="https://matters.town?utm_medium=email" src="https://static.matters.town/emails/matters.png"></mj-social-element>
+      <mj-social-element href="https://twitter.com/MattersLab" src="https://static.matters.town/emails/twitter.png"></mj-social-element>
+      <mj-social-element href="https://discord.gg/matterslab" src="https://static.matters.town/emails/discord.png"></mj-social-element>
+      <mj-social-element href="https://www.facebook.com/MattersLab2018/" src="https://static.matters.town/emails/facebook.png"></mj-social-element>
+      <mj-social-element href="https://www.instagram.com/matters.lab/" src="https://static.matters.town/emails/instagram.png"></mj-social-element>
     </mj-social>
   </mj-column>
 </mj-section>
