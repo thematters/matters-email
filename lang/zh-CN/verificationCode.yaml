@@ -35,5 +35,5 @@ paymentPasswordReset:
   link:
     content: 你正在进行修改交易密码的身份验证，如不是你本人，请不要进行操作。请点击下方按钮完成快速验证，链接有效期 20 分钟。
 
-contactUs: '若有更多问题，可以透过 email 联络我们：<a class="link" href="mailto:ask@matters.news">ask@matters.news</a>。'
+contactUs: '若有更多问题，可以透过 email 联络我们：<a class="link" href="mailto:ask@matters.town">ask@matters.town</a>。'
 happyCreating: 创作愉快！
