@@ -9,6 +9,6 @@ attention: '
 '
 editorAndLikeButton: 除此之外，Matters 的编辑器为所见即所得，你可以在修订草稿时着手调整。顺便，Matters 的赞赏按钮已内嵌 LikeButton，你原作品中的赞赏插件会被移除。
 publishFrequency: 谢谢你愿意来到 Matters，为了帮助读者循序渐进了解你的创作，我们建议每篇文章间隔一定的发布时间，每天一到两篇的发布频率是较为合适的。如果短时间内大量发布作品，可能不利于你获得赞赏与高质量评论。
-publishFirstArticle: '点击 <a class="link" href="{{siteDomain}}/me/drafts?utm_medium=email">这里</a> 准备好发布你的第一篇作品吧。记得邀请读者追踪  <a class="link" href="{{siteDomain}}/@{{recipient.userName}}?utm_medium=email"> 你的 Matters 个人空间站</a>，为你点赞赢得更多创作收入喔！'
+publishFirstArticle: '点击 <a class="link" href="https://{{siteDomain}}/me/drafts?utm_medium=email">这里</a> 准备好发布你的第一篇作品吧。记得邀请读者追踪  <a class="link" href="https://{{siteDomain}}/@{{recipient.userName}}?utm_medium=email"> 你的 Matters 个人空间站</a>，为你点赞赢得更多创作收入喔！'
 likeForIncome: 为你点赞赢得更多创作收入喔！
 contactUs: '遇到任何问题，随时联系我们：<a class="link" href="mailto:ask@matters.town">ask@matters.town</a>。'
