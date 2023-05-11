@@ -1,7 +1,7 @@
 <mj-section background-color="#fff" padding="24px 32px 0">
   <mj-column>
     <mj-social font-size="15px" icon-size="24px" inner-padding="8px" padding="0px" mode="horizontal">
-      <mj-social-element href="https://matters.news?utm_medium=email" src="https://static.matters.news/emails/matters.png"></mj-social-element>
+      <mj-social-element href="https://matters.town?utm_medium=email" src="https://static.matters.news/emails/matters.png"></mj-social-element>
       <mj-social-element href="https://twitter.com/MattersLab" src="https://static.matters.news/emails/twitter.png"></mj-social-element>
       <mj-social-element href="https://discord.gg/matterslab" src="https://static.matters.news/emails/discord.png"></mj-social-element>
       <mj-social-element href="https://www.facebook.com/MattersLab2018/" src="https://static.matters.news/emails/facebook.png"></mj-social-element>
@@ -18,7 +18,7 @@
 
 <mj-section background-color="#fff" padding="0 32px 24px">
   <mj-column>
-    <mj-text align="center" mj-class="color-grey" font-size="12px">Copyright © 2022 Matters, All rights reserved.</mj-text>
+    <mj-text align="center" mj-class="color-grey" font-size="12px">Copyright © {{copyrightYear}} Matters, All rights reserved.</mj-text>
   </mj-column>
 </mj-section>
 

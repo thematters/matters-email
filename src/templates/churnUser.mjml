@@ -91,14 +91,14 @@
           <mj-spacer height="16px" />
 
           <mj-text>
-            <a class="link-black" href="{{siteDomain}}/@{{this.author.userName}}?utm_medium=email">
+            <a class="link-black" href="https://{{siteDomain}}/@{{this.author.userName}}?utm_medium=email">
               <img class="avatar" src="{{this.author.avatar}}" />
               <span class="displayName">{{this.author.displayName}}</span>
             </a>
           </mj-text>
 
           <mj-text padding="12px 0" font-size="16px" line-height="24px" font-weight="500">
-            <a class="link-black" href="{{siteDomain}}/@{{this.author.userName}}/{{{this.slug}}}-{{this.mediaHash}}?utm_medium=email">{{this.title}}</a>
+            <a class="link-black" href="https://{{siteDomain}}/@{{this.author.userName}}/{{{this.slug}}}-{{this.mediaHash}}?utm_medium=email">{{this.title}}</a>
           </mj-text>
 
           <mj-text>

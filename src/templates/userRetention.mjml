@@ -174,7 +174,7 @@
             {{/greaterThan}}
           </mj-text>
 
-          <mj-button href="https://matters.news/" align="left" background-color="#0D6763" font-size="16px" font-weight="500" line-height="16px" inner-padding="12px 30px" padding-top="12px" color="white" border-radius="100px">
+          <mj-button href="https://matters.town/" align="left" background-color="#0D6763" font-size="16px" font-weight="500" line-height="16px" inner-padding="12px 30px" padding-top="12px" color="white" border-radius="100px">
             ${{userRetention.goToWebsite}}$
           </mj-button>
         </mj-column>
