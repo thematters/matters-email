@@ -58,7 +58,7 @@
           <mj-text>
             <mj-column>
               {{#each @root.articlesRecommended}}
-                <a class="article-digest link-black weight-medium article-recommended" href="{{@root.siteDomain}}/@-/-{{this.mediaHash}}">
+                <a class="article-digest link-black weight-medium article-recommended" href="https://{{@root.siteDomain}}/@-/-{{this.mediaHash}}">
                   <span class="article-digest-title">{{this.title}}</span>
                   <span class="article-digest-subtitle">{{this.displayName}}</span>
                 </a>
@@ -92,7 +92,7 @@
           <mj-text>
             <mj-column>
               {{#each @root.articlesHottest}}
-                <a class="article-digest link-black weight-medium article-recommended" href="{{@root.siteDomain}}/@-/-{{this.mediaHash}}">
+                <a class="article-digest link-black weight-medium article-recommended" href="https://{{@root.siteDomain}}/@-/-{{this.mediaHash}}">
                   <span class="article-digest-title">{{this.title}}</span>
                   <span class="article-digest-subtitle">{{this.displayName}}</span>
                 </a>
@@ -139,7 +139,7 @@
           <mj-text>
             <mj-column>
               {{#each @root.usersRecommended}}
-                <a class="article-digest link-black weight-medium article-recommended" href="{{@root.siteDomain}}/@{{this.userName}}">
+                <a class="article-digest link-black weight-medium article-recommended" href="https://{{@root.siteDomain}}/@{{this.userName}}">
                   <span class="article-digest-title">{{this.displayName}}</span>
                   <span class="article-digest-subtitle">@{{this.userName}}</span>
                 </a>
@@ -163,7 +163,7 @@
           <mj-spacer height="24px" />
           <mj-text mj-class="color-grey-darker">
             {{#each articlesNewFeature}}
-              <a class="article-digest link-black weight-medium " href="{{@root.siteDomain}}/@-/-{{this.mediaHash}}">
+              <a class="article-digest link-black weight-medium " href="https://{{@root.siteDomain}}/@-/-{{this.mediaHash}}">
                 <span class="article-digest-title">{{this.title}}</span>
                 <span class="article-digest-subtitle">{{this.displayName}}</span>
               </a>
