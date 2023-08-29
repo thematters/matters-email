@@ -16,12 +16,16 @@
         </mj-column>
       </mj-section>
 
-      <mj-text>
-        ${{emailChange.content}}$
-      </mj-text>
-      <mj-text>
-        ${{emailChange.contactUs}}$
-      </mj-text>
+      <mj-section css-class="card">
+        <mj-column>
+          <mj-text>
+            ${{emailChange.content}}$
+          </mj-text>
+          <mj-text>
+            ${{emailChange.contactUs}}$
+          </mj-text>
+        </mj-column>
+      </mj-section>
 
       <mj-include path="./partials/footer-${{_lang_}}$.mjml" />
     </mj-wrapper>
