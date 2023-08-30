@@ -2,13 +2,24 @@ yourCodeIs: 你的驗證碼是
 quickLink: 快速驗證連結
 
 register:
-  title: Matters | 註冊驗證
-  code:
-    content_1: 歡迎登上 Matters 宇宙航艦！Matters 是一個可以讓你自由創作和討論的空間，在這裡的每位創作者都能將鼓勵化做獎賞，與其他用戶互動、經營自己的創作空間站。
-    content_2: '你進行註冊的電子信箱為 <span class="link">{{recipient.email}}</span><br/>請輸入以下驗證碼完成驗證：'
-    content_3: '驗證碼有效期限為 20 分鐘。'
+  title: Matters | 註冊
   link:
-    content_1: 歡迎登上 Matters 宇宙航艦！Matters 是一個可以讓你自由創作和討論的空間，在這裡的每位創作者都能將鼓勵化做獎賞，與其他用戶互動、經營自己的創作空間站。
+    button_text: 登入帳號
+    content_1: 歡迎註冊 Matters！<br>點選下方按鈕登入你的 Matters 帳號以完成註冊：
+    content_2: '你進行註冊的電子信箱為 <span class="link">{{recipient.email}}</span><br/>請點擊下方按鈕完成設置，連結有效期 20 分鐘。'
+
+emailOtp:
+  title: Matters | 臨時密碼
+  link:
+    button_text: 登入帳號
+    content_1: 歡迎註冊 Matters！<br>點選下方按鈕登入你的 Matters 帳號以完成註冊：
+    content_2: '你進行註冊的電子信箱為 <span class="link">{{recipient.email}}</span><br/>請點擊下方按鈕完成設置，連結有效期 20 分鐘。'
+
+emailVerify:
+  title: Matters｜郵箱驗證
+  link:
+    button_text: 驗證郵箱
+    content_1: 歡迎註冊 Matters！<br>點選下方按鈕登入你的 Matters 帳號以完成註冊：
     content_2: '你進行註冊的電子信箱為 <span class="link">{{recipient.email}}</span><br/>請點擊下方按鈕完成設置，連結有效期 20 分鐘。'
 
 emailReset:
@@ -37,3 +48,4 @@ paymentPasswordReset:
 
 contactUs: '若有更多問題，可以透過 email 聯絡我們：<a class="link" href="mailto:ask@matters.town">ask@matters.town</a>。'
 happyCreating: 創作愉快！
+ignoreIt: 如果你沒有發送該請求，請忽略此郵件。

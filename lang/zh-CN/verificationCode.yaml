@@ -2,14 +2,25 @@ yourCodeIs: 你的验证码是
 quickLink: 快速验证链接
 
 register:
-  title: Matters | 注册验证
-  code:
-    content_1: 欢迎登上 Matters 宇宙航舰！Matters 是一个可以让你自由创作和讨论的空间，在这里的每位创作者都能将鼓励化做奖赏，与其他用户互动、经营自己的创作空间站。
-    content_2: '你进行注册的邮箱为 <span class="link">{{recipient.email}}</span><br/>请输入以下验证码完成验证：'
-    content_3: 验证码有效期限为 20 分钟。
+  title: Matters | 註冊
   link:
-    content_1: 欢迎登上 Matters 宇宙航舰！Matters 是一个可以让你自由创作和讨论的空间，在这里的每位创作者都能将鼓励化做奖赏，与其他用户互动、经营自己的创作空间站。
-    content_2: '你进行注册的邮箱为 <span class="link">{{recipient.email}}</span><br/>请点击下方按钮完成设置，链接有效期 20 分钟。'
+    button_text: 登入帳號
+    content_1: '歡迎註冊 Matters！<br>點選下方按鈕登入你的 Matters 帳號以完成註冊：'
+    content_2: '按鈕無法正常顯示嗎？點選連結完成註冊：<br>{}'
+
+emailOtp:
+  title: Matters | 臨時密碼
+  link:
+    button_text: 登入帳號
+    content_1: 歡迎註冊 Matters！<br>點選下方按鈕登入你的 Matters 帳號以完成註冊：
+    content_2: '你進行註冊的電子信箱為 <span class="link">{{recipient.email}}</span><br/>請點擊下方按鈕完成設置，連結有效期 20 分鐘。'
+
+emailVerify:
+  title: Matters｜郵箱驗證
+  link:
+    button_text: 驗證郵箱
+    content_1: 歡迎註冊 Matters！<br>點選下方按鈕登入你的 Matters 帳號以完成註冊：
+    content_2: '你進行註冊的電子信箱為 <span class="link">{{recipient.email}}</span><br/>請點擊下方按鈕完成設置，連結有效期 20 分鐘。'
 
 emailReset:
   title: Matters | 修改邮箱验证
