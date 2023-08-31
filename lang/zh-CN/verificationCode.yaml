@@ -3,10 +3,9 @@ quickLink: 快速验证链接
 
 register:
   title: Matters | 註冊
-  link:
-    button_text: 登入帳號
-    content_1: '歡迎註冊 Matters！<br>點選下方按鈕登入你的 Matters 帳號以完成註冊：'
-    content_2: '按鈕無法正常顯示嗎？點選連結完成註冊：<br>{}'
+  button_text: 登入帳號
+  content_1: '歡迎註冊 Matters！<br>點選下方按鈕登入你的 Matters 帳號以完成註冊：'
+  content_2: '按鈕無法正常顯示嗎？點選連結完成註冊：<br><a class="link" href="{{link}}">{{link}}</a>'
 
 emailOtp:
   title: Matters | 臨時密碼
@@ -48,3 +47,5 @@ paymentPasswordReset:
 
 contactUs: '若有更多问题，可以透过 email 联络我们：<a class="link" href="mailto:ask@matters.town">ask@matters.town</a>。'
 happyCreating: 创作愉快！
+
+ignoreIt: 如果你沒有發送該請求，請忽略此郵件。

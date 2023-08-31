@@ -4,12 +4,23 @@
       ${{verificationCode.register.content_1}}$
     </mj-text>
 
-    <mj-button href="{{link}}" align="left" background-color="#C0A46B" font-size="16px" font-weight="500" line-height="16px" inner-padding="16px 72px" padding-top="16px" color="white" border-radius="48px">
+    <mj-spacer height="24px" />
+
+    <mj-button href="{{link}}" align="left" background-color="#0D6763" font-size="14px" font-weight="500" line-height="22px" inner-padding="12px 72px" color="white" border-radius="100px">
       ${{verificationCode.register.button_text}}$
     </mj-button>
 
+    <mj-spacer height="24px" />
+
     <mj-text>
+      ${{verificationCode.register.content_2}}$
+    </mj-text>
+
+    <mj-spacer height="24px" />
+
     <mj-text>
+      ${{verificationCode.ignoreIt}}$
+    </mj-text>
 
   </mj-column>
 </mj-section>
