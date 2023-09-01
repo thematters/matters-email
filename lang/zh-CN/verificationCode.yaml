@@ -2,23 +2,23 @@ yourCodeIs: 你的验证码是
 quickLink: 快速验证链接
 
 register:
-  title: Matters | 註冊
-  button_text: 登入帳號
-  content_1: '歡迎註冊 Matters！<br>點選下方按鈕登入你的 Matters 帳號以完成註冊：'
-  content_2: '按鈕無法正常顯示嗎？點選連結完成註冊：<br><a class="link" href="{{@root.link}}">{{@root.link}}</a>'
+  title: Matters | 注册
+  button_text: 登入帐号
+  content_1: '欢迎注册 Matters！<br>点选下方按钮登入你的 Matters 帐号以完成注册：'
+  content_2: '按钮无法正常显示吗？点选连结完成注册：<br><a class="link" href="{{@root.link}}">{{@root.link}}</a>'
 
 emailOtp:
-  title: Matters | 臨時密碼
-  button_text: 登入帳號
-  content_1: 點選下方按鈕以完成 Matters 登入：
-  content_2: '按鈕無法正常顯示嗎？點擊連結完成登入：<br><a class="link" href="{{@root.link}}">{{@root.link}}</a>'
-  content_3: 或透過臨時密碼進入 Matters：
+  title: Matters | 临时密码
+  button_text: 登入帐号
+  content_1: 点选下方按钮以完成 Matters 登入：
+  content_2: '按钮无法正常显示吗？点击连结完成登入：<br><a class="link" href="{{@root.link}}">{{@root.link}}</a>'
+  content_3: 或透过临时密码进入 Matters：
 
 emailVerify:
-  title: Matters | 郵箱驗證
-  button_text: 驗證郵箱
-  content_1: 點選下方按鈕確認你的 Matters 帳號的郵件地址：
-  content_2: '按鈕無法正常顯示嗎？點擊連結前往驗證：<br><a class="link" href="{{@root.link}}">{{@root.link}}</a>'
+  title: Matters | 邮箱验证
+  button_text: 验证邮箱
+  content_1: 点选下方按钮确认你的 Matters 帐号的邮件地址：
+  content_2: '按钮无法正常显示吗？点击连结前往验证：<br><a class="link" href="{{@root.link}}">{{@root.link}}</a>'
 
 emailReset:
   title: Matters | 修改邮箱验证
