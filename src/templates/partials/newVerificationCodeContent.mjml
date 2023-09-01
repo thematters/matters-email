@@ -8,6 +8,10 @@
       {{#if @root.type.emailOtp}}
         ${{verificationCode.emailOtp.content_1}}$
       {{/if}}
+
+      {{#if @root.type.emailVerify}}
+        ${{verificationCode.emailVerify.content_1}}$
+      {{/if}}
     </mj-text>
 
     <mj-spacer height="24px" />
@@ -21,6 +25,10 @@
 
       {{#if @root.type.emailOtp}}
         ${{verificationCode.emailOtp.button_text}}$
+      {{/if}}
+
+      {{#if @root.type.emailVerify}}
+        ${{verificationCode.emailVerify.button_text}}$
       {{/if}}
     </mj-button>
 
@@ -36,6 +44,7 @@
     <mj-raw>
       {{/if}}
     </mj-raw>
+
     <mj-raw>
       {{#if @root.type.emailOtp}}
     </mj-raw>
@@ -49,6 +58,16 @@
       <mj-spacer height="8px" />
       <mj-text font-size="14px" font-weight="600" color="#0D6763">
         <span style="width: 240px;background:#F7F7F7;padding:12px 16px 12px 16px;border-radius:8px;display:inline-block;text-align:center"> {{@root.code}} </span>
+      </mj-text>
+    <mj-raw>
+      {{/if}}
+    </mj-raw>
+
+    <mj-raw>
+      {{#if @root.type.emailVerify}}
+    </mj-raw>
+      <mj-text>
+        ${{verificationCode.emailVerify.content_2}}$
       </mj-text>
     <mj-raw>
       {{/if}}
