@@ -6,38 +6,38 @@
 
     <!-- Content -->
     <mj-text>
-      {{#if code}}
-        {{#if type.emailReset}}
+      {{#if @root.code}}
+        {{#if @root.type.emailReset}}
           ${{verificationCode.emailReset.code.content_1}}$
         {{/if}}
 
-        {{#if type.emailResetConfirm}}
+        {{#if @root.type.emailResetConfirm}}
           ${{verificationCode.emailReset.code.content_1}}$
         {{/if}}
 
-        {{#if type.passwordReset}}
+        {{#if @root.type.passwordReset}}
           ${{verificationCode.passwordReset.code.content_1}}$
         {{/if}}
 
-        {{#if type.paymentPasswordReset}}
+        {{#if @root.type.paymentPasswordReset}}
           ${{verificationCode.paymentPasswordReset.code.content_1}}$
         {{/if}}
       {{/if}}
 
-      {{#if link}}
-        {{#if type.emailReset}}
+      {{#if @root.link}}
+        {{#if @root.type.emailReset}}
           ${{verificationCode.emailReset.link.content}}$
         {{/if}}
 
-        {{#if type.emailResetConfirm}}
+        {{#if @root.type.emailResetConfirm}}
           ${{verificationCode.emailReset.link.content}}$
         {{/if}}
 
-        {{#if type.passwordReset}}
+        {{#if @root.type.passwordReset}}
           ${{verificationCode.passwordReset.link.content}}$
         {{/if}}
 
-        {{#if type.paymentPasswordReset}}
+        {{#if @root.type.paymentPasswordReset}}
           ${{verificationCode.paymentPasswordReset.link.content}}$
         {{/if}}
       {{/if}}
@@ -46,10 +46,10 @@
 
     <!-- Code -->
     <mj-raw>
-      {{#if code}}
+      {{#if @root.code}}
     </mj-raw>
     <mj-text mj-class="verification-code">
-      {{code}}
+      {{@root.code}}
     </mj-text>
     <mj-raw>
       {{/if}}
@@ -57,27 +57,27 @@
 
     <!-- Content -->
     <mj-raw>
-      {{#if code}}
+      {{#if @root.code}}
     </mj-raw>
       <mj-spacer height="32px" />
     <mj-raw>
       {{/if}}
     </mj-raw>
     <mj-text>
-      {{#if code}}
-        {{#if type.emailReset}}
+      {{#if @root.code}}
+        {{#if @root.type.emailReset}}
           ${{verificationCode.emailReset.code.content_2}}$
         {{/if}}
 
-        {{#if type.emailResetConfirm}}
+        {{#if @root.type.emailResetConfirm}}
           ${{verificationCode.emailReset.code.content_2}}$
         {{/if}}
 
-        {{#if type.passwordReset}}
+        {{#if @root.type.passwordReset}}
           ${{verificationCode.passwordReset.code.content_2}}$
         {{/if}}
 
-        {{#if type.paymentPasswordReset}}
+        {{#if @root.type.paymentPasswordReset}}
           ${{verificationCode.paymentPasswordReset.code.content_2}}$
         {{/if}}
       {{/if}}
@@ -85,7 +85,7 @@
 
     <!-- Link -->
     <mj-raw>
-      {{#if link}}
+      {{#if @root.link}}
     </mj-raw>
     <mj-button href="{{link}}" align="left" background-color="#C0A46B" font-size="16px" font-weight="500" line-height="16px" inner-padding="16px 72px" padding-top="16px" color="white" border-radius="48px">
       ${{verificationCode.quickLink}}$
