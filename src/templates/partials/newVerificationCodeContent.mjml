@@ -56,9 +56,9 @@
         ${{verificationCode.emailOtp.content_3}}$
       </mj-text>
       <mj-spacer height="8px" />
-      <mj-text font-size="14px" font-weight="600" color="#0D6763">
-        <span style="width: 240px;background:#F7F7F7;padding:12px 16px 12px 16px;border-radius:8px;display:inline-block;text-align:center"> {{@root.code}} </span>
-      </mj-text>
+      <mj-button font-size="14px" font-weight="600" color="#0D6763" inner-padding="12px 16px" background-color="#F7F7F7" border-radius="8px" align="left">
+        {{@root.code}}
+      </mj-button>
     <mj-raw>
       {{/if}}
     </mj-raw>
