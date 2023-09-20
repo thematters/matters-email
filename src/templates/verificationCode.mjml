@@ -32,7 +32,28 @@
     </mj-title>
     <mj-preview>
       {{#if code}}
-        ${{verificationCode.yourCodeIs}}$ {{code}}
+        {{#if type.emailReset}}
+          ${{verificationCode.yourCodeIs}}$ {{code}}
+        {{/if}}
+
+        {{#if type.emailResetConfirm}}
+          ${{verificationCode.yourCodeIs}}$ {{code}}
+        {{/if}}
+
+        {{#if type.passwordReset}}
+          ${{verificationCode.yourCodeIs}}$ {{code}}
+        {{/if}}
+
+        {{#if type.paymentPasswordReset}}
+          ${{verificationCode.yourCodeIs}}$ {{code}}
+        {{/if}}
+
+        {{#if type.emailOtp}}
+          ${{verificationCode.yourOTPIs}}$ {{code}}
+        {{/if}}
+
+        <!-- {{#if type.register}}{{/if}} -->
+        <!-- {{#if type.emailVerify}}{{/if}} -->
       {{/if}}
     </mj-preview>
   </mj-head>
