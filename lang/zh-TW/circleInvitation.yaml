@@ -8,4 +8,4 @@ content3: '<a class="link" href="https://{{siteDomain}}/~{{circle.name}}?utm_med
 registerLink: '立即註冊加入'
 circleLink: '立即進入圍爐'
 
-contactUs: '若有其他任何問題，歡迎致信 <a class="link" href="mailto:hi@matters.town">hi@matters.town</a>。'
+contactUs: '若有其他任何問題，歡迎致信 <a class="link" href="mailto:ask@matters.town">ask@matters.town</a>。'
