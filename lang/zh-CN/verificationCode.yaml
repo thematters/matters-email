@@ -12,7 +12,7 @@ emailOtp:
   title: Matters | 临时密码
   button_text: 登录帐号
   content_1: 点选下方按钮以完成 Matters 登录：
-  content_2: '按钮无法正常显示吗？点击连结完成登录：<br><a class="link" href="{{@root.link}}">{{@root.link}}</a>'
+  content_2: '按钮无法正常显示吗？点击链接完成登录：<br><a class="link" href="{{@root.link}}">{{@root.link}}</a>'
   content_3: 或透过临时密码进入 Matters：
 
 emailVerify:
