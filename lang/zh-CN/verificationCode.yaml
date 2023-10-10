@@ -5,20 +5,20 @@ quickLink: 快速验证链接
 register:
   title: Matters | 注册
   button_text: 登录帐号
-  content_1: '欢迎注册 Matters！<br>点选下方按钮登录你的 Matters 帐号以完成注册：'
-  content_2: '按钮无法正常显示吗？点选连结完成注册：<br><a class="link" href="{{@root.link}}">{{@root.link}}</a>'
+  content_1: '欢迎注册 Matters！<br>点击下方按钮登录你的 Matters 帐号以完成注册：'
+  content_2: '按钮无法正常显示吗？点击连结完成注册：<br><a class="link" href="{{@root.link}}">{{@root.link}}</a>'
 
 emailOtp:
   title: Matters | 临时密码
   button_text: 登录帐号
-  content_1: 点选下方按钮以完成 Matters 登录：
+  content_1: 点击下方按钮以完成 Matters 登录：
   content_2: '按钮无法正常显示吗？点击链接完成登录：<br><a class="link" href="{{@root.link}}">{{@root.link}}</a>'
-  content_3: 或透过临时密码进入 Matters：
+  content_3: 或通过临时密码进入 Matters：
 
 emailVerify:
   title: Matters | 邮箱验证
   button_text: 验证邮箱
-  content_1: 点选下方按钮确认你的 Matters 帐号的邮件地址：
+  content_1: 点击下方按钮确认你的 Matters 帐号的邮件地址：
   content_2: '按钮无法正常显示吗？点击连结前往验证：<br><a class="link" href="{{@root.link}}">{{@root.link}}</a>'
 
 emailReset:
@@ -45,7 +45,7 @@ paymentPasswordReset:
   link:
     content: 你正在进行修改交易密码的身份验证，如不是你本人，请不要进行操作。请点击下方按钮完成快速验证，链接有效期 20 分钟。
 
-contactUs: '若有更多问题，可以透过 email 联络我们：<a class="link" href="mailto:ask@matters.town">ask@matters.town</a>。'
+contactUs: '若有更多问题，可以通过 email 联络我们：<a class="link" href="mailto:ask@matters.town">ask@matters.town</a>。'
 happyCreating: 创作愉快！
 
 ignoreIt: 如果你没有发送该请求，请忽略此邮件。
