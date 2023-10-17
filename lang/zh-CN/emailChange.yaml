@@ -1,0 +1,3 @@
+title: Matters｜邮箱地址已变更
+content: '你的 Matters 账号邮箱已从 <span class="link">{{oldEmail}}</span> 修改为 <span class="link">{{newEmail}}</span>'
+contactUs: '如果你没有发送该请求，请联系 <a class="link" href="mailto:ask@matters.town">ask@matters.town</a>'

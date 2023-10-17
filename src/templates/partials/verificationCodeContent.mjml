@@ -1,0 +1,97 @@
+<mj-section css-class="card">
+  <mj-column>
+    <!-- Greeting -->
+    <mj-include path="./partials/greeting-${{_lang_}}$.mjml" />
+    <mj-spacer height="16px" />
+
+    <!-- Content -->
+    <mj-text>
+      {{#if @root.code}}
+        {{#if @root.type.emailReset}}
+          ${{verificationCode.emailReset.code.content_1}}$
+        {{/if}}
+
+        {{#if @root.type.emailResetConfirm}}
+          ${{verificationCode.emailReset.code.content_1}}$
+        {{/if}}
+
+        {{#if @root.type.passwordReset}}
+          ${{verificationCode.passwordReset.code.content_1}}$
+        {{/if}}
+
+        {{#if @root.type.paymentPasswordReset}}
+          ${{verificationCode.paymentPasswordReset.code.content_1}}$
+        {{/if}}
+      {{/if}}
+
+      {{#if @root.link}}
+        {{#if @root.type.emailReset}}
+          ${{verificationCode.emailReset.link.content}}$
+        {{/if}}
+
+        {{#if @root.type.emailResetConfirm}}
+          ${{verificationCode.emailReset.link.content}}$
+        {{/if}}
+
+        {{#if @root.type.passwordReset}}
+          ${{verificationCode.passwordReset.link.content}}$
+        {{/if}}
+
+        {{#if @root.type.paymentPasswordReset}}
+          ${{verificationCode.paymentPasswordReset.link.content}}$
+        {{/if}}
+      {{/if}}
+    </mj-text>
+    <mj-spacer height="16px" />
+
+    <!-- Code -->
+    <mj-raw>
+      {{#if @root.code}}
+    </mj-raw>
+    <mj-text mj-class="verification-code">
+      {{@root.code}}
+    </mj-text>
+    <mj-raw>
+      {{/if}}
+    </mj-raw>
+
+    <!-- Content -->
+    <mj-raw>
+      {{#if @root.code}}
+    </mj-raw>
+      <mj-spacer height="32px" />
+    <mj-raw>
+      {{/if}}
+    </mj-raw>
+    <mj-text>
+      {{#if @root.code}}
+        {{#if @root.type.emailReset}}
+          ${{verificationCode.emailReset.code.content_2}}$
+        {{/if}}
+
+        {{#if @root.type.emailResetConfirm}}
+          ${{verificationCode.emailReset.code.content_2}}$
+        {{/if}}
+
+        {{#if @root.type.passwordReset}}
+          ${{verificationCode.passwordReset.code.content_2}}$
+        {{/if}}
+
+        {{#if @root.type.paymentPasswordReset}}
+          ${{verificationCode.paymentPasswordReset.code.content_2}}$
+        {{/if}}
+      {{/if}}
+    </mj-text>
+
+    <!-- Link -->
+    <mj-raw>
+      {{#if @root.link}}
+    </mj-raw>
+    <mj-button href="{{link}}" align="left" background-color="#C0A46B" font-size="16px" font-weight="500" line-height="16px" inner-padding="16px 72px" padding-top="16px" color="white" border-radius="48px">
+      ${{verificationCode.quickLink}}$
+    </mj-button>
+    <mj-raw>
+      {{/if}}
+    </mj-raw>
+  </mj-column>
+</mj-section>

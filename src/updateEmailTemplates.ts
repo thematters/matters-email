@@ -240,6 +240,16 @@ const TEMPLATES = (() => {
         name: 'User Retention',
         templateFile: 'userRetention-zh-TW.html',
       },
+      {
+        templateId: 'd-4c7653d27d0f4f8f9801692588819769',
+        name: 'Email Change',
+        templateFile: 'emailChange-zh-CN.html',
+      },
+      {
+        templateId: 'd-3af92651ad31455090e49c6911e23b09',
+        name: 'Email Change',
+        templateFile: 'emailChange-zh-TW.html',
+      },
     ]
   } else if (env === 'production') {
     console.log('\x1b[36m%s\x1b[0m', 'updating production email templates...')
@@ -393,6 +403,16 @@ const TEMPLATES = (() => {
         templateId: 'd-bc5695dcae564795ac76bc6a783a5ef7',
         name: 'User Retention',
         templateFile: 'userRetention-zh-TW.html',
+      },
+      {
+        templateId: 'd-25eddfd765994b3d97cfbb9760503a19',
+        name: 'Email Change',
+        templateFile: 'emailChange-zh-CN.html',
+      },
+      {
+        templateId: 'd-546c1a3cfc394a819983303fa56caf87',
+        name: 'Email Change',
+        templateFile: 'emailChange-zh-TW.html',
       },
     ]
   } else {

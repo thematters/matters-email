@@ -1,0 +1,33 @@
+<mjml>
+  <mj-head>
+    <mj-include path="./partials/head-${{_lang_}}$.mjml" />
+    <mj-title>
+        ${{emailChange.title}}$
+    </mj-preview>
+  </mj-head>
+
+  <mj-body mj-class="body" css-class="body">
+    <mj-wrapper mj-class="wrapper">
+      <mj-include path="./partials/header-${{_lang_}}$.mjml" />
+
+      <mj-section>
+        <mj-column>
+          <mj-image src="https://static.matters.news/emails/banner_onboard.jpg" />
+        </mj-column>
+      </mj-section>
+
+      <mj-section css-class="card">
+        <mj-column>
+          <mj-text>
+            ${{emailChange.content}}$
+          </mj-text>
+          <mj-text>
+            ${{emailChange.contactUs}}$
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-include path="./partials/footer-${{_lang_}}$.mjml" />
+    </mj-wrapper>
+  </mj-body>
+</mjml>

@@ -1,15 +1,25 @@
 yourCodeIs: 你的验证码是
+yourOTPIs: 你的临时密码是
 quickLink: 快速验证链接
 
 register:
-  title: Matters | 注册验证
-  code:
-    content_1: 欢迎登上 Matters 宇宙航舰！Matters 是一个可以让你自由创作和讨论的空间，在这里的每位创作者都能将鼓励化做奖赏，与其他用户互动、经营自己的创作空间站。
-    content_2: '你进行注册的邮箱为 <span class="link">{{recipient.email}}</span><br/>请输入以下验证码完成验证：'
-    content_3: 验证码有效期限为 20 分钟。
-  link:
-    content_1: 欢迎登上 Matters 宇宙航舰！Matters 是一个可以让你自由创作和讨论的空间，在这里的每位创作者都能将鼓励化做奖赏，与其他用户互动、经营自己的创作空间站。
-    content_2: '你进行注册的邮箱为 <span class="link">{{recipient.email}}</span><br/>请点击下方按钮完成设置，链接有效期 20 分钟。'
+  title: Matters | 注册
+  button_text: 登录帐号
+  content_1: '欢迎注册 Matters！<br>点击下方按钮登录你的 Matters 帐号以完成注册：'
+  content_2: '按钮无法正常显示吗？点击连结完成注册：<br><a class="link" href="{{@root.link}}">{{@root.link}}</a>'
+
+emailOtp:
+  title: Matters | 临时密码
+  button_text: 登录帐号
+  content_1: 点击下方按钮以完成 Matters 登录：
+  content_2: '按钮无法正常显示吗？点击链接完成登录：<br><a class="link" href="{{@root.link}}">{{@root.link}}</a>'
+  content_3: 或通过临时密码进入 Matters：
+
+emailVerify:
+  title: Matters | 邮箱验证
+  button_text: 验证邮箱
+  content_1: 点击下方按钮确认你的 Matters 帐号的邮件地址：
+  content_2: '按钮无法正常显示吗？点击连结前往验证：<br><a class="link" href="{{@root.link}}">{{@root.link}}</a>'
 
 emailReset:
   title: Matters | 修改邮箱验证
@@ -35,5 +45,7 @@ paymentPasswordReset:
   link:
     content: 你正在进行修改交易密码的身份验证，如不是你本人，请不要进行操作。请点击下方按钮完成快速验证，链接有效期 20 分钟。
 
-contactUs: '若有更多问题，可以透过 email 联络我们：<a class="link" href="mailto:ask@matters.town">ask@matters.town</a>。'
+contactUs: '若有更多问题，可以通过 email 联络我们：<a class="link" href="mailto:ask@matters.town">ask@matters.town</a>。'
 happyCreating: 创作愉快！
+
+ignoreIt: 如果你没有发送该请求，请忽略此邮件。

@@ -9,10 +9,13 @@ module.exports = {
     'prettier',
   ],
   rules: {
-    "camelcase": "off",
-    "@typescript-eslint/camelcase": ["error", {
-      "properties": "never"
-    }],
-    "@typescript-eslint/explicit-function-return-type": "off"
-  }
+    camelcase: 'off',
+    '@typescript-eslint/camelcase': [
+      'error',
+      {
+        properties: 'never',
+      },
+    ],
+    '@typescript-eslint/explicit-function-return-type': 'off',
+  },
 }
