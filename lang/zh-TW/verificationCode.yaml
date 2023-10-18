@@ -9,7 +9,7 @@ register:
   content_2: '按鈕無法正常顯示嗎？點選連結完成註冊：<br><a class="link" href="{{@root.link}}">{{@root.link}}</a>'
   code:
     content_1: 歡迎登上 Matters 宇宙航艦！Matters 是一個可以讓你自由創作和討論的空間，在這裡的每位創作者都能將鼓勵化做獎賞，與其他用戶互動、經營自己的創作空間站。
-    content_2: '你進行註冊的電子信箱為 <span class="link">{{recipient.email}}</span><br/>請輸入以下驗證碼完成驗證：'
+    content_2: '你進行註冊的電子信箱為 <span class="link">{{@root.recipient.email}}</span><br/>請輸入以下驗證碼完成驗證：'
     content_3: '驗證碼有效期限為 20 分鐘。'
 
 emailOtp:
