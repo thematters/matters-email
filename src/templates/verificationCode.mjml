@@ -70,7 +70,7 @@
 
 
       <mj-raw>
-        {{#or type.register (or type.emailOtp type.emailVerify)}}
+        {{#or type.emailOtp type.emailVerify}}
       </mj-raw>
           <mj-include path="./partials/newVerificationCodeContent-${{_lang_}}$.mjml" />
       <mj-raw>

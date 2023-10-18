@@ -5,6 +5,30 @@
     <mj-spacer height="16px" />
 
     <!-- Content -->
+    <mj-raw>
+      {{#if @root.type.register}}
+    </mj-raw>
+          <mj-text>
+            {{#if code}}
+              ${{verificationCode.register.code.content_1}}$
+            {{/if}}
+            {{#if link}}
+              ${{verificationCode.register.link.content_1}}$
+            {{/if}}
+          </mj-text>
+          <mj-spacer height="16px" />
+          <mj-text>
+            {{#if code}}
+              ${{verificationCode.register.code.content_2}}$
+            {{/if}}
+            {{#if link}}
+              ${{verificationCode.register.link.content_2}}$
+            {{/if}}
+          </mj-text>
+    <mj-raw>
+      {{/if}}
+    </mj-raw>
+
     <mj-text>
       {{#if @root.code}}
         {{#if @root.type.emailReset}}
