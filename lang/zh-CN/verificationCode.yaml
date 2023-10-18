@@ -7,6 +7,11 @@ register:
   button_text: 登录帐号
   content_1: '欢迎注册 Matters！<br>点击下方按钮登录你的 Matters 帐号以完成注册：'
   content_2: '按钮无法正常显示吗？点击连结完成注册：<br><a class="link" href="{{@root.link}}">{{@root.link}}</a>'
+  code:
+    content_1: 欢迎登上 Matters 宇宙航舰！Matters 是一个可以让你自由创作和讨论的空间，在这里的每位创作者都能将鼓励化做奖赏，与其他用户互动、经营自己的创作空间站。
+    content_2: '你进行注册的邮箱为 <span class="link">{{recipient.email}}</span><br/>请输入以下验证码完成验证：'
+    content_3: 验证码有效期限为 20 分钟。
+
 
 emailOtp:
   title: Matters | 临时密码
