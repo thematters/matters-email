@@ -1,0 +1,530 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-all font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, 'PingFang TC', 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif" padding="0" font-weight="400" font-size="13px" color="#333" line-height="20px" />
+      <mj-class name="body" background-color="#f6f6f6" width="630px" />
+      <mj-class name="wrapper" padding-left="10px" padding-right="10px" />
+      <mj-class name="subtitle" color="#333" font-size="16px" font-weight="500" line-height="24px"/>
+      <mj-class name="summary" color="#808080" padding="16px 0 0 0"/>
+      <mj-class name="cta-button" width="100%" color="white" font-size="16px" border-radius="0" height="47px" padding="32px 0 22px 0" background-color="#0d6763" inner-padding="0" href="https://matters.news/"/>
+    </mj-attributes>
+    <mj-style inline="inline">
+      .body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeSpeed;
+      }
+      .link-black {
+        color: #333;
+        text-decoration: none;
+      }
+      .avatar > div > * {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .avatar a {
+        width: 20px;
+        height: 20px;
+      }
+      .avatar a img {
+        border-radius: 10px;
+        width: 20px;
+        height: 20px;
+      }
+      .avatar span {
+        background-color: #0D6763;
+        border-radius: 11px;
+        color: #fff;
+        width: 22px;
+        height: 22px;
+        font-weight: 300;
+        font-size: 12px;
+        zoom: 0.9;
+        text-align: center;
+      }
+      .circle > div {
+        padding: 22px 0 0 0;
+      }
+      .circle a {
+        display: inline-block;
+        color: #333;
+      }
+      .circle a > * {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .circle a img {
+        border-radius: 8px;
+        width: 32px;
+        height: 32px;
+        margin: 0 8px 0 0;
+      }
+      .circle a span {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 24px;
+      }
+      .article a {
+        display: block;
+        line-height: 24px;
+      }
+      .broadcast > div {
+        background-color: #F7F7F7;
+        padding: 8px 16px;
+        border-radius: 4px;
+      }
+    </mj-style>
+    <mj-title>🐿️ {{recipient.displayName}}，${{dailySummary.title}}$</mj-title>
+  </mj-head>
+
+  <mj-body mj-class="body" css-class="body">
+    <mj-wrapper mj-class="wrapper">
+      <mj-include path="./partials/header-${{_lang_}}$.mjml" />
+
+      <mj-section>
+        <mj-column>
+          <mj-image src="https://static.matters.news/emails/banner.jpg" />
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-color="white" padding="32px 32px 22px 32px">
+        <mj-column>
+          <mj-text font-size="14px" line-height="32px">
+            {{#if recipient.displayName }}
+              ${{dailySummary.dear}}$ {{ recipient.displayName }}，
+              <br/>
+            {{/if}}
+            ${{dailySummary.activitiesIn24Hrs}}$🎋
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-color="white" padding="0 32px">
+        <mj-column>
+          <mj-divider border-width="1px" border-color="#ebebeb" />
+        </mj-column>
+      </mj-section>
+
+      <!-- 你的作品在站上受到歡迎 -->
+      <mj-raw>
+        {{#if section.article}}
+      </mj-raw>
+      <mj-section background-color="white" padding="22px 32px">
+        <mj-column>
+          <mj-text mj-class="subtitle">${{dailySummary.yourWorksArePopular}}$</mj-text>
+
+          <!-- 讚賞了你的作品 -->
+          <mj-raw>
+            {{#each notices.article_new_appreciation}}
+          </mj-raw>
+          <mj-text mj-class="summary">
+            {{#each this.actors[0]}}
+              <a class="link-black" href="{{siteDomain}}/@{{this.userName}}?utm_medium=email">{{this.displayName}}</a> 
+            {{/each}}
+            {{#if this.actorCount}}
+              ${{dailySummary.etc}}$ <span class="link-black">{{this.actorCount}}</span> 人 
+            {{/if}} 
+            ${{dailySummary.workAwarded}}$ 
+            <a class="link-black" href="{{siteDomain}}/@{{this.article.author.userName}}/{{{this.article.slug}}}-{{this.article.mediaHash}}?utm_medium=email">《{{this.article.title}}》</a>
+          </mj-text>
+          <mj-spacer height="4px" />
+          <mj-text css-class="avatar">
+            {{#each this.actors.slice(3)}}
+              <a class="link-black" href="{{siteDomain}}/@{{this.userName}}?utm_medium=email"><img src="{{this.avatar}}" /></a>
+            {{/each}}
+            {{#if this.actorCount}}
+              <span>+{{this.actorCount - 4}}</span>
+            {{/if}} 
+          </mj-text>
+          <mj-raw>
+            {{/each}}
+          </mj-raw>
+          
+          <!-- 回應了你的作品 -->
+          <mj-raw>
+            {{#each notices.article_new_comment}}
+          </mj-raw>
+          <mj-text mj-class="summary">
+            {{#each this.actors[0]}}
+              <a class="link-black" href="{{siteDomain}}/@{{this.userName}}?utm_medium=email">{{this.displayName}}</a> 
+            {{/each}}
+            {{#if this.actorCount}}
+              ${{dailySummary.etc}}$ <span class="link-black">{{this.actorCount}}</span> 人 
+            {{/if}} 
+            ${{dailySummary.workCommented}}$ 
+            <a class="link-black" href="{{siteDomain}}/@{{this.article.author.userName}}/{{{this.article.slug}}}-{{this.article.mediaHash}}?utm_medium=email">《{{this.article.title}}》</a>
+          </mj-text>
+          <mj-spacer height="4px" />
+          <mj-text css-class="avatar">
+            {{#each this.actors.slice(3)}}
+              <a class="link-black" href="{{siteDomain}}/@{{this.userName}}?utm_medium=email"><img src="{{this.avatar}}" /></a>
+            {{/each}}
+            {{#if this.actorCount}}
+              <span>+{{this.actorCount - 4}}</span>
+            {{/if}} 
+          </mj-text>
+          <mj-raw>
+            {{/each}}
+          </mj-raw>
+          
+          <!-- 收藏了你的作品 -->
+          <mj-raw>
+            {{#each notices.article_new_subscriber}}
+          </mj-raw>
+          <mj-text mj-class="summary">
+            {{#each this.actors[0]}}
+              <a class="link-black" href="{{siteDomain}}/@{{this.userName}}?utm_medium=email">{{this.displayName}}</a> 
+            {{/each}}
+            {{#if this.actorCount}}
+              ${{dailySummary.etc}}$ <span class="link-black">{{this.actorCount}}</span> 人 
+            {{/if}} 
+            ${{dailySummary.workBookmarked}}$  
+            <a class="link-black" href="{{siteDomain}}/@{{this.article.author.userName}}/{{{this.article.slug}}}-{{this.article.mediaHash}}?utm_medium=email">《{{this.article.title}}》</a>
+          </mj-text>
+          <mj-spacer height="4px" />
+          <mj-text css-class="avatar">
+            {{#each this.actors.slice(3)}}
+              <a class="link-black" href="{{siteDomain}}/@{{this.userName}}?utm_medium=email"><img src="{{this.avatar}}" /></a>
+            {{/each}}
+            {{#if this.actorCount}}
+              <span>+{{this.actorCount - 4}}</span>
+            {{/if}} 
+          </mj-text>
+          <mj-raw>
+            {{/each}}
+          </mj-raw>
+          
+          <!-- 關聯了你的作品 -->
+          <mj-raw>
+            {{#each notices.article_new_collected}}
+          </mj-raw>
+          <mj-text mj-class="summary">
+            {{#each this.actors[0]}}
+              <a class="link-black" href="{{siteDomain}}/@{{this.userName}}?utm_medium=email">{{this.displayName}}</a> 
+            {{/each}}
+            {{#if this.actorCount}}
+              ${{dailySummary.etc}}$ <span class="link-black">{{this.actorCount}}</span> 人 
+            {{/if}} 
+            ${{dailySummary.workAssociated}}$  
+            <a class="link-black" href="{{siteDomain}}/@{{this.article.author.userName}}/{{{this.article.slug}}}-{{this.article.mediaHash}}?utm_medium=email">《{{this.article.title}}》</a>
+          </mj-text>
+          <mj-spacer height="4px" />
+          <mj-text css-class="avatar">
+            {{#each this.actors.slice(3)}}
+              <a class="link-black" href="{{siteDomain}}/@{{this.userName}}?utm_medium=email"><img src="{{this.avatar}}" /></a>
+            {{/each}}
+            {{#if this.actorCount}}
+              <span>+{{this.actorCount - 4}}</span>
+            {{/if}} 
+          </mj-text>
+          <mj-raw>
+            {{/each}}
+          </mj-raw>
+          
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-color="white" padding="0 32px">
+        <mj-column>
+          <mj-divider border-width="1px" border-color="#ebebeb" />
+        </mj-column>
+      </mj-section>
+      <mj-raw>
+        {{/if}}
+      </mj-raw>
+
+      <!-- 其他讀者在站上提及了你 -->
+      <mj-raw>
+        {{#if section.mention}}
+      </mj-raw>
+      <mj-section background-color="white" padding="22px 32px">
+        <mj-column>
+          <mj-text mj-class="subtitle">${{dailySummary.othersMentionedYou}}$</mj-text>
+
+          <!-- 在作品中提及了你 -->
+          <mj-raw>
+            {{#each notices.article_mentioned_you}}
+          </mj-raw>
+          <mj-text mj-class="summary">
+            <a class="link-black" href="{{siteDomain}}/@{{this.actor.userName}}?utm_medium=email">{{this.actor.displayName}}</a> ${{dailySummary.inWork}}$ <a class="link-black" href="{{siteDomain}}/@{{this.article.author.userName}}/{{{this.article.slug}}}-{{this.article.mediaHash}}?utm_medium=email">《{{this.article.title}}》</a> ${{dailySummary.mentionedYou}}$
+          </mj-text>
+          <mj-spacer height="4px" />
+          <mj-text css-class="avatar">
+            <a class="link-black" href="{{siteDomain}}/@{{this.actor.userName}}?utm_medium=email"><img src="{{this.avatar}}" /></a>
+          </mj-text>
+          <mj-raw>
+            {{/each}}
+          </mj-raw>
+          
+          <!-- 在評論中提及了你 -->
+          <mj-raw>
+            {{#each notices.comment_mentioned_you}}
+          </mj-raw>
+          <mj-text mj-class="summary">
+            <a class="link-black" href="{{siteDomain}}/@{{this.actor.userName}}?utm_medium=email">{{this.actor.displayName}}</a> ${{dailySummary.inComment}}$ <a class="link-black" href="{{siteDomain}}/@{{this.article.author.userName}}/{{{this.article.slug}}}-{{this.article.mediaHash}}?utm_medium=email">《{{this.article.title}}》</a> ${{dailySummary.mentionedYou}}$
+          </mj-text>
+          <mj-spacer height="4px" />
+          <mj-text css-class="avatar">
+            <a class="link-black" href="{{siteDomain}}/@{{this.actor.userName}}?utm_medium=email"><img src="{{this.avatar}}" /></a>
+          </mj-text>
+          <mj-raw>
+            {{/each}}
+          </mj-raw>
+          
+          <!-- 在評論中被回覆 -->
+          <mj-raw>
+            {{#each notices.comment_new_reply}}
+          </mj-raw>
+          <mj-text mj-class="summary">
+            ${{dailySummary.youInWork}}$
+            <a class="link-black" href="{{siteDomain}}/@{{this.article.author.userName}}/{{{this.article.slug}}}-{{this.article.mediaHash}}?utm_medium=email">《{{this.article.title}}》</a> ${{dailySummary.comment}}$ <a class="link-black" href="{{siteDomain}}/@{{this.comment.article.author.userName}}/{{this.comment.article.slug}}-{{this.comment.article.mediaHash}}?utm_medium=email#{{this.comment.globalId}}">「{{this.comment.content}}」</a> 被 <a class="link-black" href="{{siteDomain}}/@{{this.actor.userName}}?utm_medium=email">{{this.actor.displayName}}</a> ${{dailySummary.replied}}$
+          </mj-text>
+          <mj-spacer height="4px" />
+          <mj-text css-class="avatar">
+            <a class="link-black" href="{{siteDomain}}/@{{this.actor.userName}}?utm_medium=email"><img src="{{this.avatar}}" /></a>
+          </mj-text>
+          <mj-raw>
+            {{/each}}
+          </mj-raw>
+          
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-color="white" padding="0 32px">
+        <mj-column>
+          <mj-divider border-width="1px" border-color="#ebebeb" />
+        </mj-column>
+      </mj-section>
+      <mj-raw>
+        {{/if}}
+      </mj-raw>
+
+      <!-- 認識新朋友，發掘最新作品 -->
+      <mj-raw>
+        {{#if section.follow}}
+      </mj-raw>
+      <mj-section background-color="white" padding="22px 32px">
+        <mj-column>
+          <mj-text mj-class="subtitle">${{dailySummary.newFriend}}$，${{dailySummary.newWork}}$</mj-text>
+          
+          <!-- 追蹤了你 -->
+          <mj-raw>
+            {{#each notices.user_new_follower}}
+          </mj-raw>
+          <mj-text mj-class="summary">
+            {{#each this.actors[0]}}
+              <a class="link-black" href="{{siteDomain}}/@{{this.userName}}?utm_medium=email">{{this.displayName}}</a> 
+            {{/each}}
+            {{#if this.actorCount}}
+              ${{dailySummary.etc}}$ <span class="link-black">{{this.actorCount}}</span> 人 
+            {{/if}} 
+            ${{dailySummary.followedYou}}$。${{dailySummary.communicateByCreate}}$
+          </mj-text>
+          <mj-spacer height="4px" />
+          <mj-text css-class="avatar">
+            {{#each this.actors.slice(3)}}
+              <a class="link-black" href="{{siteDomain}}/@{{this.userName}}?utm_medium=email"><img src="{{this.avatar}}" /></a>
+            {{/each}}
+            {{#if this.actorCount}}
+              <span>+{{this.actorCount - 4}}</span>
+            {{/if}} 
+          </mj-text>
+          <mj-raw>
+            {{/each}}
+          </mj-raw>
+          
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-color="white" padding="0 32px">
+        <mj-column>
+          <mj-divider border-width="1px" border-color="#ebebeb" />
+        </mj-column>
+      </mj-section>
+      <mj-raw>
+        {{/if}}
+      </mj-raw>
+
+      <!-- 你的圍爐最新動態 -->
+      <mj-raw>
+        {{#if notices.circle_new_subscriber || notices.circle_new_follower}}
+      </mj-raw>
+      <mj-section background-color="white" padding="22px 32px">
+        <mj-column>
+          <mj-text mj-class="subtitle">${{dailySummary.yourCircle}}$</mj-text>
+          
+          <mj-text css-class="circle"><a href="#"><img src="https://picsum.photos/64" /><span>BL追劇社</span></a></mj-text>
+      
+          <mj-text mj-class="summary">
+            {{#if notices.circle_new_subscriber}}
+              有 <span>{{this.actors.length}}</span> 位新訂閱者
+            {{/if}} 
+            {{#if notices.circle_new_subscriber && notices.circle_new_follower}}
+              ，以及
+            {{/if}}
+            {{#if !notices.circle_new_subscriber && notices.circle_new_follower}}
+              有 
+            {{/if}} 
+            {{#if notices.circle_new_follower}}
+              <span>{{this.actors.length}}</span> 人追蹤了你的圍爐
+            {{/if}} 
+          </mj-text>
+          <mj-spacer height="4px" />
+          <mj-text css-class="avatar">
+            {{#if notices.circle_new_subscriber && notices.circle_new_follower}}
+              {{#each this.actors.slice(3)}}
+                <a class="link-black" href="{{siteDomain}}/@{{this.userName}}?utm_medium=email"><img src="{{this.avatar}}" /></a>
+              {{/each}}
+            {{/if}} 
+            <a href="#"><img src="https://picsum.photos/20" /></a>
+            <a href="#"><img src="https://picsum.photos/20" /></a>
+            <a href="#"><img src="https://picsum.photos/20" /></a>
+            <a href="#"><img src="https://picsum.photos/20" /></a>
+            <span>+4</span>
+          </mj-text>
+          
+
+          <mj-text mj-class="summary">
+            眾聊有 <span class="link-black">19</span> 則新話題與 <span class="link-black">4</span> 則回覆，其中 <span class="link-black">2</span> 則提及你
+          </mj-text>
+          <mj-spacer height="4px" />
+          <mj-text css-class="avatar">
+            <a href="#"><img src="https://picsum.photos/20" /></a>
+            <a href="#"><img src="https://picsum.photos/20" /></a>
+            <a href="#"><img src="https://picsum.photos/20" /></a>
+            <a href="#"><img src="https://picsum.photos/20" /></a>
+            <span>+4</span>
+          </mj-text>
+          
+
+          <mj-text mj-class="summary">
+            廣播有 <span class="link-black">12</span> 則回覆，其中 <span class="link-black">2</span> 則提及你
+          </mj-text>
+          <mj-spacer height="4px" />
+          <mj-text css-class="avatar">
+            <a href="#"><img src="https://picsum.photos/20" /></a>
+            <a href="#"><img src="https://picsum.photos/20" /></a>
+            <a href="#"><img src="https://picsum.photos/20" /></a>
+            <a href="#"><img src="https://picsum.photos/20" /></a>
+            <span>+4</span>
+          </mj-text>
+
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-color="white" padding="0 32px">
+        <mj-column>
+          <mj-divider border-width="1px" border-color="#ebebeb" />
+        </mj-column>
+      </mj-section>
+      <mj-raw>
+        {{/if}}
+      </mj-raw>
+
+      <!-- 其他圍爐的新作品和發燒話題 -->
+      <mj-section background-color="white" padding="22px 32px">
+        <mj-column>
+          <mj-text mj-class="subtitle">其他圍爐的新作品和發燒話題</mj-text>
+          <mj-text css-class="circle"><a href="#"><img src="https://picsum.photos/64" /><span>產品設計居酒屋</span></a></mj-text>
+
+          <mj-text mj-class="summary">
+            發布了 <span class="link-black">2</span> 篇新作品
+          </mj-text>
+          <mj-spacer height="4px" />
+          <mj-text css-class="article">
+            <a href="#" class="link-black">《軍綠色的1984年 Toyota Land Cruiser FJ60，讓你來場復古硬派風範露營！》</a>
+            <a href="#" class="link-black">《持修 Cosplay 化身新聞主播、調酒師以WAT氣泡雞尾酒調製「初戀滋味」》</a>
+          </mj-text>
+
+          <mj-text mj-class="summary">
+            發布了 <span class="link-black">1</span> 則廣播
+          </mj-text>
+          <mj-spacer height="4px" />
+          <mj-text css-class="broadcast" color="#808080">
+            去年搬到丹麥的EO編輯，要為我們介紹她眼中的神奇國度，以及哥本哈根的小店推薦。追蹤 IG 掌握最新活動 → https://bit.ly/2JrBgiB
+          </mj-text>
+
+          <mj-text mj-class="summary">
+            眾聊有 <span class="link-black">19</span> 則新話題與 <span class="link-black">4</span> 則回覆，其中 <span class="link-black">2</span> 則提及你
+          </mj-text>
+          <mj-spacer height="4px" />
+          <mj-text css-class="avatar">
+            <a href="#"><img src="https://picsum.photos/20" /></a>
+            <a href="#"><img src="https://picsum.photos/20" /></a>
+            <a href="#"><img src="https://picsum.photos/20" /></a>
+            <a href="#"><img src="https://picsum.photos/20" /></a>
+            <span>+4</span>
+          </mj-text>
+
+          <mj-divider border-width="1px" border-color="#ebebeb" padding="22px 0 0 0"/>
+
+          <mj-text css-class="circle"><a href="#"><img src="https://picsum.photos/64" /><span>Web3 夜聊</span></a></mj-text>
+
+          <mj-text mj-class="summary">
+            發布了 <span class="link-black">1</span> 篇新作品
+          </mj-text>
+          <mj-spacer height="4px" />
+          <mj-text css-class="article">
+            <a href="#" class="link-black">《最能代表「北歐人生活方式」？就是電動載貨單車》</a>
+          </mj-text>
+
+          <mj-divider border-width="1px" border-color="#ebebeb" padding="22px 0 0 0"/>
+
+          <mj-text css-class="circle"><a href="#"><img src="https://picsum.photos/64" /><span>編劇家的雜談室</span></a></mj-text>
+
+          <mj-text mj-class="summary">
+            發布了 <span class="link-black">1</span> 則廣播
+          </mj-text>
+          <mj-spacer height="4px" />
+          <mj-text css-class="broadcast" color="#808080">
+            Figma 最近上了新功能，你們都用過了嗎？
+          </mj-text>
+
+          <mj-text mj-class="summary">
+            眾聊有 <span class="link-black">122</span> 則新話題
+          </mj-text>
+          <mj-spacer height="4px" />
+          <mj-text css-class="avatar">
+            <a href="#"><img src="https://picsum.photos/20" /></a>
+            <a href="#"><img src="https://picsum.photos/20" /></a>
+            <a href="#"><img src="https://picsum.photos/20" /></a>
+            <a href="#"><img src="https://picsum.photos/20" /></a>
+            <span>+4</span>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-color="white" padding="0 32px">
+        <mj-column>
+          <mj-divider border-width="1px" border-color="#ebebeb" />
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-color="white" padding="22px 32px 32px 32px">
+        <mj-column>
+          <mj-text font-size="14px" line-height="32px">
+            不想錯過任何精彩作品和討論，現在就到 Matters 開始閱讀和交流吧！
+            <br/>
+            和我們一起創造更有價值的自由寫作空間 🥂
+          </mj-text>
+          <mj-button mj-class="cta-button">到 Matters 查看最新消息</mj-button>
+          <mj-text font-size="14px" line-height="32px">
+            ——Matters 團隊
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="22px 32px 32px 32px">
+        <mj-column>
+          <mj-text color="#999C9D" font-size="12px" line-height="32px">
+            Copyright © 2019  Matters, All rights reserved.
+            <br />
+            You are receiving this email because you are a Matters subscriber.
+            <br />
+            unsubscribe from this list    update subscription preferences 
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+  </mj-body>
+</mjml>
