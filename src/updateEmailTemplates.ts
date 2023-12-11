@@ -432,12 +432,15 @@ const TEMPLATES = (() => {
 
 // invoke
 ;(async function main() {
-  const args = process.argv.slice(2);
-  const stripPrefix = args?.[0] === "--prefix" ? new RegExp(args?.[1]) : null;
+  const args = process.argv.slice(2)
+  const stripPrefix = args?.[0] === '--prefix' ? new RegExp(args?.[1]) : null
 
-  for (const t of TEMPLATES.filter(({ name, templateFile }) => (
-    stripPrefix == null || (stripPrefix.test(name) || stripPrefix.test(templateFile))
-  ))) {
+  for (const t of TEMPLATES.filter(
+    ({ name, templateFile }) =>
+      stripPrefix == null ||
+      stripPrefix.test(name) ||
+      stripPrefix.test(templateFile)
+  )) {
     createTemplateVersion(
       t.templateId,
       t.name,

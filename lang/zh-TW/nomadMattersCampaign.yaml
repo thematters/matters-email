@@ -15,4 +15,4 @@ viewMyBadges: 查看我的徽章
 badgesLinkText: >-
   或使用以下連結查看徽章：<br/><a style="color: #0D6763;">{{shareLink}}</a>
 campaignLinkText: >-
-  關於遊牧者計畫及邀請方式：<br/><a style="color: #0D6763;">{{ campaignLink }}</a>
+  關於遊牧者計畫及邀請方式：<br/><a style="color: #0D6763;">{{campaignLink}}</a>
