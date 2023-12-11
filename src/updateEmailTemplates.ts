@@ -250,6 +250,16 @@ const TEMPLATES = (() => {
         name: 'Email Change',
         templateFile: 'emailChange-zh-TW.html',
       },
+      {
+        templateId: 'd-78b94f4b29d7437ba2db8802f2aac587',
+        name: 'nomad-matters-campaign',
+        templateFile: 'nomad-matters-campaign-zh-CN.html',
+      },
+      {
+        templateId: 'd-ead2168972df477ca329d3c1e9ba2ca8',
+        name: 'nomad-matters-campaign',
+        templateFile: 'nomad-matters-campaign-zh-TW.html',
+      },
     ]
   } else if (env === 'production') {
     console.log('\x1b[36m%s\x1b[0m', 'updating production email templates...')

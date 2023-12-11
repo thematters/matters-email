@@ -1,0 +1,51 @@
+<mjml>
+  <mj-head>
+    <mj-include path="./partials/head-${{_lang_}}$.mjml" />
+    <mj-title>${{nomadMattersCampaign.title}}$</mj-title>
+  </mj-head>
+
+  <mj-body mj-class="body" css-class="body">
+    <mj-wrapper mj-class="wrapper">
+      <mj-include path="./partials/header-${{_lang_}}$.mjml" />
+
+      <mj-section>
+        <mj-column>
+          <mj-image src="https://static.matters.news/emails/banner-nomad{{newLevel}}-badge.jpg" />
+        </mj-column>
+      </mj-section>
+
+      <mj-section css-class="card">
+        <mj-column>
+          <mj-text mj-class="color-grey-darker">
+            {{displayName}} ${{nomadMattersCampaign.hi}}$</p>
+          </mj-text>
+
+          <mj-text>
+            {{#equals newLevel 1}}
+              ${{nomadMattersCampaign.Level1Text}}$
+            {{/equals}}
+            {{#equals newLevel 2}}
+              ${{nomadMattersCampaign.Level2Text}}$
+            {{/equals}}
+            {{#equals newLevel 3}}
+              ${{nomadMattersCampaign.Level3Text}}$
+            {{/equals}}
+            {{#equals newLevel 4}}
+              ${{nomadMattersCampaign.Level4Text}}$
+            {{/equals}}
+          </mj-text>
+
+    <mj-button href="{{shareLink}}" align="left" background-color="#0D6763" font-size="14px" font-weight="500" line-height="22px" inner-padding="12px 72px" color="white" border-radius="100px">
+      ${{nomadMattersCampaign.viewMyBadges}}$
+    </mj-button>
+
+          <mj-text>
+            ${{nomadMattersCampaign.showBadgesLink}}$
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-include path="./partials/footer-${{_lang_}}$.mjml" />
+    </mj-wrapper>
+  </mj-body>
+</mjml>
