@@ -10,7 +10,7 @@
 
       <mj-section>
         <mj-column>
-          <mj-image src="https://static.matters.news/emails/banner-nomad{{newLevel}}-badge.jpg" />
+          <mj-image src="https://static.matters.news/emails/banner-nomad{{newLevel}}-badge.jpeg" />
         </mj-column>
       </mj-section>
 
@@ -46,7 +46,12 @@
           <mj-spacer height="16px" />
 
           <mj-text>
-            ${{nomadMattersCampaign.showBadgesLink}}$
+            ${{nomadMattersCampaign.badgesLinkText}}$
+          </mj-text>
+
+          <mj-spacer height="16px" />
+          <mj-text>
+            ${{nomadMattersCampaign.campaignLinkText}}$
           </mj-text>
         </mj-column>
       </mj-section>

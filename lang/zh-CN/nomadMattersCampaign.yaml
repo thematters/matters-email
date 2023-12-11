@@ -8,4 +8,7 @@ Level3Text: '你在游牧者之路邀请了 10 位朋友，太厉害了！ LV3 �
 Level4Text: '你成功邀请了 20 位朋友参与游牧者计画，这是极少数人才能达到的成就，徽章已升级为最高等级火闪电！立刻回到马特市查看，并向社区展示你的徽章吧！'
 
 viewMyBadges: 查看我的徽章
-showBadgesLink: '或使用以下連結查看徽章：<br/><a style="color: #0D6763;">{{shareLink}}</a>'
+badgesLinkText: >-
+  或使用以下連結查看徽章：<br/><a style="color: #0D6763;">{{shareLink}}</a>
+campaignLinkText: >-
+  关于游牧者计画及邀请方式：<br/><a style="color: #0D6763;">{{ campaignLink }}</a>
