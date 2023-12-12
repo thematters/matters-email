@@ -2,18 +2,18 @@
   <mj-head>
     <mj-include path="./partials/head-${{_lang_}}$.mjml" />
     <mj-title>
-{{#equals newLevel 1}}
+      {{#equals newLevel 1}}
         ${{nomadMattersCampaign.Level1Title}}$
-{{/equals}}
-{{#equals newLevel 2}}
+      {{/equals}}
+      {{#equals newLevel 2}}
         ${{nomadMattersCampaign.Level2Title}}$
-{{/equals}}
-{{#equals newLevel 3}}
+      {{/equals}}
+      {{#equals newLevel 3}}
         ${{nomadMattersCampaign.Level3Title}}$
-{{/equals}}
-{{#equals newLevel 4}}
+      {{/equals}}
+      {{#equals newLevel 4}}
         ${{nomadMattersCampaign.Level4Title}}$
-{{/equals}}
+      {{/equals}}
     </mj-preview>
   </mj-head>
 
@@ -23,18 +23,18 @@
 
       <mj-section>
         <mj-column>
-{{#equals newLevel 1}}
-          <mj-image src="https://static.matters.news/emails/banner-nomad1-badge.jpg" />
-{{/equals}}
-{{#equals newLevel 2}}
-          <mj-image src="https://static.matters.news/emails/banner-nomad2-badge.jpg" />
-{{/equals}}
-{{#equals newLevel 3}}
-          <mj-image src="https://static.matters.news/emails/banner-nomad3-badge.jpg" />
-{{/equals}}
-{{#equals newLevel 4}}
-          <mj-image src="https://static.matters.news/emails/banner-nomad4-badge.jpg" />
-{{/equals}}
+          {{#equals newLevel 1}}
+            <mj-image src="https://static.matters.news/emails/banner-nomad1-badge.jpg" />
+          {{/equals}}
+          {{#equals newLevel 2}}
+            <mj-image src="https://static.matters.news/emails/banner-nomad2-badge.jpg" />
+          {{/equals}}
+          {{#equals newLevel 3}}
+            <mj-image src="https://static.matters.news/emails/banner-nomad3-badge.jpg" />
+          {{/equals}}
+          {{#equals newLevel 4}}
+            <mj-image src="https://static.matters.news/emails/banner-nomad4-badge.jpg" />
+          {{/equals}}
         </mj-column>
       </mj-section>
 
@@ -43,30 +43,37 @@
           <mj-text mj-class="color-grey-darker">
             ${{nomadMattersCampaign.to}}$ ${{nomadMattersCampaign.hi}}$</p>
           </mj-text>
-{{#equals newLevel 1}}
-          <mj-text>
-            ${{nomadMattersCampaign.Level1Text}}$
-          </mj-text>
-{{/equals}}
-{{#equals newLevel 2}}
-          <mj-text>
-            ${{nomadMattersCampaign.Level2Text}}$
-          </mj-text>
-{{/equals}}
-{{#equals newLevel 3}}
-          <mj-text>
-            ${{nomadMattersCampaign.Level3Text}}$
-          </mj-text>
-{{/equals}}
-{{#equals newLevel 4}}
-          <mj-text>
-            ${{nomadMattersCampaign.Level4Text}}$
-          </mj-text>
-{{/equals}}
 
-    <mj-button href="{{link}}" align="left" background-color="#0D6763" font-size="14px" font-weight="500" line-height="22px" inner-padding="12px 72px" color="white" border-radius="100px">
-      ${{nomadMattersCampaign.viewMyBadges}}$
-    </mj-button>
+          <mj-spacer height="16px" />
+
+          {{#equals newLevel 1}}
+            <mj-text>
+              ${{nomadMattersCampaign.Level1Text}}$
+            </mj-text>
+          {{/equals}}
+          {{#equals newLevel 2}}
+            <mj-text>
+              ${{nomadMattersCampaign.Level2Text}}$
+            </mj-text>
+          {{/equals}}
+          {{#equals newLevel 3}}
+            <mj-text>
+              ${{nomadMattersCampaign.Level3Text}}$
+            </mj-text>
+          {{/equals}}
+          {{#equals newLevel 4}}
+            <mj-text>
+              ${{nomadMattersCampaign.Level4Text}}$
+            </mj-text>
+          {{/equals}}
+
+          <mj-spacer height="24px" />
+
+          <mj-button href="{{link}}" align="left" background-color="#0D6763" font-size="14px" font-weight="500" line-height="22px" inner-padding="12px 72px" color="white" border-radius="100px">
+            ${{nomadMattersCampaign.viewMyBadges}}$
+          </mj-button>
+
+          <mj-spacer height="16px" />
 
           <mj-text>
             ${{nomadMattersCampaign.showBadgesLink}}$
