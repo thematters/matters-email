@@ -20,6 +20,8 @@
             {{displayName}} ${{nomadMattersCampaign.hi}}$</p>
           </mj-text>
 
+          <mj-spacer height="16px" />
+
           <mj-text>
             {{#equals newLevel 1}}
               ${{nomadMattersCampaign.Level1Text}}$
@@ -35,9 +37,13 @@
             {{/equals}}
           </mj-text>
 
-    <mj-button href="{{shareLink}}" align="left" background-color="#0D6763" font-size="14px" font-weight="500" line-height="22px" inner-padding="12px 72px" color="white" border-radius="100px">
-      ${{nomadMattersCampaign.viewMyBadges}}$
-    </mj-button>
+          <mj-spacer height="24px" />
+
+          <mj-button href="{{shareLink}}" align="left" background-color="#0D6763" font-size="14px" font-weight="500" line-height="22px" inner-padding="12px 72px" color="white" border-radius="100px">
+            ${{nomadMattersCampaign.viewMyBadges}}$
+          </mj-button>
+
+          <mj-spacer height="16px" />
 
           <mj-text>
             ${{nomadMattersCampaign.showBadgesLink}}$
