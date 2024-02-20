@@ -1,0 +1,11 @@
+title: '{{subject}}'
+hi: 你好，
+
+claimTextMultipleWallets: >-
+  你已獲得 Billboard 配捐共 {{amount}} USDT，因過去 14 天中有更換錢包地址，配捐金額將會按各錢包收到的支持比例拆分，請切換錢包地址分別領取。
+claimTextSingleWallet: >-
+  你已獲得 Billboard 配捐共 {{amount}} USDT。
+claimButtonText: '前往領取'
+
+claimLinkText: >-
+  查看更多關於 Billboard 的消息：

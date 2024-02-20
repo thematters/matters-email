@@ -260,6 +260,16 @@ const TEMPLATES = (() => {
         name: 'nomad-matters-campaign',
         templateFile: 'nomad-matters-campaign-zh-TW.html',
       },
+      {
+        templateId: 'd-f33d89d33a72419dbfc504c09ca84f81',
+        name: 'qf-notices',
+        templateFile: 'qf-notices-zh-CN.html',
+      },
+      {
+        templateId: 'd-dd6f9660b30a40eaa831254275c4b0b6',
+        name: 'qf-notices',
+        templateFile: 'qf-notices-zh-TW.html',
+      },
     ]
   } else if (env === 'production') {
     console.log('\x1b[36m%s\x1b[0m', 'updating production email templates...')
