@@ -1,0 +1,55 @@
+<mjml>
+  <mj-head>
+    <mj-include path="./partials/head-${{_lang_}}$.mjml" />
+    <mj-title>${{qfNotices.title}}$</mj-title>
+  </mj-head>
+
+  <mj-body mj-class="body" css-class="body">
+    <mj-wrapper mj-class="wrapper">
+      <mj-include path="./partials/header-${{_lang_}}$.mjml" />
+
+      <mj-section>
+        <mj-column>
+          <mj-image src="https://static.matters.news/emails/banner-qf-notices.png" />
+        </mj-column>
+      </mj-section>
+
+      <mj-section css-class="card">
+        <mj-column>
+          <mj-text mj-class="color-grey-darker">
+            {{displayName}} ${{qfNotices.hi}}$</p>
+          </mj-text>
+
+          <mj-spacer height="16px" />
+
+          <mj-text>
+            {{#if walletChanges}}
+              ${{qfNotices.claimTextMultipleWallets}}$
+            {{else}}
+              ${{qfNotices.claimTextSingleWallet}}$
+            {{/if}}
+          </mj-text>
+
+          <mj-spacer height="24px" />
+
+          <mj-button href="{{claimLink}}" align="left" background-color="#0D6763" font-size="14px" font-weight="500" line-height="22px" inner-padding="12px 72px" color="white" border-radius="100px">
+            ${{qfNotices.claimButtonText}}$
+          </mj-button>
+
+          <mj-spacer height="16px" />
+
+          <mj-text>
+            ${{qfNotices.claimLinkText}}$
+          </mj-text>
+
+          <mj-spacer height="16px" />
+          <mj-text>
+            {{billboardUrl}}
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-include path="./partials/footer-${{_lang_}}$.mjml" />
+    </mj-wrapper>
+  </mj-body>
+</mjml>
