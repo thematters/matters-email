@@ -1,7 +1,7 @@
 <mj-section>
   <mj-column>
     <mj-text>
-      <a class="article-digest link-black weight-medium" href="https://{{siteDomain}}/@{{article.author.userName}}/{{article.id}}-{{article.slug}}-{{article.mediaHash}}?utm_medium=email">
+      <a class="article-digest link-black weight-medium" href="https://{{siteDomain}}/a/{{article.shortHash}}?utm_medium=email">
         <span class="article-digest-title">{{article.title}}</span>
         <span class="article-digest-subtitle">{{article.author.displayName}}</span>
       </a>
