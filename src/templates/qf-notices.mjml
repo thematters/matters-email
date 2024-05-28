@@ -16,13 +16,13 @@
 
       <mj-section css-class="card">
         <mj-column>
-          <mj-text mj-class="color-grey-darker">
+          <mj-text color="#333">
             {{displayName}} ${{qfNotices.hi}}$</p>
           </mj-text>
 
           <mj-spacer height="16px" />
 
-          <mj-text>
+          <mj-text color="#333">
             {{#if walletChanges}}
               ${{qfNotices.claimTextMultipleWallets}}$
             {{else}}
@@ -30,7 +30,16 @@
             {{/if}}
           </mj-text>
 
-          <mj-spacer height="24px" />
+          <mj-spacer height="16px" />
+          <mj-text color="#333">
+            ${{qfNotices.billboardText1}}$
+          </mj-text>
+          <mj-spacer height="16px" />
+          <mj-text color="#333">
+            ${{qfNotices.billboardText2}}$
+          </mj-text>
+
+          <mj-spacer height="16px" />
 
           <mj-button href="{{claimLink}}" align="left" background-color="#0D6763" font-size="14px" font-weight="500" line-height="22px" inner-padding="12px 72px" color="white" border-radius="100px">
             ${{qfNotices.claimButtonText}}$
@@ -38,13 +47,11 @@
 
           <mj-spacer height="16px" />
 
-          <mj-text>
+          <mj-text color="#333">
             ${{qfNotices.claimLinkText}}$
           </mj-text>
-
-          <mj-spacer height="16px" />
-          <mj-text>
-            {{billboardUrl}}
+          <mj-text color="#333">
+            <a class="link" href="{{billboardUrl}}">{{billboardUrl}}</a>
           </mj-text>
         </mj-column>
       </mj-section>
