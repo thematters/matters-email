@@ -246,7 +246,7 @@
 
           <!-- comment_mentioned_you:start -->
           <mj-raw>
-            {{#each notices.comment_mentioned_you}}
+            {{#each notices.article_comment_mentioned_you}}
           </mj-raw>
           <mj-text mj-class="color-grey-dark">
             <a class="link-black" href="https://{{siteDomain}}/@{{this.actor.userName}}?utm_medium=email">{{this.actor.displayName}}</a>
