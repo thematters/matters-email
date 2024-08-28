@@ -2,7 +2,7 @@
   "name": "matters-email",
   "version": "2.1.1",
   "engines": {
-    "node": "12.16.x"
+    "node": ">=18 <19.0"
   },
   "description": "Use mjml to generate and update sendgrid dynamic templates",
   "main": "index.js",
