@@ -1,0 +1,16 @@
+title: '{{subject}}'
+hi: ','
+
+amount: >-
+  Your article has received support from Matters users. As part of Billboard's matching fund mechanism, you will be receiving {{amount}} USDT.
+
+intro_1: >-
+  Billboard is a decentralized on-chain advertising platform launched by Matters Lab on Optimism lately. It allocates 80% of its revenue to creators on Matters.town who meet the criteria.
+
+intro_2: >-
+  The mechanism harnesses the community's power to discover and support high-quality content. Your article has received USDT support from Matters users in this round, making it eligible for matching funds. We appreciate your participation in the community and your ongoing contributions. Click the button below to claim your funds.
+
+button_text: 'Claim the matching fund'
+
+footer: >-
+  To learn more about Billboard, please refer to the <a class="link" href="https://matters.town/a/jl1d9n2ul4i9">announcement</a> or visit the following URL: <a class="link" href="https://billboard.matters-lab.io/">https://billboard.matters-lab.io/</a>
