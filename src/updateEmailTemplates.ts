@@ -270,6 +270,11 @@ const TEMPLATES = (() => {
         name: 'qf-notices',
         templateFile: 'qf-notices-zh-TW.html',
       },
+      {
+        templateId: 'd-6c33968152a14578918789241f63279a',
+        name: 'qf-notices',
+        templateFile: 'qf-notices-en.html',
+      },
     ]
   } else if (env === 'production') {
     console.log('\x1b[36m%s\x1b[0m', 'updating production email templates...')

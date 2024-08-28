@@ -1,11 +1,16 @@
 title: '{{subject}}'
-hi: 你好，
+hi: ' 你好，'
 
-claimTextMultipleWallets: >-
-  你已获得 Billboard 配捐共 {{amount}} USDT，因过去 14 天中有更换钱包地址，配捐金额将会按各钱包收到的支持比例拆分，请切换钱包地址分别领取。
-claimTextSingleWallet: >-
-  你已获得 Billboard 配捐共 {{amount}} USDT。
-claimButtonText: '前往领取'
+amount: >-
+  你的文章获得站上用户的支持，基于 Billboard 的配捐机制，你将获得 {{amount}} USDT 的分润。
 
-claimLinkText: >-
-  查看更多关于 Billboard 的消息：
+intro_1: >-
+  Billboard 是 Matters Lab 新推出的一套运行于 Optimism 的去中心化链上广告协议，其中 80% 收益将以配捐制度分配给符合条件的 Matters 用户。
+
+intro_2: >-
+  这套配捐机制的核心精神，是希望透过社区的力量共同挖掘、支持好内容，而你的文章在这一轮获得了马特市用户的 USDT 支持，因此符合配捐资格。感谢你参与社区并持续创作，点击以下按钮即可领取。
+
+button_text: '前往领取'
+
+footer: >-
+  想更加了解 Billboard，可以查看 <a class="link" href="https://matters.town/a/jl1d9n2ul4i9">这篇公告</a>，或点击以下网址：<a class="link" href="https://billboard.matters-lab.io/">https://billboard.matters-lab.io/</a>
