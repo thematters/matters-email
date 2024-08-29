@@ -270,6 +270,11 @@ const TEMPLATES = (() => {
         name: 'qf-notices',
         templateFile: 'qf-notices-zh-TW.html',
       },
+      {
+        templateId: 'd-6c33968152a14578918789241f63279a',
+        name: 'qf-notices',
+        templateFile: 'qf-notices-en.html',
+      },
     ]
   } else if (env === 'production') {
     console.log('\x1b[36m%s\x1b[0m', 'updating production email templates...')
@@ -434,6 +439,21 @@ const TEMPLATES = (() => {
         name: 'Email Change',
         templateFile: 'emailChange-zh-TW.html',
       },
+      {
+        templateId: 'd-d4abaa12250c4c80be8396fd18563930',
+        name: 'qf-notices',
+        templateFile: 'qf-notices-zh-CN.html',
+      },
+      {
+        templateId: 'd-7a1f55f59fcf45a0a824904d6056b7ce',
+        name: 'qf-notices',
+        templateFile: 'qf-notices-zh-TW.html',
+      },
+      {
+        templateId: 'd-ac54ca1b20c04e079ccbb1c9102f87dd',
+        name: 'qf-notices',
+        templateFile: 'qf-notices-en.html',
+      }
     ]
   } else {
     return []
