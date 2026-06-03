@@ -1,7 +1,5 @@
-accountDeleted: 你的賬號已被註銷
+accountDeleted: 你的帳號已被註銷
 hi: 你好
-accountCanceledReason: 你的 Matters 帳戶因違反社區約章已被強制註銷。註銷後，你無法再使用 Matters ID 登陸
-gotoWallet: 如需管理錢包，請前往
-forgetPassword: 點擊「忘記密碼」，重新設置。設置完成後，請使用郵箱+新密碼登陸
-problemOfEmail: 如果無法進入你的郵箱，請聯繫
-sendQuestionTo: '對此處罰有任何疑問，可發郵件至：<a class="link" href="mailto:ask@matters.town">ask@matters.town</a>。'
+accountCanceledReason: 你的 Matters 帳戶已被註銷。註銷後，你將無法再以原本的方式（電子郵箱、社交帳號或數字錢包）登入 Matters。
+gotoWallet: 你的 Matters 站內錢包將無法繼續使用；若你曾綁定 MetaMask 或 WalletConnect 等加密貨幣錢包，這類錢包由你自行保管，不受註銷影響，仍可正常使用。
+sendQuestionTo: '如對帳號註銷有任何疑問，可發郵件至：<a class="link" href="mailto:hi@matters.town">hi@matters.town</a> 詢問。'
