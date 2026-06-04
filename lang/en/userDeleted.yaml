@@ -1,7 +1,5 @@
-accountDeleted: 你的賬號已被註銷
-hi: 你好
-accountCanceledReason: 你的 Matters 帳戶因違反社區約章已被強制註銷。註銷後，你無法再使用 Matters ID 登陸
-gotoWallet: 如需管理錢包，請前往
-forgetPassword: 點擊「忘記密碼」，重新設置。設置完成後，請使用郵箱+新密碼登陸
-problemOfEmail: 如果無法進入你的郵箱，請聯繫
-sendQuestionTo: '對此處罰有任何疑問，可發郵件至：<a class="link" href="mailto:ask@matters.town">ask@matters.town</a>。'
+accountDeleted: Your Matters account has been deactivated
+hi: hello
+accountCanceledReason: Your Matters account has been deactivated. You will no longer be able to sign in to Matters using your previous methods (email, social account, or crypto wallet).
+gotoWallet: Your in-app Matters wallet will no longer be accessible. Crypto wallets you connected via MetaMask or WalletConnect remain under your own custody and are unaffected by the deactivation — they will continue to work normally.
+sendQuestionTo: 'If you have any questions about the deactivation, please email <a class="link" href="mailto:hi@matters.town">hi@matters.town</a>.'

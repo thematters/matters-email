@@ -27,19 +27,14 @@
 
           <mj-spacer height="16px" />
           <mj-text>
-            ${{userDeleted.accountCanceledReason}}$ <a class="link" href="https://like.co/in/matters/redirect">like.co</a>。
+            ${{userDeleted.accountCanceledReason}}$
           </mj-text>
           <mj-spacer height="16px" />
 
           <mj-text>
-            ${{userDeleted.gotoWallet}}$ <a class="link" href="https://like.co/in/matters/redirect">like.co</a>，${{userDeleted.forgetPassword}}$ <a class="link" href="https://like.co/in/matters/redirect">like.co</a>。
+            ${{userDeleted.gotoWallet}}$
           </mj-text>
           <mj-spacer height="32px" />
-
-          <mj-text>
-            ${{userDeleted.problemOfEmail}}$ <a class="link" href="https://like.co/in/matters/redirect">like.co</a> 客服。
-          </mj-text>
-          <mj-spacer height="16px" />
 
           <mj-text>
             ${{userDeleted.sendQuestionTo}}$

@@ -46,12 +46,14 @@ The build process consists of two main stages:
 **Tool:** `gulp-html-i18n`
 
 The i18n process:
+
 1. Scans all `.mjml` files in `src/templates/`
 2. Replaces `${{key}}$` placeholders with translated text from YAML files
 3. Replaces `${{_lang_}}$` with the language code (en, zh-CN, zh-TW)
 4. Generates separate MJML files for each language in `build/i18n-emails/`
 
 **Example transformation:**
+
 ```mjml
 <!-- Source template -->
 <mj-title>${{verificationCode.register.title}}$</mj-title>
@@ -67,6 +69,7 @@ The i18n process:
 **Tool:** `gulp-mjml`
 
 The MJML conversion:
+
 1. Processes localized MJML files from `build/i18n-emails/`
 2. Compiles MJML to responsive HTML
 3. Generates final HTML files in `build/emails/`
@@ -124,6 +127,7 @@ Partials are automatically localized using the `${{_lang_}}$` placeholder:
 ```
 
 This becomes:
+
 - `./partials/header-en.mjml` for English
 - `./partials/header-zh-CN.mjml` for Simplified Chinese
 - `./partials/header-zh-TW.mjml` for Traditional Chinese
@@ -137,17 +141,21 @@ This becomes:
 ## Build Commands
 
 ### Development
+
 ```bash
 npm run start
 ```
+
 - Builds templates
 - Starts hot-reload server on port 8000
 - Watches for file changes and rebuilds automatically
 
 ### Production Build
+
 ```bash
 npm run build
 ```
+
 - Generates all localized HTML files
 - No server, just builds the templates
 
@@ -158,6 +166,7 @@ npm run build
 The deployment system maintains separate template configurations for development and production environments in `src/updateEmailTemplates.ts`.
 
 Each template entry includes:
+
 - `templateId` - SendGrid dynamic template ID
 - `name` - Human-readable template name
 - `templateFile` - Generated HTML file to upload
@@ -186,6 +195,7 @@ npm run upload:dev -- --prefix "verification"
 ### Environment Variables
 
 Required environment variable:
+
 - `MATTERS_SENDGRID_API_KEY` - SendGrid API key for authentication
 
 ## Template Variables
@@ -193,31 +203,30 @@ Required environment variable:
 Templates support Handlebars-style variables for dynamic content:
 
 ### Common Variables
+
 - `{{code}}` - Verification codes
 - `{{link}}` - Action links
 - `{{@root.recipient.email}}` - Recipient email address
 - `{{copyrightYear}}` - Current year
 
 ### Conditional Logic
+
 Templates use Handlebars conditionals for different email types:
 
 ```mjml
-{{#if type.register}}
-  ${{verificationCode.register.title}}$
-{{/if}}
-
-{{#if type.emailReset}}
-  ${{verificationCode.emailReset.title}}$
-{{/if}}
+{{#if type.register}} ${{verificationCode.register.title}}$ {{/if}} {{#if
+type.emailReset}} ${{verificationCode.emailReset.title}}$ {{/if}}
 ```
 
 ## File Naming Convention
 
 ### Generated Files
+
 - **i18n-emails:** `{templateName}-{language}.mjml`
 - **Final HTML:** `{templateName}-{language}.html`
 
 Examples:
+
 - `verificationCode-zh-CN.mjml`
 - `dailySummary-en.html`
 - `payment-zh-TW.html`
@@ -243,18 +252,21 @@ Examples:
 ## Best Practices
 
 ### Template Design
+
 - Use semantic MJML components for better email client compatibility
 - Keep templates responsive and mobile-friendly
 - Use partials for reusable components
 - Test across different email clients
 
 ### Localization
+
 - Use descriptive translation keys
 - Maintain consistent terminology across languages
 - Test all language variants
 - Keep translations in sync
 
 ### Deployment
+
 - Test in development environment first
 - Use version control for template configurations
 - Monitor SendGrid API limits
@@ -285,12 +297,14 @@ npm run upload:dev -- --prefix "templateName"
 ## Dependencies
 
 ### Build Tools
+
 - **gulp** - Task runner
 - **gulp-mjml** - MJML compilation
 - **gulp-html-i18n** - Internationalization
 - **browser-sync** - Development server
 
 ### Runtime Dependencies
+
 - **mjml** - Email template engine
 - **request** - HTTP client for SendGrid API
 - **dotenv** - Environment variable management

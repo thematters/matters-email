@@ -1,7 +1,5 @@
 accountDeleted: 你的账号已被注销
 hi: 你好
-accountCanceledReason: 你的 Matters 帐户因违反社区约章已被强制注销。注销后，你无法再使用 Matter
-gotoWallet: 如需管理钱包，请前往
-forgetPassword: 点击「忘记密码」，重新设置。设置完成后，请使用邮箱+新密码登陆
-problemOfEmail: 如果无法进入你的邮箱，请联系
-sendQuestionTo: '对此处罚有任何疑问，可发邮件至：<a class="link" href="mailto:ask@matters.town">ask@matters.town</a>。'
+accountCanceledReason: 你的 Matters 账户已被注销。注销后，你将无法再以原本的方式（电子邮箱、社交账号或数字钱包）登录 Matters。
+gotoWallet: 你的 Matters 站内钱包将无法继续使用；若你曾绑定 MetaMask 或 WalletConnect 等加密货币钱包，这类钱包由你自行保管，不受注销影响，仍可正常使用。
+sendQuestionTo: '如对账号注销有任何疑问，可发邮件至：<a class="link" href="mailto:hi@matters.town">hi@matters.town</a> 询问。'
